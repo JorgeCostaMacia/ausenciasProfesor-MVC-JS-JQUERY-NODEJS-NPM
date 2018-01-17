@@ -1,50 +1,109 @@
 {
-  "index": {
-    "usuarios": {
-        "id": "Identificador",
-        "login": "Login",
-        "pass": "Password",
-        "nombre": "Nombre",
-        "departamento": "Departamento",
-        "permisos": "Permisos",
-        "peticiones": "Peticiones",
-        "log"
+    "index": {
+        "login":{
+            "key": [
+                "id",
+                "nick",
+                "pass",
+            ],
+            "title":[
+                "Identificador",
+                "Nick",
+                "Password",
+            ]
+        },
+
+        "usuarios": {
+            "key": [
+                "id",
+                "login",
+                "pass",
+                "nombre",
+                "departamento",
+                "permisos",
+                "peticiones",
+                "log"
+            ],
+            "title":[
+                "Identificador",
+                "Login",
+                "Password",
+                "Nombre",
+                "Departamento",
+                "Permisos",
+                "Peticiones",
+                "Registro"
+            ]
+        },
+
+        "genPeticion": {
+            "key": [
+                "fecha",
+                "comentarios",
+            ],
+            "title":[
+                "Fechas",
+                "Comentarios",
+            ]
+        },
+
+        "penAutorizar": {
+            "key": [
+                "fechaCreacion",
+                "fechaLlegada",
+                "comentarios",
+            ],
+            "title":[
+                "Fecha creacion",
+                "Fecha llegada",
+                "Comentarios",
+            ]
+        },
+
+        "penJustificar": {
+           "key": [
+                "fechaCreacion",
+                "fechaLlegada",
+                "comentarios",
+            ],
+            "title":[
+                "Fecha creacion",
+                "Fecha llegada",
+                "Comentarios",
+            ]
+        },
+
+        "finalizadas": {
+           "key": [
+                "fecha"
+                "fechaCreacion",
+                "fechaLlegada",
+                "comentarios",
+            ],
+            "title":[
+                "Fecha",
+                "Fecha creacion",
+                "Fecha llegada",
+                "Comentarios",
+            ]
+       }
     },
 
-    "genPeticion": {
-        "fecha": "Fecha",
-        "comentarios": "Comentarios"
-    },
-
-    "penAutorizar": {
-        "fechaCreacion": "Fecha creacion",
-        "fechaLlegada": "Fecha llegada",
-        "comentarios": "Comentarios"
-    },
-
-    "penJustificar": {
-        "fechaCreacion": "Fecha creacion",
-        "fechaLlegada": "Fecha llegada",
-        "comentarios": "Comentarios"
-    },
-
-    "finalizadas": {
-       "fechaCreacion": "Fecha creacion",
-       "fechaLlegada": "Fecha llegada",
-       "comentarios": "Ausencias"
-   }
-},
-
-"usuarios": [
-    { 
-        "id":1,
-        "login":"admin",
-        "pass":"admin",
-        "nombre":"admin",
-        "departamento":"admin",
-        "permisos":"admin",
-        "peticiones":[],
-        "log":[]
-    }
-]
+    "login": [
+        {
+            "id":1,
+            "nick": "admin",
+            "pass": "admin"
+        }
+    ],
+    "usuarios": [
+        { 
+            "id":1,
+            "nombre":"admin",
+            "departamento":"admin",
+            "permisos":"admin",
+            "peticiones":[],
+            "log":[]
+        }
+    ]
 }
