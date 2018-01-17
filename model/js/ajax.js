@@ -1,15 +1,29 @@
 "use strict";
 
-// CREA PETICION - LLAMA PHP - CUANDO RECIBE RESPUESTA MONTA FUNCION Y LA LLAMA
-// URL: PAGINA A LA QUE LLAMA
-// PARAMETER: VARIABLES Y SUS VALORES (COMO GET IMPLICITO)
-function ajaxQuery(url, parameter, nameResultFunction, method, usarxml) {
-    let  ajaxConnection = newAjaxConnection();
+ function ajaxQuery(url, parameter, nameResultFunction, method, usarxml) {
+    let _connection = newConnection();
 
-    if(trim (method.toUpperCase())=='POST' )  { requestPOST(url, parameter, ajaxConnection, usarxml); }
-    else { requestGET(url, parameter, ajaxConnection); }
+    if(trim (method.toUpperCase()) == 'POST' )  { requestPOST(url, parameter, _connection); }
+    else if(trim (method.toUpperCase()) == 'GET' )  { requestGET(url,parameter, _connection); }
+    else if(trim (method.toUpperCase()) == 'DELETE' )  { requestDelete(url, parameter, _connection); }
+    else if(trim (method.toUpperCase()) == 'PUT' )  { requestPut(url, parameter, _connection); }
 
-    ajaxConnection.onreadystatechange  = function () { responseAjax(ajaxConnection, nameResultFunction); }
+    _connection.onreadystatechange  = function () { responseAjax(_connection, nameResultFunction, usarxml); }
+    _connection.onerror = function() { /*msjDanger('No puede conectarse');*/}
+
+}
+
+function newConnection() {
+    let _connection = "";
+    try { _connection = new XMLHttpRequest(); } /* e.j. Firefox */
+    catch(err1) {
+        try { _connection = new ActiveXObject("Msxml2.XMLHTTP"); } /*  some versions IE */
+        catch(err2) {
+            try { _connection = new ActiveXObject("Microsoft.XMLHTTP"); } /* some versions IE */
+            catch(err3) { _connection = false; }
+        }
+    }
+    return _connection;
 }
 
 function responseAjax(ajaxConnection, nameResultFunction, usarxml){
@@ -19,33 +33,31 @@ function responseAjax(ajaxConnection, nameResultFunction, usarxml){
             if(usarxml ==1)  { queryRessult = ajaxConnection.responseXML; }
             eval(nameResultFunction  + '(queryRessult)');
         }
-        else { msjDanger("Error de conexion"); }
+        else { /*msjDanger('No puede conectarse');*/ }
     }
 }
 
-function newAjaxConnection() {
-    let ajaxConnection = "";
-    try { ajaxConnection = new XMLHttpRequest(); } /* e.j. Firefox */
-    catch(err1) {
-        try { ajaxConnection = new ActiveXObject("Msxml2.XMLHTTP"); } /*  some versions IE */
-        catch(err2) {
-            try { ajaxConnection = new ActiveXObject("Microsoft.XMLHTTP"); } /* some versions IE */
-            catch(err3) { ajaxConnection =  false; }
-        }
-    }
-    return ajaxConnection;
+function requestGET(url, parameter, _connection) {
+    _connection.open("GET", url + parameter, true);
+    _connection.send();
 }
 
-function requestGET(url, parameter, ajaxConnection) {
-    let myRand = parseInt(Math.random()*99999999);
-    ajaxConnection.open("GET",url+'?'+parameter+'&rand='+myRand,true);
-    ajaxConnection.send(null);
+function requestPOST(url, parameter, _connection) {
+    _connection.open("POST", url, true);
+    _connection.setRequestHeader('Content-Type',  'application/json');
+    _connection.send(JSON.stringify(parameter));
 }
 
-function requestPOST(url, parameter, ajaxConnection) {
-    ajaxConnection.open("POST", url, true);
-    ajaxConnection.setRequestHeader('Content-Type',  'application/x-www-form-urlencoded');
-    ajaxConnection.send(parameter);
+function requestDelete(url, parameter, _connection) {
+    _connection.open("DELETE", url + parameter, true);
+    _connection.setRequestHeader('Content-Type',  'application/json');
+    _connection.send();
+}
+
+function requestPut(url, parameter, _connection) {
+    _connection.open("PUT", url,true);
+    _connection.setRequestHeader('Content-Type',  'application/json');
+    _connection.send(JSON.stringify(parameter));
 }
 
 function trim (myString){ return myString.replace(/^\s+/g,'').replace(/\s+$/g,'') }
