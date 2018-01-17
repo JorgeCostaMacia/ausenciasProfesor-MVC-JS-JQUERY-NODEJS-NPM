@@ -1,0 +1,50 @@
+{
+  "index": {
+    "usuarios": {
+        "id": "Identificador",
+        "login": "Login",
+        "pass": "Password",
+        "nombre": "Nombre",
+        "departamento": "Departamento",
+        "permisos": "Permisos",
+        "peticiones": "Peticiones",
+        "log"
+    },
+
+    "genPeticion": {
+        "fecha": "Fecha",
+        "comentarios": "Comentarios"
+    },
+
+    "penAutorizar": {
+        "fechaCreacion": "Fecha creacion",
+        "fechaLlegada": "Fecha llegada",
+        "comentarios": "Comentarios"
+    },
+
+    "penJustificar": {
+        "fechaCreacion": "Fecha creacion",
+        "fechaLlegada": "Fecha llegada",
+        "comentarios": "Comentarios"
+    },
+
+    "finalizadas": {
+       "fechaCreacion": "Fecha creacion",
+       "fechaLlegada": "Fecha llegada",
+       "comentarios": "Ausencias"
+   }
+},
+
+"usuarios": [
+    { 
+        "id":1,
+        "login":"admin",
+        "pass":"admin",
+        "nombre":"admin",
+        "departamento":"admin",
+        "permisos":"admin",
+        "peticiones":[],
+        "log":[]
+    }
+]
+}
