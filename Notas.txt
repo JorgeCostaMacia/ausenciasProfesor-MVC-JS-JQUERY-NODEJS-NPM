@@ -1,0 +1,4 @@
+# Cuando se genera un permiso no oficial no necesita autorización, se salta el paso de autorización
+de permiso y se añade a la cola de justificantes pendientes de autorización.
+
+# 
