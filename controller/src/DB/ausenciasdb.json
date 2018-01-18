@@ -105,5 +105,89 @@
             "peticiones":[],
             "log":[]
         }
-    ]
+    ],
+
+    "privilegios": {
+        "admin": {
+            "nombre": "Administrador",
+            "permisos": {
+                "insert": [
+                    "usuario",
+                    "login",
+                    "justificante"
+                    "privileges",
+                    "index"
+                ],
+
+                "update": [
+                    "usuario",
+                    "login",
+                    "justificante"
+                    "privileges",
+                    "index"
+                ],
+                "delete": [
+                    "usuario",
+                    "login",
+                    "justificante"
+                    "privileges",
+                    "index"
+                ],
+                "select": [
+                    "usuarios",
+                    "login", 
+                    "privileges",
+                    "index"
+                ]
+            }
+        },
+        
+        "direcc": {
+            "nombre": "Dirección",
+            "permisos": {
+                "insert": [
+                    "usuario",
+                    "justificante"
+                ],
+                "update": [
+                    "usuario",
+                    "justificante"
+                ],
+                "delete": [
+                    "usuario",
+                    "justificante"
+                ],
+                "select": [
+                    "usuarios",
+                    "login",
+                    "privileges",
+                    "index"
+                ]
+            },
+
+        "profe": {
+            "nombre": "Profesor",
+            "permisos": {
+                "insert": [
+                    "usuario",
+                    "justificante"
+                ],
+                "update": [
+                    "usuario",
+                    "justificante"
+                ],
+                "delete": [
+                    "usuario",
+                    "justificante"
+                ],
+                "select": [
+                "usuarios",
+                    "login",
+                    "privileges",
+                    "index"
+                ]
+            },
+        }
+
+    }
 }
