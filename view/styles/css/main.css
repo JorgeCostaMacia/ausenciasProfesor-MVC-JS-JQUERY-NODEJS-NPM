@@ -23,6 +23,7 @@ main > :last-child{
 }
 
 .h-100vh {
+.mvh-100 {
     min-height: 100vh !important;
 }
 
