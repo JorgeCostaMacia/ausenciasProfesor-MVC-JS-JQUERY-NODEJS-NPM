@@ -1,80 +1,68 @@
 class Usuario {
     constructor(id, login, pass, nombre, departamento, permisos, peticiones, log) {
-        this._id = id;
-        this._login = login;
-        this._pass = pass;
-        this._nombre = nombre;
-        this._departamento = departamento;
-        this._permisos = permisos;
-        this._peticiones = peticiones;
-        this._log = log;
-    }
+        var _id = id;
+        var _login = login;
+        var _pass = pass;
+        var _nombre = nombre;
+        var _departamento = departamento;
+        var _permisos = permisos;
+        var _peticiones = peticiones;
+        var _log = log;
 
-    get id() {
-        return this._id;
-    }
+        this.getId = function () {
+            return _id;
+        };
+        this.getLogin = function () {
+            return _login;
+        };
+        this.getPass = function () {
+            return _pass;
+        };
+        this.getNombre = function () {
+            return _nombre;
+        };
+        this.getDepartamento = function () {
+            return _departamento;
+        };
+        this.getPermisos = function () {
+            return _permisos;
+        };
+        this.getPeticiones = function () {
+            return _peticiones;
+        };
+        this.getLog = function () {
+            return _log;
+        };
 
-    set id(value) {
-        this._id = value;
-    }
 
-    get login() {
-        return this._login;
-    }
-
-    set login(value) {
-        this._login = value;
-    }
-
-    get pass() {
-        return this._pass;
-    }
-
-    set pass(value) {
-        this._pass = value;
-    }
-
-    get nombre() {
-        return this._nombre;
-    }
-
-    set nombre(value) {
-        this._nombre = value;
-    }
-
-    get departamento() {
-        return this._departamento;
-    }
-
-    set departamento(value) {
-        this._departamento = value;
-    }
-
-    get permisos() {
-        return this._permisos;
-    }
-
-    set permisos(value) {
-        this._permisos = value;
-    }
-
-    get peticiones() {
-        return this._peticiones;
-    }
-
-    set peticiones(value) {
-        this._peticiones = value;
-    }
-
-    get log() {
-        return this._log;
-    }
-
-    set log(value) {
-        this._log = value;
+        this.setId = function (id) {
+            _id = id;
+        };
+        this.setLogin = function (login) {
+            _login = login;
+        };
+        this.setPass = function (pass) {
+            _pass = pass;
+        };
+        this.setNombre = function (nombre) {
+            _nombre = nombre;
+        };
+        this.setDepartamento = function (departamento) {
+            _departamento = departamento;
+        };
+        this.setPermisos = function (permisos) {
+            _permisos = permisos;
+        };
+        this.setPeticiones = function (peticiones) {
+            _peticiones = peticiones;
+        };
+        this.setLog = function (log) {
+            _log = log;
+        };
     }
 
     imprimir(elementoID) {
-        $("#"+elementoID).append("<tr><td>" + this.id + "</td><td>" + this.login + "</td><td>" + this.pass + "</td><td>" + this.nombre + "</td><td>" + this.departamento + "</td><td>" + this.permisos + "</td><td>" + this.peticiones + "</td><td>" + this.log + "</td></tr>");
+        $("#" + elementoID).append("<tr><td>" + this.getId() + "</td><td>" + this.getLogin + "</td><td>" + this.getNombre + "</td><td>" + this.getDepartamento + "</td><td>" + this.getPermisos + "</td><td>" + this.getPeticiones + "</td><td>" + this.getLog + "</td></tr>");
     }
+
 }
