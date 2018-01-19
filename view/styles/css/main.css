@@ -51,6 +51,10 @@ select option:disabled {
     min-height: 100vh;
 }
 
+.bg-light {
+    background: #FAFAFA !important;
+}
+
 /*
     Scrollbar
 ---------------------------------------------------------------------- */
@@ -127,7 +131,7 @@ input#pass {
 /*
     Tablas
 --------------------------------------------------------------------- */
-table.tabla-id, table.tabla-jugadores{
+.table-fixed-layout{
     table-layout: fixed;
 }
 
