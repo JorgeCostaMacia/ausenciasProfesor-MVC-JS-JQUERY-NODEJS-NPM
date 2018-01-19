@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d20b41a-2f85-4ac3-8ead-2a2729d49bca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Mockup/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Mockup/mockup_desktop_generar_registro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Mockup/mockup_desktop_inicio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Mockup/mockup_desktop_tablas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Mockup/mockup_movil_generar_permiso.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Mockup/mockup_movil_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Mockup/mockup_movil_tabla.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Prototype/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Wireframe/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Wireframe/wireframe_movil_inicio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Wireframe/wireframe_movil_inicio_minimizado.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/src/Documentation/Wireframe/wireframe_movil_tabla.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/Documentation/mockups y wireframes/Thumbs.db" afterPath="$PROJECT_DIR$/controller/src/Documentation/mockups y wireframes/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/styles/css/main.css" afterPath="$PROJECT_DIR$/view/styles/css/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1148">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
               <folding>
                 <marker date="1516354657466" expanded="false" signature="4851:4858" ph="×" />
               </folding>
@@ -28,7 +42,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="43" column="93" lean-forward="false" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +78,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/view/styles/css/main.css" />
+        <option value="$PROJECT_DIR$/view/login.html" />
       </list>
     </option>
   </component>
@@ -76,6 +119,24 @@
               <item name="ausenciasProfesor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ausenciasProfesor" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ausenciasProfesor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ausenciasProfesor" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ausenciasProfesor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ausenciasProfesor" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ausenciasProfesor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ausenciasProfesor" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -89,6 +150,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/view" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -117,7 +180,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1541000" />
+    <option name="totallyTimeSpent" value="3053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -154,11 +217,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1148">
+        <state relative-caret-position="-527">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <marker date="1516354657466" expanded="false" signature="4851:4858" ph="×" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding>
+            <marker date="1516354657466" expanded="false" signature="4851:4858" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="43" column="93" lean-forward="false" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+          <folding />
         </state>
       </provider>
     </entry>
