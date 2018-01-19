@@ -1,15 +1,36 @@
 {
+    "login": [
+        {
+            "id":1,
+            "nick": "admin",
+            "pass": "admin"
+        }
+    ],
+    "usuarios": [
+        {
+            "id":1,
+            "nombre":"admin",
+            "departamento":"admin",
+            "permisos":"admin",
+            "peticiones": {
+                "permisos": [],
+                "justificantes": []
+            },
+            "log":[]
+        }
+    ],
+
     "index": {
         "login":{
             "key": [
                 "id",
                 "nick",
-                "pass",
+                "pass"
             ],
             "title":[
                 "Identificador",
                 "Nick",
-                "Password",
+                "Password"
             ]
         },
 
@@ -39,11 +60,11 @@
         "genPeticion": {
             "key": [
                 "fecha",
-                "comentarios",
+                "comentarios"
             ],
             "title":[
                 "Fechas",
-                "Comentarios",
+                "Comentarios"
             ]
         },
 
@@ -51,12 +72,12 @@
             "key": [
                 "fechaCreacion",
                 "fechaLlegada",
-                "comentarios",
+                "comentarios"
             ],
             "title":[
                 "Fecha creacion",
                 "Fecha llegada",
-                "Comentarios",
+                "Comentarios"
             ]
         },
 
@@ -64,12 +85,12 @@
            "key": [
                 "fechaCreacion",
                 "fechaLlegada",
-                "comentarios",
+                "comentarios"
             ],
             "title":[
                 "Fecha creacion",
                 "Fecha llegada",
-                "Comentarios",
+                "Comentarios"
             ]
         },
 
@@ -78,34 +99,16 @@
                 "fecha"
                 "fechaCreacion",
                 "fechaLlegada",
-                "comentarios",
+                "comentarios"
             ],
             "title":[
                 "Fecha",
                 "Fecha creacion",
                 "Fecha llegada",
-                "Comentarios",
+                "Comentarios"
             ]
        }
     },
-
-    "login": [
-        {
-            "id":1,
-            "nick": "admin",
-            "pass": "admin"
-        }
-    ],
-    "usuarios": [
-        { 
-            "id":1,
-            "nombre":"admin",
-            "departamento":"admin",
-            "permisos":"admin",
-            "peticiones":[],
-            "log":[]
-        }
-    ],
 
     "privilegios": {
         "admin": {
@@ -186,7 +189,7 @@
                     "privileges",
                     "index"
                 ]
-            },
+            }
         }
 
     }
