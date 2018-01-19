@@ -47,10 +47,6 @@ select option:disabled {
     font-size: 1em !important;
 }
 
-#contenido {
-    min-height: 100vh;
-}
-
 .bg-light {
     background: #FAFAFA !important;
 }
@@ -172,12 +168,12 @@ input#pass {
 }
 
 @media only screen and (min-width: 768px) {
-    .navbar.position-fixed {
-        height: 100%;
-    }
 
-    main {
-        margin-top: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
     }
 }
 
