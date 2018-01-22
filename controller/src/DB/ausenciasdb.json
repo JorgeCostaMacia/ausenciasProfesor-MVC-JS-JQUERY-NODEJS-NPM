@@ -13,11 +13,14 @@
             "departamento":"admin",
             "permisos":"admin",
             "peticiones": {
-                "permisos": [],
-                "justificantes": []
+                "genPeticion":[],
+                "penAutorizar":[],
+                "penAutorizar": [],
+                "finalizadas":[]
             },
+            "justificantes": [],
             "log":[]
-        }
+        },
     ],
 
     "index": {
