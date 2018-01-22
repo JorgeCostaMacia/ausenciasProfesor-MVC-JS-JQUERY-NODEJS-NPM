@@ -1,27 +1,28 @@
 {
     "login": [
         {
-            "id":1,
-            "nick": "admin",
+            "id": "admin",
             "pass": "admin"
         }
     ],
     "usuarios": [
         {
-            "id":1,
+            "id":"admin",
             "nombre":"admin",
             "departamento":"admin",
             "permisos":"admin",
-            "peticiones": {
-                "genPeticion":[],
-                "penAutorizar":[],
-                "penJustificar": [],
-                "finalizadas":[]
-            },
-            "justificantes": [],
             "log":[]
         }
     ],
+
+    "peticiones":[
+
+    ],
+
+    "anexos":[
+
+    ],
+
 
     "index": {
         "login":{
