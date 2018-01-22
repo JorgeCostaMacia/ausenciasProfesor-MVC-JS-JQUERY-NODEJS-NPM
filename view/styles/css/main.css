@@ -52,6 +52,18 @@ select option:disabled {
     background: #FAFAFA !important;
 }
 
+.link {
+    color: #4582EC;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #1559cf;
+    text-decoration: underline;
+}
+
 /*
     Scrollbar
 ---------------------------------------------------------------------- */

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d20b41a-2f85-4ac3-8ead-2a2729d49bca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view/generar_permiso.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/login.html" afterPath="$PROJECT_DIR$/view/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/permisos_pendientes.html" afterPath="$PROJECT_DIR$/view/permisos_pendientes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/styles/css/main.css" afterPath="$PROJECT_DIR$/view/styles/css/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,21 +22,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="64" column="27" lean-forward="false" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+            <state relative-caret-position="334">
+              <caret line="113" column="93" lean-forward="false" selection-start-line="113" selection-start-column="93" selection-end-line="113" selection-end-column="93" />
               <folding>
-                <element signature="e#7975#7982#1" expanded="true" />
+                <element signature="e#8107#8114#1" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generar_permiso.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/generar_permiso.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2252">
-              <caret line="147" column="45" lean-forward="false" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -44,11 +34,41 @@
       <file leaf-file-name="permisos_pendientes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3400">
-              <caret line="200" column="130" lean-forward="false" selection-start-line="200" selection-start-column="130" selection-end-line="200" selection-end-column="130" />
+            <state relative-caret-position="280">
+              <caret line="120" column="42" lean-forward="true" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
               <folding>
-                <element signature="e#12587#12594#1" expanded="true" />
+                <element signature="e#7112#7119#1" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permisos_solicitar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="127" column="45" lean-forward="false" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="justificantes_pendientes.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="132" column="41" lean-forward="false" selection-start-line="132" selection-start-column="41" selection-end-line="132" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="justificantes_pendientes_autorizacion.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes_autorizacion.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="64" column="40" lean-forward="false" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,8 +86,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            <state relative-caret-position="459">
+              <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -91,12 +111,19 @@
       <find>contenido</find>
       <find>view/</find>
       <find>bg-light</find>
+      <find>table-light</find>
+      <find>Buscar solicitante</find>
+      <find>permisos</find>
+      <find>permiso</find>
+      <find>pendientes</find>
     </findStrings>
     <replaceStrings>
       <replace>styles/css/</replace>
       <replace>#</replace>
       <replace>buscador-campo</replace>
       <replace>table-light</replace>
+      <replace>Nombre solicitante</replace>
+      <replace>justificantes</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -109,9 +136,11 @@
         <option value="$PROJECT_DIR$/view/styles/inicio.html" />
         <option value="$PROJECT_DIR$/view/login.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/view/generar_permiso.html" />
         <option value="$PROJECT_DIR$/view/styles/css/main.css" />
         <option value="$PROJECT_DIR$/view/permisos_pendientes.html" />
-        <option value="$PROJECT_DIR$/view/generar_permiso.html" />
+        <option value="$PROJECT_DIR$/view/permisos_solicitar.html" />
+        <option value="$PROJECT_DIR$/view/justificantes_pendientes.html" />
       </list>
     </option>
   </component>
@@ -181,6 +210,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\GitHub\ausenciasProfesor\view" />
+      <recent name="C:\Users\Usuario\Documents\GitHub\ausenciasProfesor" />
       <recent name="C:\Users\Usuario\Documents\GitHub\ausenciasProfesor\view\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -211,12 +241,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516353013848</updated>
       <workItem from="1516353015884" duration="1541000" />
-      <workItem from="1516604955089" duration="4451000" />
+      <workItem from="1516604955089" duration="10129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13588000" />
+    <option name="totallyTimeSpent" value="19266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -256,7 +286,7 @@
         <state relative-caret-position="459">
           <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
-            <element signature="e#7975#7982#1" expanded="true" />
+            <element signature="e#8107#8114#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -290,7 +320,7 @@
         <state relative-caret-position="-527">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#7975#7982#1" expanded="true" />
+            <element signature="e#8107#8114#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -316,7 +346,7 @@
         <state relative-caret-position="782">
           <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
           <folding>
-            <element signature="e#7975#7982#1" expanded="true" />
+            <element signature="e#8107#8114#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -326,7 +356,7 @@
         <state relative-caret-position="-527">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#7975#7982#1" expanded="true" />
+            <element signature="e#8107#8114#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -347,38 +377,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/generar_permiso.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="66" column="68" lean-forward="false" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/justificantes_pendientes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes_autorizacion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="64" column="40" lean-forward="false" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        <state relative-caret-position="459">
+          <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="127" column="45" lean-forward="false" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="64" column="27" lean-forward="false" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+        <state relative-caret-position="334">
+          <caret line="113" column="93" lean-forward="false" selection-start-line="113" selection-start-column="93" selection-end-line="113" selection-end-column="93" />
           <folding>
-            <element signature="e#7975#7982#1" expanded="true" />
+            <element signature="e#8107#8114#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3400">
-          <caret line="200" column="130" lean-forward="false" selection-start-line="200" selection-start-column="130" selection-end-line="200" selection-end-column="130" />
+        <state relative-caret-position="280">
+          <caret line="120" column="42" lean-forward="true" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
           <folding>
-            <element signature="e#12587#12594#1" expanded="true" />
+            <element signature="e#7112#7119#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/generar_permiso.html">
+    <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2252">
-          <caret line="147" column="45" lean-forward="false" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
+        <state relative-caret-position="396">
+          <caret line="132" column="41" lean-forward="false" selection-start-line="132" selection-start-column="41" selection-end-line="132" selection-end-column="41" />
           <folding />
         </state>
       </provider>
