@@ -1,5 +1,0 @@
-class Peticion {
-    constructor(){
-
-    }
-}
