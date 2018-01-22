@@ -22,6 +22,10 @@ main > :last-child{
     padding-bottom: 20px;
 }
 
+<<<<<<< HEAD
+.h-100vh {
+=======
+>>>>>>> 436251cd08c2f4355e68312d98512c8bd30b9dd1
 .mvh-100 {
     min-height: 100vh !important;
 }
