@@ -3,7 +3,6 @@
 var loginGestor = new LoginGestor();
 var gestor = new Gestor();
 
-
 function evalLogin(){
     msjClean();
 
