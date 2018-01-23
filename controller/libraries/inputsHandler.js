@@ -1,12 +1,12 @@
 "use strict";
 
 function validateNickLogin(loginNick) {
-	if(esTexto(loginNick) && loginNick.length >= 5){ return true; }
+	if(esTextoNumero(loginNick) && loginNick.length >= 5){ return true; }
 	else { return false; }
 }
 
 function validatePassLogin(loginPass) {
-	if(esTexto(loginPass) && loginPass.length >= 8) { return true; }
+	if(esTextoNumero(loginPass) && loginPass.length >= 5) { return true; }
 	else { return false; }	
 }
 function validateNombre(nombre){

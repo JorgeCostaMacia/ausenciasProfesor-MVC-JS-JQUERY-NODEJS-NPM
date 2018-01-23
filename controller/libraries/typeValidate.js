@@ -10,6 +10,16 @@ function esTexto(dato){
     return controlLetra;
 }
 
+function esTextoNumero(dato){
+    let controlLetra = true;
+    if(dato != "" && dato != null){
+        for(let i = 0; i < dato.length; i++){
+            if(!esLetra(dato[i]) && !esNumeros(dato[i])){ controlLetra = false; i = dato.length; }
+        }
+    } else { controlLetra = false; }
+    return controlLetra;
+}
+
 function esTextoEspacio(dato){
     let controlLetra = true;
     if(dato != "" && dato != null){

@@ -33,7 +33,7 @@ function responseAjax(ajaxConnection, nameResultFunction, usarxml){
             if(usarxml ==1)  { queryRessult = ajaxConnection.responseXML; }
             eval(nameResultFunction  + '(queryRessult)');
         }
-        else { /*msjDanger('No puede conectarse');*/ }
+        else { msjDanger('Error de conexion'); }
     }
 }
 

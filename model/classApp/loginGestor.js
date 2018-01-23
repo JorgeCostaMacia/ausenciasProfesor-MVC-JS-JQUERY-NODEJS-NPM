@@ -1,41 +1,28 @@
 "use strict";
 
-class loginGestor{
-    constructor(){
+class LoginGestor {
+    validateLogin(loginId, loginPass){
+        msjClean();
 
-        this.validateLogin = function(loginId, loginPass){
-            let errores = [];
+        let errores = [];
 
-            if(validateNickLogin(loginId)) { /*okNickLoginIcon(); */}
-            else {
-                errores.push("idLogin");
-                //badNickLoginIcon();
-            }
-
-            if (validatePassLogin(loginPass)) { /*okPassLoginIcon();*/ }
-            else {
-                errores.push("passLogin");
-                //badPassLoginIcon();
-            }
+        if(!validateNickLogin(loginId)) {
+            errores.push("idLogin");
+            msjDanger("Formato de usuario incorrecto - Solo admite letras y numeros - Ha de contener al menos 5 caracteres");
         }
-
-        this.getUsuarioLogin = function(loginId, loginPass, returnFunction){
-            let parameter = 'id=' + loginId;
-            if(loginPass != ""){ parameter += '&pass=' + loginPass; }
-            ajaxQuery("localhost:3000/login?", parameter, returnFunction, "GET", 0);
+        if (!validatePassLogin(loginPass)) {
+            errores.push("passLogin");
+            msjDanger("Formato de pass incorrecto - Solo admite letras y numeros - Ha de contener al menos 5 caracteres");
         }
-
-        this.addUsuarioLogin = function(){
-            
-        }
-
-
-
-
-
-
-
+        return errores;
     }
+
+    getUsuarioLogin(table, loginId, loginPass, returnFunction){
+        let parameter = '?id=' + loginId;
+        if(loginPass != ""){ parameter += '&pass=' + loginPass; }
+        ajaxQuery("http://localhost:3000/" + table, parameter, returnFunction, "GET", 0);
+    }
+
 
 
 

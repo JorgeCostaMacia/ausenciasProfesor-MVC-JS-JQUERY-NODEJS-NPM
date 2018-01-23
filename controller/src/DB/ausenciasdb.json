@@ -2,7 +2,8 @@
     "login": [
         {
             "id": "admin",
-            "pass": "admin"
+            "pass": "admin",
+            "token": ""
         }
     ],
     "usuarios": [
@@ -10,7 +11,7 @@
             "id":"admin",
             "nombre":"admin",
             "departamento":"admin",
-            "permisos":"admin",
+            "nivel":"admin",
             "log":[]
         }
     ],
@@ -114,7 +115,7 @@
        }
     },
 
-    "privilegios": {
+    "nivel": {
         "admin": {
             "nombre": "Administrador",
             "permisos": {

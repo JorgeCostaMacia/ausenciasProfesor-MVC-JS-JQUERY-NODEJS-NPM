@@ -30,6 +30,10 @@
         <!-- Contenido principal -->
         <main>
 
+
+            <!-- CONTENEDOR PARA MENSAJES -->
+            <div id="mensajes"></div>
+
             <div id="logeo" class="d-flex justify-content-center row">
                 <div class="login bg-light mt-5 px-4 pb-4 pt-4">
 
@@ -39,10 +43,10 @@
                         <h2>Inicie sesión</h2>
                         <div class="form-group has-danger">
                             <label for="usuario" class="sr-only form-control-label">Usuario</label>
-                            <input type="text" id="usuario" name="usuario" pattern="[a-zA-Z0-9_]{,15}" class="form-control is-invalid" placeholder="Usuario" required autofocus>
+                            <input type="text" id="usuario" name="usuario" maxlength="15" class="form-control is-invalid" placeholder="Usuario" required autofocus>
                             <label for="pass" class="sr-only form-control-label">Contraseña</label>
-                            <input type="password" id="pass" name="pass" class="form-control is-invalid" placeholder="Contraseña" required>
-                            <button class="btn btn-lg btn-primary btn-block mt-3" type="submit" name="accion" value="login">Iniciar sesión</button>
+                            <input type="password" id="pass" name="pass" maxlength="15" class="form-control is-invalid" placeholder="Contraseña" required>
+                            <button class="btn btn-lg btn-primary btn-block mt-3" type="button" id="submitLogin" name="accion" value="login">Iniciar sesión</button>
                         </div>
 
                     </form>
@@ -88,6 +92,25 @@
 <script type="text/javascript" src="styles/js/popper.min.js"></script>
 <script type="text/javascript" src="styles/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="styles/js/main.js"></script>
+
+<script type="text/javascript" src="../controller/libraries/inputsHandler.js"></script>
+<script type="text/javascript" src="../controller/libraries/typeValidate.js"></script>
+
+<script type="text/javascript" src="../model/classApp/Gestor.js"></script>
+<script type="text/javascript" src="../model/classApp/loginGestor.js"></script>
+
+<script type="text/javascript" src="js/mensajes.js"></script>
+
+<script type="text/javascript" src="../model/classEntities/Login.js"></script>
+<script type="text/javascript" src="../model/classEntities/Peticion.js"></script>
+<script type="text/javascript" src="../model/classEntities/Usuario.js"></script>
+
+<script type="text/javascript" src="../model/ajax.js"></script>
+
+<script type="text/javascript" src="../controller/login/login.js"></script>
+<script type="text/javascript" src="../controller/login/events.js"></script>
+
+<script type="text/javascript" src="../controller/events.js"></script>
 
 </body>
 </html>
