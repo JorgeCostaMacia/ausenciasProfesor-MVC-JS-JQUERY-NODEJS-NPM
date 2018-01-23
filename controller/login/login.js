@@ -31,4 +31,3 @@ function getUsuario(resultado){
 
     gestor.addLocal(ressult[0]["id"], ressult[0]["nivel"]);
 }
-
