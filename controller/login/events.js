@@ -2,7 +2,10 @@
 
 function addEventsLogin(){
     let logeo = document.getElementById("logeo");
-    if(logeo != null ){ addEventsformLogin(); }
+    if(logeo != null ){
+        addEventsformLogin();
+        evalCookie();
+    }
 }
 
 function addEventsformLogin(){

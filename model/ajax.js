@@ -7,10 +7,10 @@
     else if(trim (method.toUpperCase()) == 'GET' )  { requestGET(url,parameter, _connection); }
     else if(trim (method.toUpperCase()) == 'DELETE' )  { requestDelete(url, parameter, _connection); }
     else if(trim (method.toUpperCase()) == 'PUT' )  { requestPut(url, parameter, _connection); }
+    else if(trim (method.toUpperCase()) == 'PATCH' )  { requestPATCH(url, parameter, _connection); }
 
     _connection.onreadystatechange  = function () { responseAjax(_connection, nameResultFunction, usarxml); }
-    _connection.onerror = function() { /*msjDanger('No puede conectarse');*/}
-
+    _connection.onerror = function() { msjDanger('No puede conectarse');}
 }
 
 function newConnection() {
@@ -56,6 +56,12 @@ function requestDelete(url, parameter, _connection) {
 
 function requestPut(url, parameter, _connection) {
     _connection.open("PUT", url,true);
+    _connection.setRequestHeader('Content-Type',  'application/json');
+    _connection.send(JSON.stringify(parameter));
+}
+
+function requestPATCH(url, parameter, _connection) {
+    _connection.open("PATCH", url,true);
     _connection.setRequestHeader('Content-Type',  'application/json');
     _connection.send(JSON.stringify(parameter));
 }

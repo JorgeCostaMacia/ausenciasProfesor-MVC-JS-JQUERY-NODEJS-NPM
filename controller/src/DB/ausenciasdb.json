@@ -1,202 +1,184 @@
 {
-    "login": [
-        {
-            "id": "admin",
-            "pass": "admin",
-            "token": ""
-        }
-    ],
-    "usuarios": [
-        {
-            "id":"admin",
-            "nombre":"admin",
-            "departamento":"admin",
-            "nivel":"admin",
-            "log":[]
-        }
-    ],
-
-    "peticiones":[
-
-    ],
-
-    "anexos":[
-
-    ],
-
-
-    "index": {
-        "login":{
-            "key": [
-                "id",
-                "nick",
-                "pass"
-            ],
-            "title":[
-                "Identificador",
-                "Nick",
-                "Password"
-            ]
-        },
-
-        "usuarios": {
-            "key": [
-                "id",
-                "login",
-                "pass",
-                "nombre",
-                "departamento",
-                "permisos",
-                "peticiones",
-                "log"
-            ],
-            "title":[
-                "Identificador",
-                "Login",
-                "Password",
-                "Nombre",
-                "Departamento",
-                "Permisos",
-                "Peticiones",
-                "Registro"
-            ]
-        },
-
-        "genPeticion": {
-            "key": [
-                "fecha",
-                "comentarios"
-            ],
-            "title":[
-                "Fechas",
-                "Comentarios"
-            ]
-        },
-
-        "penAutorizar": {
-            "key": [
-                "fechaCreacion",
-                "fechaLlegada",
-                "comentarios"
-            ],
-            "title":[
-                "Fecha creacion",
-                "Fecha llegada",
-                "Comentarios"
-            ]
-        },
-
-        "penJustificar": {
-           "key": [
-                "fechaCreacion",
-                "fechaLlegada",
-                "comentarios"
-            ],
-            "title":[
-                "Fecha creacion",
-                "Fecha llegada",
-                "Comentarios"
-            ]
-        },
-
-        "finalizadas": {
-           "key": [
-                "fecha",
-                "fechaCreacion",
-                "fechaLlegada",
-                "comentarios"
-            ],
-            "title":[
-                "Fecha",
-                "Fecha creacion",
-                "Fecha llegada",
-                "Comentarios"
-            ]
-       }
-    },
-
-    "nivel": {
-        "admin": {
-            "nombre": "Administrador",
-            "permisos": {
-                "insert": [
-                    "usuario",
-                    "login",
-                    "justificante",
-                    "privileges",
-                    "index"
-                ],
-
-                "update": [
-                    "usuario",
-                    "login",
-                    "justificante",
-                    "privileges",
-                    "index"
-                ],
-                "delete": [
-                    "usuario",
-                    "login",
-                    "justificante",
-                    "privileges",
-                    "index"
-                ],
-                "select": [
-                    "usuarios",
-                    "login", 
-                    "privileges",
-                    "index"
-                ]
-            }
-        },
-        
-        "direcc": {
-            "nombre": "Dirección",
-            "permisos": {
-                "insert": [
-                    "usuario",
-                    "justificante"
-                ],
-                "update": [
-                    "usuario",
-                    "justificante"
-                ],
-                "delete": [
-                    "usuario",
-                    "justificante"
-                ],
-                "select": [
-                    "usuarios",
-                    "login",
-                    "privileges",
-                    "index"
-                ]
-            }
-        },
-
-        "profe": {
-            "nombre": "Profesor",
-            "permisos": {
-                "insert": [
-                    "usuario",
-                    "justificante"
-                ],
-                "update": [
-                    "usuario",
-                    "justificante"
-                ],
-                "delete": [
-                    "usuario",
-                    "justificante"
-                ],
-                "select": [
-                "usuarios",
-                    "login",
-                    "privileges",
-                    "index"
-                ]
-            }
-        }
-
+  "login": [
+    {
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI0IzEyOjQ1OjIw",
+      "id": "admin",
+      "pass": "YWRtaW4="
     }
+  ],
+  "usuarios": [
+    {
+      "id": "admin",
+      "nombre": "admin",
+      "departamento": "admin",
+      "nivel": "admin",
+      "log": []
+    }
+  ],
+  "peticiones": [],
+  "anexos": [],
+  "index": {
+    "login": {
+      "key": [
+        "id",
+        "nick",
+        "pass"
+      ],
+      "title": [
+        "Identificador",
+        "Nick",
+        "Password"
+      ]
+    },
+    "usuarios": {
+      "key": [
+        "id",
+        "login",
+        "pass",
+        "nombre",
+        "departamento",
+        "permisos",
+        "peticiones",
+        "log"
+      ],
+      "title": [
+        "Identificador",
+        "Login",
+        "Password",
+        "Nombre",
+        "Departamento",
+        "Permisos",
+        "Peticiones",
+        "Registro"
+      ]
+    },
+    "genPeticion": {
+      "key": [
+        "fecha",
+        "comentarios"
+      ],
+      "title": [
+        "Fechas",
+        "Comentarios"
+      ]
+    },
+    "penAutorizar": {
+      "key": [
+        "fechaCreacion",
+        "fechaLlegada",
+        "comentarios"
+      ],
+      "title": [
+        "Fecha creacion",
+        "Fecha llegada",
+        "Comentarios"
+      ]
+    },
+    "penJustificar": {
+      "key": [
+        "fechaCreacion",
+        "fechaLlegada",
+        "comentarios"
+      ],
+      "title": [
+        "Fecha creacion",
+        "Fecha llegada",
+        "Comentarios"
+      ]
+    },
+    "finalizadas": {
+      "key": [
+        "fecha",
+        "fechaCreacion",
+        "fechaLlegada",
+        "comentarios"
+      ],
+      "title": [
+        "Fecha",
+        "Fecha creacion",
+        "Fecha llegada",
+        "Comentarios"
+      ]
+    }
+  },
+  "nivel": {
+    "admin": {
+      "nombre": "Administrador",
+      "permisos": {
+        "insert": [
+          "usuario",
+          "login",
+          "justificante",
+          "privileges",
+          "index"
+        ],
+        "update": [
+          "usuario",
+          "login",
+          "justificante",
+          "privileges",
+          "index"
+        ],
+        "delete": [
+          "usuario",
+          "login",
+          "justificante",
+          "privileges",
+          "index"
+        ],
+        "select": [
+          "usuarios",
+          "login",
+          "privileges",
+          "index"
+        ]
+      }
+    },
+    "direcc": {
+      "nombre": "Dirección",
+      "permisos": {
+        "insert": [
+          "usuario",
+          "justificante"
+        ],
+        "update": [
+          "usuario",
+          "justificante"
+        ],
+        "delete": [
+          "usuario",
+          "justificante"
+        ],
+        "select": [
+          "usuarios",
+          "login",
+          "privileges",
+          "index"
+        ]
+      }
+    },
+    "profe": {
+      "nombre": "Profesor",
+      "permisos": {
+        "insert": [
+          "usuario",
+          "justificante"
+        ],
+        "update": [
+          "usuario",
+          "justificante"
+        ],
+        "delete": [
+          "usuario",
+          "justificante"
+        ],
+        "select": [
+          "usuarios",
+          "login",
+          "privileges",
+          "index"
+        ]
+      }
+    }
+  }
 }
