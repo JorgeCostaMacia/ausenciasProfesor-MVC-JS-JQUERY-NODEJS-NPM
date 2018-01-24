@@ -1,7 +1,7 @@
 {
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI0IzE5OjIwOjM0",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI0IzE5OjQyOjY=",
       "id": "admin",
       "pass": "YWRtaW4="
     }
@@ -15,40 +15,38 @@
       "log": []
     }
   ],
+
   "peticiones": [],
+
   "anexos": [],
+
   "index": {
     "login": {
       "key": [
         "id",
-        "nick",
-        "pass"
+        "pass",
+        "token"
       ],
       "title": [
         "Identificador",
-        "Nick",
-        "Password"
+        "Password",
+        "Token"
       ]
     },
+
     "usuarios": {
       "key": [
         "id",
-        "login",
-        "pass",
         "nombre",
         "departamento",
-        "permisos",
-        "peticiones",
+        "nivel",
         "log"
       ],
       "title": [
         "Identificador",
-        "Login",
-        "Password",
         "Nombre",
         "Departamento",
-        "Permisos",
-        "Peticiones",
+        "Nivel",
         "Registro"
       ]
     },

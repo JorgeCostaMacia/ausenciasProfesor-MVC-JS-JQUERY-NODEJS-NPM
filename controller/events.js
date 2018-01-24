@@ -4,5 +4,6 @@ document.onload = addEvents();
 
 function addEvents(){
     addEventsLogin();
+    addEventsInicio();
 
 }

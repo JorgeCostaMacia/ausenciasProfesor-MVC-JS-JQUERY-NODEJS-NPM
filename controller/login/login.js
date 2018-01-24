@@ -1,14 +1,13 @@
 "use strict";
 
-var gestor = new Gestor();
-var loginManager = new LoginManager();
-var usuarioManager = new UsuarioManager();
+let gestor = new Gestor();
+let loginManager = new LoginManager();
+let usuarioManager = new UsuarioManager();
 
 function evalCookie(){
-    if(gestor.existCookie()) {
-
+    if(gestor.existCookie() ) {
         let id = gestor.getLocal()["id"];
-        loginManager.getLogin(id, '','evalCookieToken');
+        if(id != null){ loginManager.getLogin(id, '','evalCookieToken'); }
     }
 }
 
@@ -17,7 +16,7 @@ function evalCookieToken(resultado){
     let cookie = gestor.getCookie("token");
     let token = ressult[0]["token"];
 
-    if(cookie == token){ window.location.href = "inicio.html"; }
+    if(cookie == token){ window.location.assign("inicio.html"); }
 }
 
 function evalLogin(){
@@ -36,9 +35,10 @@ function checkExistLogin(resultado){
 
     let ressult = JSON.parse(resultado);
 
-    gestor.addLogins(new Login(ressult[0]["id"], ressult[0]["pass"], ressult[0]["token"]));
-
-    if(ressult.length > 0) { usuarioManager.getUsuario(ressult[0]["id"], 'addUsuarioLocal'); }
+    if(ressult.length > 0) {
+        gestor.addLogins(new Login(ressult[0]["id"], ressult[0]["pass"], ressult[0]["token"]));
+        usuarioManager.getUsuario(ressult[0]["id"], 'addUsuarioLocal');
+    }
     else { msjDanger('No existe el usuario o la contraseña es erronea'); }
 }
 
@@ -54,5 +54,5 @@ function addUsuarioLocal(resultado){
     gestor.addLocal(ressult[0]["id"], ressult[0]["nivel"]);
     gestor.addCookie('token', token, 300);
 
-    window.location.href = "inicio.html";
+    window.location.assign("inicio.html");
 }
