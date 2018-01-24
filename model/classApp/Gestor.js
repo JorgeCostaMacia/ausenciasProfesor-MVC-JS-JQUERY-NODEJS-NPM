@@ -18,11 +18,8 @@ class Gestor{
         this.setPeticiones = function(peticioness){ peticiones = peticioness; }
         this.addPeticiones = function(peticion){ peticiones.push(peticion); }
     }
-    
 
-    vaciarLocal(){
-        localStorage.clear();
-    }
+    delLocal(){ localStorage.clear(); }
 
     getLocal(){
         let ressult = [];
@@ -77,7 +74,6 @@ class Gestor{
 
     existCookie() {
         let cookie = this.getCookie("token");
-        console.log(cookie);
         if ( cookie != "") { return true; }
         else { return false; }
     }

@@ -5,7 +5,19 @@ var loginManager = new LoginManager();
 var usuarioManager = new UsuarioManager();
 
 function evalCookie(){
-    if(gestor.existCookie()){ window.location.href = "inicio.html";}
+    if(gestor.existCookie()) {
+
+        let id = gestor.getLocal()["id"];
+        loginManager.getLogin(id, '','evalCookieToken');
+    }
+}
+
+function evalCookieToken(resultado){
+    let ressult = JSON.parse(resultado);
+    let cookie = gestor.getCookie("token");
+    let token = ressult[0]["token"];
+
+    if(cookie == token){ window.location.href = "inicio.html"; }
 }
 
 function evalLogin(){
@@ -42,5 +54,5 @@ function addUsuarioLocal(resultado){
     gestor.addLocal(ressult[0]["id"], ressult[0]["nivel"]);
     gestor.addCookie('token', token, 300);
 
-    gestor = new Gestor();
+    window.location.href = "inicio.html";
 }

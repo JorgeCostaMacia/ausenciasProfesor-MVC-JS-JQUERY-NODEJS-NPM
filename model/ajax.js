@@ -10,7 +10,7 @@
     else if(trim (method.toUpperCase()) == 'PATCH' )  { requestPATCH(url, parameter, _connection); }
 
     _connection.onreadystatechange  = function () { responseAjax(_connection, nameResultFunction, usarxml); }
-    _connection.onerror = function() { msjDanger('No puede conectarse');}
+    _connection.onerror = function() { msjDanger('No puede conectarse'); }
 }
 
 function newConnection() {
