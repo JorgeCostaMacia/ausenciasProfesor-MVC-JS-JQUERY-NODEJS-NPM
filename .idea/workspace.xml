@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e6c96cd-4236-456d-9e94-4c24702b0c20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/aceptar_usuarios.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/view/login.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/Documentation/proyecto ausencias - guía de estilo.odt" afterPath="$PROJECT_DIR$/controller/src/Documentation/proyecto ausencias - guía de estilo.odt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/src/Documentation/proyecto ausencias - guía de estilo.pdf" afterPath="$PROJECT_DIR$/controller/src/Documentation/proyecto ausencias - guía de estilo.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/form_permiso.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registro.html" afterPath="$PROJECT_DIR$/registro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/aceptar_usuarios.html" afterPath="$PROJECT_DIR$/view/aceptar_usuarios.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/ausencias_finalizadas.html" afterPath="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/inicio.html" afterPath="$PROJECT_DIR$/view/inicio.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/justificantes.html" afterPath="$PROJECT_DIR$/view/justificantes.html" />
@@ -30,11 +27,9 @@
       <file leaf-file-name="inicio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/inicio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-              <folding>
-                <element signature="e#8337#8344#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="1130">
+              <caret line="162" column="6" lean-forward="false" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,8 +37,8 @@
       <file leaf-file-name="aceptar_usuarios.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/aceptar_usuarios.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="75" column="48" lean-forward="false" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+            <state relative-caret-position="314">
+              <caret line="112" column="6" lean-forward="false" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -52,18 +47,18 @@
       <file leaf-file-name="justificantes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/justificantes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="52" column="76" lean-forward="false" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
+            <state relative-caret-position="314">
+              <caret line="161" column="6" lean-forward="false" selection-start-line="161" selection-start-column="6" selection-end-line="161" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="permisos_solicitar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="permisos_solicitar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
+            <state relative-caret-position="195">
+              <caret line="112" column="86" lean-forward="false" selection-start-line="112" selection-start-column="86" selection-end-line="112" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -72,8 +67,8 @@
       <file leaf-file-name="permisos_pendientes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="314">
+              <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -82,8 +77,8 @@
       <file leaf-file-name="justificantes_pendientes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+            <state relative-caret-position="926">
+              <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -92,11 +87,19 @@
       <file leaf-file-name="ausencias_finalizadas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/ausencias_finalizadas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-              <folding>
-                <element signature="e#7260#7267#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="314">
+              <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_permiso.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/form_permiso.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="110" column="79" lean-forward="false" selection-start-line="110" selection-start-column="79" selection-end-line="110" selection-end-column="79" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,13 +124,15 @@
         <option value="$PROJECT_DIR$/view/styles/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/registro.html" />
-        <option value="$PROJECT_DIR$/view/inicio.html" />
+        <option value="$PROJECT_DIR$/view/soliticar_permiso.html" />
+        <option value="$PROJECT_DIR$/view/aceptar_usuarios.html" />
         <option value="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
+        <option value="$PROJECT_DIR$/view/form_permiso.html" />
+        <option value="$PROJECT_DIR$/view/inicio.html" />
         <option value="$PROJECT_DIR$/view/justificantes.html" />
         <option value="$PROJECT_DIR$/view/justificantes_pendientes.html" />
         <option value="$PROJECT_DIR$/view/permisos_pendientes.html" />
         <option value="$PROJECT_DIR$/view/permisos_solicitar.html" />
-        <option value="$PROJECT_DIR$/view/aceptar_usuarios.html" />
       </list>
     </option>
   </component>
@@ -137,7 +142,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="432" />
     <option name="width" value="772" />
     <option name="height" value="688" />
@@ -174,13 +179,6 @@
               <item name="ausenciasProfesor" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ausenciasProfesor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ausenciasProfesor" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,15 +222,15 @@
       <updated>1516789649555</updated>
       <workItem from="1516789673913" duration="1021000" />
       <workItem from="1516870163906" duration="119000" />
-      <workItem from="1516877894643" duration="4248000" />
+      <workItem from="1516877894643" duration="5910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10327000" />
+    <option name="totallyTimeSpent" value="11989000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13762811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -276,9 +274,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="54" column="104" lean-forward="false" selection-start-line="54" selection-start-column="104" selection-end-line="54" selection-end-column="104" />
-          <folding>
-            <element signature="e#8337#8344#1" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -342,9 +338,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="103" column="47" lean-forward="false" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
-          <folding>
-            <element signature="e#8337#8344#1" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -396,62 +390,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/justificantes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="52" column="76" lean-forward="false" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/aceptar_usuarios.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="75" column="48" lean-forward="false" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        <state relative-caret-position="314">
+          <caret line="112" column="6" lean-forward="false" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ausencias_finalizadas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-          <folding>
-            <element signature="e#7260#7267#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="314">
+          <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/inicio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-          <folding>
-            <element signature="e#8337#8344#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="1130">
+          <caret line="162" column="6" lean-forward="false" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/justificantes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="161" column="6" lean-forward="false" selection-start-line="161" selection-start-column="6" selection-end-line="161" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+        <state relative-caret-position="926">
+          <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state relative-caret-position="314">
+          <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
+        <state relative-caret-position="195">
+          <caret line="112" column="86" lean-forward="false" selection-start-line="112" selection-start-column="86" selection-end-line="112" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/form_permiso.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="110" column="79" lean-forward="false" selection-start-line="110" selection-start-column="79" selection-end-line="110" selection-end-column="79" />
           <folding />
         </state>
       </provider>
