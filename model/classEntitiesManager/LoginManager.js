@@ -30,7 +30,7 @@ class LoginManager {
             type:"PATCH",
             data: {'token': token},
            cache: false,
-           error: msjDanger("No puede Conectarse TOK GET"),
+           error: msjDanger("No puede Conectarse TOK GET")
        });
     }
 

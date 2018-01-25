@@ -71,6 +71,10 @@ select option:disabled {
     text-decoration: underline;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 /*
     Scrollbar
 ---------------------------------------------------------------------- */
@@ -122,23 +126,28 @@ body{
 
 
 /*
-    Login
+    Login y registro
 --------------------------- */
-.login {
+
+
+#login {
     width: 320px;
     max-width: 320px;
-    height: 300px;
-    max-height: 300px;
-    height: max-content;
-    height: fit-content;
+    height: 330px;
+    max-height: 330px;
 }
 
-input#usuario {
+#registro {
+    width: 320px;
+    max-width: 320px;
+}
+
+#login input#usuario, #registro input#pass {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
-input#pass {
+#login input#pass, #registro input#repetir-pass {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
