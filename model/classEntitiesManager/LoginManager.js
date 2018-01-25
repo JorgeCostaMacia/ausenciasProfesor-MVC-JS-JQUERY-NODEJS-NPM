@@ -4,7 +4,13 @@ class LoginManager {
     getLogin(loginId, loginPass, returnFunction){
         let parameter = '?id=' + loginId;
         if(loginPass != ""){ parameter += '&pass=' + loginPass; }
-        ajaxQuery("http://localhost:3000/login", parameter, returnFunction, "GET", 0);
+       // ajaxQuery("http://localhost:3000/login", parameter, returnFunction, "GET", 0);
+        $.ajax({
+        	url:"http://localhost:3000/login",
+        	type:"GET",
+        	data: parameter,
+        	success: returnFunction
+        })
     }
 
     addLogin(loginId, loginPass){
@@ -21,8 +27,5 @@ class LoginManager {
         let parameter = {'token': ''}
         ajaxQuery("http://localhost:3000/login/" + loginId, parameter, '', "PATCH", 0);
     }
+
 }
-
-
-
-
