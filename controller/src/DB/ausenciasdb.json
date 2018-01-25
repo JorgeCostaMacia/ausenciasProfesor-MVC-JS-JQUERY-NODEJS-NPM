@@ -1,7 +1,7 @@
 {
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI0IzE5OjQyOjY=",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI1IzEwOjQyOjM2",
       "id": "admin",
       "pass": "YWRtaW4="
     }
@@ -15,11 +15,8 @@
       "log": []
     }
   ],
-
   "peticiones": [],
-
   "anexos": [],
-
   "index": {
     "login": {
       "key": [
@@ -33,7 +30,6 @@
         "Token"
       ]
     },
-
     "usuarios": {
       "key": [
         "id",
