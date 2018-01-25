@@ -17,8 +17,8 @@ class LoginManager {
     addLogin(loginId, loginPass){
         $.ajax({
             url:"http://localhost:3000/login",
-            type:"PUT",
-            data: 'id=' + loginId + '&pass=' + loginPass,
+            type:"POST",
+            data: 'id=' + loginId + '&pass=' + loginPass + '&token=' + '',
             cache: false,
             error: function (){ msjDanger("Se ha producido un error en la conexion"); }
       });

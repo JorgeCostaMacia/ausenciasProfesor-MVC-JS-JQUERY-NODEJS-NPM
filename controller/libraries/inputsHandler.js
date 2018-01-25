@@ -10,11 +10,11 @@ function validatePassLogin(loginPass) {
 	else { return false; }	
 }
 function validateNombre(nombre){
-    if(esTextoEspacio(nombre) && nombre.length >= 5){ return true; }
+    if(esTextoEspacio(nombre) && nombre.length >= 3){ return true; }
     else { return false; }
 }
 
-function validateNomCom(nomCom){
+function validateDepartamento(nomCom){
     if(esTextoEspacio(nomCom) && nomCom.length >= 5){ return true; }
     else { return false; }
 }

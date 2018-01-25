@@ -6,6 +6,15 @@
       "pass": "YWRtaW4="
     }
   ],
+  "registro": [
+    {
+      "id": "admin2",
+      "pass": "YWRtaW4=",
+      "nombre": "laura",
+      "departamento": "informatica",
+      "nivel": "profesor"
+    }
+  ],
   "usuarios": [
     {
       "id": "admin",

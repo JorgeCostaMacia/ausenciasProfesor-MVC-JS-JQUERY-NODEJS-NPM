@@ -18,6 +18,11 @@ function evalCookieToken(ressult){
     if(cookie == token){ window.location.assign("inicio.html"); }
 }
 
+function evalRegistroLocal(){
+    let registro = gestor.getLocal()["registro"];
+    if(registro === "registro"){ msjSucces("Se ha dado de alta correctamente"); }
+}
+
 function evalLogin(){
     msjClean();
 
