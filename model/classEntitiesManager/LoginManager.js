@@ -9,9 +9,9 @@ class LoginManager {
         	url:"http://localhost:3000/login",
         	type:"GET",
         	data: parameter,
-            success: returnFunction,
-        	error: msjDanger("No puede Conectarse GET LOGIN")
-        });
+            success: function(ressult){ eval(returnFunction + '(ressult)'); },
+            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+        })
     }
 
     addLogin(loginId, loginPass){
@@ -20,17 +20,17 @@ class LoginManager {
             type:"PUT",
             data: 'id=' + loginId + '&pass=' + loginPass,
             cache: false,
-            error: msjDanger("No puede Conectarse"),
+            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
       });
     }
 
     addToken(loginId, token){
        $.ajax({
-            url:"http://localhost:3000/login/" + loginId,
-            type:"PATCH",
-            data: {'token': token},
+           url:"http://localhost:3000/login/" + loginId,
+           type:"PATCH",
+           data: {'token': token},
            cache: false,
-           error: msjDanger("No puede Conectarse TOK GET"),
+           error: function (){ msjDanger("Se ha producido un error en la conexion"); }
        });
     }
 
@@ -40,7 +40,7 @@ class LoginManager {
             type:"PATCH",
             data: {'token': ''},
             cache: false,
-            error: msjDanger("No puede Conectarse TOK DEL")
+            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
         });
     }
 

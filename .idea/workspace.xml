@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d20b41a-2f85-4ac3-8ead-2a2729d49bca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/controller/login/login.js" afterPath="$PROJECT_DIR$/controller/login/login.js" />
       <change beforePath="$PROJECT_DIR$/controller/src/DB/ausenciasdb.json" afterPath="$PROJECT_DIR$/controller/src/DB/ausenciasdb.json" />
       <change beforePath="$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js" afterPath="$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js" />
@@ -21,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginManager.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+            <state relative-caret-position="-4">
+              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,21 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeticionManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/PeticionManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="70" lean-forward="false" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -76,8 +64,8 @@
       <file leaf-file-name="UsuarioManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,9 +128,9 @@
         <option value="$PROJECT_DIR$/controller/login/events.js" />
         <option value="$PROJECT_DIR$/controller/inicio/inicio.js" />
         <option value="$PROJECT_DIR$/view/js/mensajes.js" />
+        <option value="$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js" />
         <option value="$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js" />
         <option value="$PROJECT_DIR$/controller/login/login.js" />
-        <option value="$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js" />
       </list>
     </option>
   </component>
@@ -323,12 +311,12 @@
       <workItem from="1516817343200" duration="4590000" />
       <workItem from="1516868034634" duration="5296000" />
       <workItem from="1516877866755" duration="923000" />
-      <workItem from="1516878960102" duration="2817000" />
+      <workItem from="1516878960102" duration="4794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44625000" />
+    <option name="totallyTimeSpent" value="46602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="0" />
@@ -638,14 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/PeticionManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/libraries/jQuery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -664,6 +644,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/PeticionManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/classApp/Gestor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -674,24 +662,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        <state relative-caret-position="-4">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="70" lean-forward="false" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
           <folding />
         </state>
       </provider>
