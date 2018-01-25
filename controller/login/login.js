@@ -11,8 +11,8 @@ function evalCookie(){
     }
 }
 
-function evalCookieToken(resultado){
-    let ressult = JSON.parse(resultado);
+function evalCookieToken(ressult){
+    //let ressult = JSON.parse(resultado);
     let cookie = gestor.getCookie("token");
     let token = ressult[0]["token"];
 
@@ -27,25 +27,23 @@ function evalLogin(){
 
     let errores = validateLogin(loginId, loginPass);
 
-    if(errores.length == 0){ loginManager.getLogin(loginId, gestor.stringBase64(loginPass), 'checkExistLogin'); }
+    if(errores.length == 0){ loginManager.getLogin(loginId, gestor.stringBase64(loginPass), checkExistLogin); }
 }
 
-function checkExistLogin(resultado){
+function checkExistLogin(ressult){
     msjClean();
-
-    let ressult = JSON.parse(resultado);
 
     if(ressult.length > 0) {
         gestor.addLogins(new Login(ressult[0]["id"], ressult[0]["pass"], ressult[0]["token"]));
-        usuarioManager.getUsuario(ressult[0]["id"], 'addUsuarioLocal');
+        usuarioManager.getUsuario(ressult[0]["id"], addUsuarioLocal);
     }
     else { msjDanger('No existe el usuario o la contraseña es erronea'); }
 }
 
-function addUsuarioLocal(resultado){
+function addUsuarioLocal(ressult){
     msjClean();
 
-    let ressult = JSON.parse(resultado);
+   // let ressult = JSON.parse(resultado);
 
     gestor.addUsuarios(new Usuario(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], ressult[0]["log"]));
 
