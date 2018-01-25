@@ -64,6 +64,10 @@ select option:disabled {
     text-decoration: underline;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 /*
     Scrollbar
 ---------------------------------------------------------------------- */

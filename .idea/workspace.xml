@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e6c96cd-4236-456d-9e94-4c24702b0c20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registro.html" afterPath="$PROJECT_DIR$/registro.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/justificantes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/view/justificantes_pendientes_autorizacion.html" afterPath="$PROJECT_DIR$/view/justificantes_pendientes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/inicio.html" afterPath="$PROJECT_DIR$/view/inicio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/permisos_pendientes.html" afterPath="$PROJECT_DIR$/view/permisos_pendientes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/permisos_solicitar.html" afterPath="$PROJECT_DIR$/view/permisos_solicitar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/styles/css/main.css" afterPath="$PROJECT_DIR$/view/styles/css/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,11 +22,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="0">
               <caret line="36" column="114" lean-forward="false" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
               <folding />
             </state>
@@ -31,7 +36,7 @@
       <file leaf-file-name="registro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/registro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="510">
               <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding />
             </state>
@@ -41,10 +46,62 @@
       <file leaf-file-name="inicio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/inicio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="163" column="47" lean-forward="false" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
+            <state relative-caret-position="187">
+              <caret line="115" column="85" lean-forward="false" selection-start-line="115" selection-start-column="85" selection-end-line="115" selection-end-column="85" />
               <folding>
-                <element signature="e#8092#8099#1" expanded="true" />
+                <element signature="e#8310#8317#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permisos_solicitar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="71" column="87" lean-forward="false" selection-start-line="71" selection-start-column="87" selection-end-line="71" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="justificantes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/justificantes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="115" column="91" lean-forward="false" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permisos_pendientes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-442">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="justificantes_pendientes.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ausencias_finalizadas.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/ausencias_finalizadas.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+              <folding>
+                <element signature="e#7248#7255#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,17 +111,7 @@
         <entry file="file://$PROJECT_DIR$/view/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="56">
-              <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+              <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -87,10 +134,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/view/inicio.html" />
-        <option value="$PROJECT_DIR$/view/styles/css/main.css" />
         <option value="$PROJECT_DIR$/registro.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/view/styles/css/main.css" />
+        <option value="$PROJECT_DIR$/view/permisos_pendientes.html" />
+        <option value="$PROJECT_DIR$/view/justificantes_pendientes.html" />
+        <option value="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
+        <option value="$PROJECT_DIR$/view/inicio.html" />
+        <option value="$PROJECT_DIR$/view/permisos_solicitar.html" />
+        <option value="$PROJECT_DIR$/view/justificantes.html" />
       </list>
     </option>
   </component>
@@ -120,8 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +201,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -159,6 +211,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\GitHub\ausenciasProfesor\view" />
       <recent name="C:\Users\Usuario\Documents\GitHub\ausenciasProfesor" />
     </key>
   </component>
@@ -186,11 +239,12 @@
       <updated>1516789649555</updated>
       <workItem from="1516789673913" duration="1021000" />
       <workItem from="1516870163906" duration="119000" />
+      <workItem from="1516877894643" duration="1182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4062000" />
+    <option name="totallyTimeSpent" value="7261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -206,21 +260,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13762811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,12 +279,86 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="114" lean-forward="false" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/inicio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="104" lean-forward="false" selection-start-line="54" selection-start-column="104" selection-end-line="54" selection-end-column="104" />
+          <folding>
+            <element signature="e#8310#8317#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="129" column="58" lean-forward="false" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/justificantes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="135" column="48" lean-forward="false" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" column="116" lean-forward="false" selection-start-line="122" selection-start-column="116" selection-end-line="122" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" column="65" lean-forward="true" selection-start-line="122" selection-start-column="65" selection-end-line="122" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/inicio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="103" column="47" lean-forward="false" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
           <folding>
-            <element signature="e#8092#8099#1" expanded="true" />
+            <element signature="e#8310#8317#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -260,44 +379,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/inicio.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="163" column="47" lean-forward="false" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
-          <folding>
-            <element signature="e#8092#8099#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="36" column="114" lean-forward="false" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/registro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="510">
           <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="36" column="114" lean-forward="false" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
+        <state relative-caret-position="357">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/ausencias_finalizadas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding>
+            <element signature="e#7248#7255#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/inicio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="115" column="85" lean-forward="false" selection-start-line="115" selection-start-column="85" selection-end-line="115" selection-end-column="85" />
+          <folding>
+            <element signature="e#8310#8317#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="71" column="87" lean-forward="false" selection-start-line="71" selection-start-column="87" selection-end-line="71" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/justificantes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="115" column="91" lean-forward="false" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
