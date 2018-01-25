@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0d20b41a-2f85-4ac3-8ead-2a2729d49bca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -8,6 +9,18 @@
       <change beforePath="$PROJECT_DIR$/controller/src/DB/ausenciasdb.json" afterPath="$PROJECT_DIR$/controller/src/DB/ausenciasdb.json" />
       <change beforePath="$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js" afterPath="$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js" />
       <change beforePath="$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js" afterPath="$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js" />
+=======
+    <list default="true" id="3e6c96cd-4236-456d-9e94-4c24702b0c20" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/form_permiso.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/aceptar_usuarios.html" afterPath="$PROJECT_DIR$/view/aceptar_usuarios.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/ausencias_finalizadas.html" afterPath="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/inicio.html" afterPath="$PROJECT_DIR$/view/inicio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/justificantes.html" afterPath="$PROJECT_DIR$/view/justificantes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/justificantes_pendientes.html" afterPath="$PROJECT_DIR$/view/justificantes_pendientes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/permisos_pendientes.html" afterPath="$PROJECT_DIR$/view/permisos_pendientes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/permisos_solicitar.html" afterPath="$PROJECT_DIR$/view/permisos_solicitar.html" />
+>>>>>>> master
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,26 +34,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="LoginManager.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+=======
+      <file leaf-file-name="inicio.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/inicio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1130">
+              <caret line="162" column="6" lean-forward="false" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="6" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ausenciasdb.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/DB/ausenciasdb.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1290">
               <caret line="86" column="16" lean-forward="false" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="16" />
+=======
+      <file leaf-file-name="aceptar_usuarios.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/aceptar_usuarios.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="112" column="6" lean-forward="false" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="jQuery-3.3.1.min.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/libraries/jQuery-3.3.1.min.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,6 +79,14 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="justificantes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/justificantes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="161" column="6" lean-forward="false" selection-start-line="161" selection-start-column="6" selection-end-line="161" selection-end-column="6" />
+              <folding />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -56,38 +94,77 @@
       <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="150">
               <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+=======
+            <state relative-caret-position="195">
+              <caret line="112" column="86" lean-forward="false" selection-start-line="112" selection-start-column="86" selection-end-line="112" selection-end-column="86" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="PeticionManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/PeticionManager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="permisos_pendientes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/permisos_pendientes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="UsuarioManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+=======
+      <file leaf-file-name="justificantes_pendientes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="926">
+              <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Gestor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/classApp/Gestor.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="900">
               <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+=======
+      <file leaf-file-name="ausencias_finalizadas.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/ausencias_finalizadas.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_permiso.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/form_permiso.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="110" column="79" lean-forward="false" selection-start-line="110" selection-start-column="79" selection-end-line="110" selection-end-column="79" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -109,6 +186,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/model/classApp/inputGestor.js" />
         <option value="$PROJECT_DIR$/controller/libraries/typeValidate.js" />
@@ -143,6 +221,20 @@
         <option value="$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js" />
         <option value="$PROJECT_DIR$/controller/login/login.js" />
         <option value="$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js" />
+=======
+        <option value="$PROJECT_DIR$/view/styles/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/registro.html" />
+        <option value="$PROJECT_DIR$/view/soliticar_permiso.html" />
+        <option value="$PROJECT_DIR$/view/aceptar_usuarios.html" />
+        <option value="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
+        <option value="$PROJECT_DIR$/view/form_permiso.html" />
+        <option value="$PROJECT_DIR$/view/inicio.html" />
+        <option value="$PROJECT_DIR$/view/justificantes.html" />
+        <option value="$PROJECT_DIR$/view/justificantes_pendientes.html" />
+        <option value="$PROJECT_DIR$/view/permisos_pendientes.html" />
+        <option value="$PROJECT_DIR$/view/permisos_solicitar.html" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -152,6 +244,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -160,6 +253,12 @@
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="432" />
+    <option name="width" value="772" />
+    <option name="height" value="688" />
+>>>>>>> master
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -250,6 +349,7 @@
               <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="classEntitiesManager" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="ausenciasProfesor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ausenciasProfesor" type="2a2b976b:PhpTreeStructureProvider$1" />
@@ -261,6 +361,8 @@
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+=======
+>>>>>>> master
           </expand>
           <select />
         </subPane>
@@ -312,6 +414,7 @@
       <created>1516353013848</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1516353013848</updated>
       <workItem from="1516353015884" duration="1541000" />
       <workItem from="1516611300965" duration="102000" />
@@ -324,14 +427,27 @@
       <workItem from="1516868034634" duration="5296000" />
       <workItem from="1516877866755" duration="923000" />
       <workItem from="1516878960102" duration="2817000" />
+=======
+      <updated>1516789649555</updated>
+      <workItem from="1516789673913" duration="1021000" />
+      <workItem from="1516870163906" duration="119000" />
+      <workItem from="1516877894643" duration="5910000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="44625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="11989000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> master
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15993538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -376,8 +492,13 @@
     <entry file="file://$PROJECT_DIR$/controller/js/login/getAcount.js" />
     <entry file="file://$PROJECT_DIR$/model/classApp/Gestor.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+=======
+        <state relative-caret-position="918">
+          <caret line="54" column="104" lean-forward="false" selection-start-line="54" selection-start-column="104" selection-end-line="54" selection-end-column="104" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
@@ -475,6 +596,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="915">
           <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
         </state>
@@ -484,6 +606,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+=======
+        <state relative-caret-position="328">
+          <caret line="103" column="47" lean-forward="false" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
+          <folding />
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -543,8 +670,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="300">
           <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
@@ -568,6 +696,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+=======
+        <state relative-caret-position="357">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
@@ -595,6 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="180">
           <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="74" />
         </state>
@@ -604,10 +745,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1270">
           <caret line="96" column="64" lean-forward="true" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
+=======
+        <state relative-caret-position="-43">
+          <caret line="45" column="111" lean-forward="false" selection-start-line="45" selection-start-column="111" selection-end-line="45" selection-end-column="111" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/controller/login/validate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -619,10 +765,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="43" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/view/js/mensajes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -634,20 +787,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="18" />
+=======
+    <entry file="file://$PROJECT_DIR$/view/aceptar_usuarios.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="112" column="6" lean-forward="false" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/PeticionManager.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="314">
+          <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/libraries/jQuery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="15">
           <caret line="1" column="73808" lean-forward="false" selection-start-line="1" selection-start-column="73808" selection-end-line="1" selection-end-column="73808" />
           <folding>
@@ -668,30 +833,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+=======
+        <state relative-caret-position="1130">
+          <caret line="162" column="6" lean-forward="false" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/justificantes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="161" column="6" lean-forward="false" selection-start-line="161" selection-start-column="6" selection-end-line="161" selection-end-column="6" />
+>>>>>>> master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/UsuarioManager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+=======
+    <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="150">
           <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+=======
+        <state relative-caret-position="314">
+          <caret line="146" column="6" lean-forward="false" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="6" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/model/classEntitiesManager/LoginManager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+=======
+    <entry file="file://$PROJECT_DIR$/view/permisos_solicitar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="112" column="86" lean-forward="false" selection-start-line="112" selection-start-column="86" selection-end-line="112" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/form_permiso.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="110" column="79" lean-forward="false" selection-start-line="110" selection-start-column="79" selection-end-line="110" selection-end-column="79" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
