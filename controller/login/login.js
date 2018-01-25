@@ -31,7 +31,6 @@ function evalLogin(){
 
 function checkExistLogin(ressult){
     msjClean();
-    console.log(ressult);
 
     if(ressult.length > 0) {
         gestor.addLogins(new Login(ressult[0]["id"], ressult[0]["pass"], ressult[0]["token"]));
@@ -43,8 +42,6 @@ function checkExistLogin(ressult){
 function addUsuarioLocal(ressult){
     msjClean();
 
-    console.log(ressult);
-
     gestor.addUsuarios(new Usuario(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], ressult[0]["log"]));
 
     let token = gestor.genToken();
@@ -52,5 +49,5 @@ function addUsuarioLocal(ressult){
     gestor.addLocal(ressult[0]["id"], ressult[0]["nivel"]);
     gestor.addCookie('token', token, 300);
 
-    window.location.assign("inicio.html");
+    window.location.assign("view/inicio.html");
 }
