@@ -22,8 +22,8 @@ function evalCookieToken(resultado){
 function evalLogin(){
     msjClean();
 
-    let loginId = document.getElementById("usuario").value;
-    let loginPass = document.getElementById("pass").value;
+    let loginId = $("#usuario").val();
+    let loginPass = $("#pass").val();
 
     let errores = validateLogin(loginId, loginPass);
 
