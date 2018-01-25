@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e6c96cd-4236-456d-9e94-4c24702b0c20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/justificantes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/view/justificantes_pendientes_autorizacion.html" afterPath="$PROJECT_DIR$/view/justificantes_pendientes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/inicio.html" afterPath="$PROJECT_DIR$/view/inicio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/permisos_pendientes.html" afterPath="$PROJECT_DIR$/view/permisos_pendientes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/permisos_solicitar.html" afterPath="$PROJECT_DIR$/view/permisos_solicitar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/styles/css/main.css" afterPath="$PROJECT_DIR$/view/styles/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registro.html" afterPath="$PROJECT_DIR$/registro.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,18 +19,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="36" column="114" lean-forward="false" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
+            <state relative-caret-position="340">
+              <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registro.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="registro.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/registro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="263">
+              <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -85,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="justificantes_pendientes.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="justificantes_pendientes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/justificantes_pendientes.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -134,15 +127,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/registro.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/view/styles/css/main.css" />
         <option value="$PROJECT_DIR$/view/permisos_pendientes.html" />
-        <option value="$PROJECT_DIR$/view/justificantes_pendientes.html" />
         <option value="$PROJECT_DIR$/view/ausencias_finalizadas.html" />
         <option value="$PROJECT_DIR$/view/inicio.html" />
         <option value="$PROJECT_DIR$/view/permisos_solicitar.html" />
         <option value="$PROJECT_DIR$/view/justificantes.html" />
+        <option value="$PROJECT_DIR$/view/justificantes_pendientes.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/registro.html" />
       </list>
     </option>
   </component>
@@ -239,12 +232,12 @@
       <updated>1516789649555</updated>
       <workItem from="1516789673913" duration="1021000" />
       <workItem from="1516870163906" duration="119000" />
-      <workItem from="1516877894643" duration="1182000" />
+      <workItem from="1516877894643" duration="2005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7261000" />
+    <option name="totallyTimeSpent" value="8084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -379,22 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="114" lean-forward="false" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/styles/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -459,6 +436,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding />
         </state>
       </provider>
