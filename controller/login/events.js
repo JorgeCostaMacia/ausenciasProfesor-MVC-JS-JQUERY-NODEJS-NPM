@@ -1,21 +1,19 @@
 "use strict";
 
 function addEventsLogin(){
-    let logeo = document.getElementById("logeo");
-    if(logeo != null ){
+    if($("#logeo") != null ){
         addEventsformLogin();
         evalCookie();
     }
 }
 
 function addEventsformLogin(){
-    let submitLogin = document.getElementById("submitLogin");
+    $("#submitLogin").click(evalLogin);
 
     //let submitGetAccount = document.getElementById("submitGetAccount");
     //let submitRegistrar = document.getElementById("submitRegistrar");
     //let addLogin = document.getElementById("addLogin");
 
-    submitLogin.addEventListener("click", evalLogin);
 
     //submitGetAccount.addEventListener("click", addformGetAccount);
     //submitRegistrar.addEventListener("click", evalformGetAccount);
