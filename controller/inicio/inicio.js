@@ -11,8 +11,7 @@ function evalCookie(){
     }
 }
 
-function evalCookieToken(resultado){
-    let ressult = JSON.parse(resultado);
+function evalCookieToken(ressult){
     let cookie = gestor.getCookie("token");
     let token = ressult[0]["token"];
 
