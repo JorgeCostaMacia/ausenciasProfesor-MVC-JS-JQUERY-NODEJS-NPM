@@ -5,14 +5,13 @@ let loginManager = new LoginManager();
 let usuarioManager = new UsuarioManager();
 
 function evalCookie(){
-    if(gestor.existCookie() ) {
-        let id = gestor.getLocal()["id"];
-        if(id != null){ loginManager.getLogin(id, '','evalCookieToken'); }
-    }
+   // if(gestor.existCookie() ) {
+     //   let id = gestor.getLocal()["id"];
+       // if(id != null){ loginManager.getLogin(id, '',evalCookieToken); }
+   // }
 }
 
 function evalCookieToken(ressult){
-    //let ressult = JSON.parse(resultado);
     let cookie = gestor.getCookie("token");
     let token = ressult[0]["token"];
 
@@ -43,8 +42,6 @@ function checkExistLogin(ressult){
 function addUsuarioLocal(ressult){
     msjClean();
 
-   // let ressult = JSON.parse(resultado);
-
     gestor.addUsuarios(new Usuario(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], ressult[0]["log"]));
 
     let token = gestor.genToken();
@@ -52,5 +49,5 @@ function addUsuarioLocal(ressult){
     gestor.addLocal(ressult[0]["id"], ressult[0]["nivel"]);
     gestor.addCookie('token', token, 300);
 
-    window.location.assign("inicio.html");
+    //window.location.assign("inicio.html");
 }
