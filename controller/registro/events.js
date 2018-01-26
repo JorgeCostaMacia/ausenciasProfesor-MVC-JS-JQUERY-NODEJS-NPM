@@ -1,10 +1,12 @@
 "use strict";
 
-function addEventsLogin(){
-    if($("#registro") != null ){
-        addEventsformRegistro();
-        evalCookie();
-    }
+document.onload = addEventsRegistro();
+
+function addEventsRegistro(){
+    addEventsformRegistro();
+    evalCookie();
 }
 
-function addEventsformRegistro(){ $("#submitRegistro").click(evalRegistro); }
+function addEventsformRegistro(){
+    if($("#submitRegistro") != null ){ $("#submitLogin").click(evalRegistro); }
+}

@@ -1,11 +1,11 @@
 "use strict";
 
+document.onload = addEventsLogin();
+
 function addEventsLogin(){
-    if($("#logeo") != null ){
-        addEventsformLogin();
-        evalCookie();
-        evalRegistroLocal();
-    }
+    addEventsformLogin();
+    evalCookie();
+    evalRegistroLocal();
 }
 
 function addEventsformLogin(){ $("#submitLogin").click(evalLogin); }
