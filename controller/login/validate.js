@@ -5,11 +5,11 @@ function validateLogin(loginId, loginPass){
 
     if(!validateNickLogin(loginId)) {
         errores.push("idLogin");
-        msjDanger("Formato de usuario incorrecto - Solo admite letras y numeros - Ha de contener al menos 5 caracteres");
+        msjDanger("Formato de usuario incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
     }
     if (!validatePassLogin(loginPass)) {
         errores.push("passLogin");
-        msjDanger("Formato de pass incorrecto - Solo admite letras y numeros - Ha de contener al menos 5 caracteres");
+        msjDanger("Formato de pass incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
     }
     return errores;
 }

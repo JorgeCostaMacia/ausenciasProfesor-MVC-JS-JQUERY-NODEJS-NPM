@@ -39,9 +39,6 @@ function checkExistLogin(ressult){
     if(ressult.length > 0) { msjDanger('No se puede dar de alta - Existe el usuario'); }
     else {
         getRegistro($("#usuario").val(), 'checkExistRegistro');
-        gestor.addLocal("", "", 'registro');
-        registroManager.addRegistro($("#usuario").val(), gestor.stringBase64($("#pass").val()), $("#nombre").val(), $("#departamento").val(), $("#nivel").val());
-        setTimeout(window.location.assign("../index.html"), 2000);
     }
 }
 

@@ -29,8 +29,22 @@ function returnLogin(){
 function getUsuarioLocal(){
     let usuario = gestor.getLocal();
 
-    if(usuario["nivel"] == 'admin'){ peticionManager.getPeticion('', 'getPeticiones'); }
+    if(usuario["nivel"] == 'admin'){ /* REDIRECT */ }
     if(usuario["nivel"] == 'direccion'){ peticionManager.getPeticion('', 'getPeticiones'); }
-    if(usuario["nivel"] == 'profesor'){ peticionManager.getPeticion('', 'getPeticiones'); }
+    if(usuario["nivel"] == 'profesor'){ peticionManager.getPeticion(usuario["id"], 'getPeticiones'); }
+}
+
+function getPeticiones(ressult){
+    let countGenPeticion = 0;
+    let countPendientePeticion = 0;
+    let countJustificante = 0;
+    let countPendienteJustificante = 0;
+    let countTotal = 0;
+
+    for(let i = 0; i < ressult.length; i++){
+        if(ressult[i]["cola"] == "genPeticion"){
+
+        }
+    }
 
 }
