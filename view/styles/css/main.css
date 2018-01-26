@@ -212,7 +212,7 @@ body{
 
 
 /*
-    Estilos impresión
+    Estilos formulario
 ------------------------------------------------------------------------ */
 
 /*input::-webkit-datetime-edit{ color: transparent; }
@@ -226,22 +226,22 @@ input:focus::-webkit-datetime-edit{ color: #000; }*/
     min-width: 90px;
 }
 
-[class*="col"], fieldset, label {
+#formulario-permiso [class*="col"], fieldset, label {
     padding: 0;
     margin: 0;
 }
 
-input[type="text"], input[type="date"], input[type="time"], input[type="number"], select {
+#formulario-permiso input[type="text"], input[type="date"], input[type="time"], input[type="number"], select {
     border: none;
     border-bottom: 1px solid #555;
     text-align: center;
 }
 
-input[type="number"] {
+#formulario-permiso input[type="number"] {
     max-width: 4em;
 }
 
-textarea {
+#formulario-permiso textarea {
     border: none;
     border-bottom: 1px solid #555;
 }
@@ -250,7 +250,7 @@ textarea {
     width: 2em;
 }
 
-fieldset {
+#formulario-permiso fieldset {
     margin-bottom: 1em;
 }
 
