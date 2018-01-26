@@ -43,6 +43,10 @@ select option:disabled {
     max-width: 200px !important;
 }
 
+.w-33 {
+    width: 33% !important;
+}
+
 .a-btn{
     text-decoration: none !important;
 }
@@ -204,6 +208,114 @@ body{
     .navbar {
         min-height: 100vh;
     }
+}
+
+
+/*
+    Estilos impresión
+------------------------------------------------------------------------ */
+
+/*input::-webkit-datetime-edit{ color: transparent; }
+input:focus::-webkit-datetime-edit{ color: #000; }*/
+
+#formulario-permiso{
+    font-size: 14px;
+}
+
+.mw-90 {
+    min-width: 90px;
+}
+
+[class*="col"], fieldset, label {
+    padding: 0;
+    margin: 0;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="number"], select {
+    border: none;
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
+
+input[type="number"] {
+    max-width: 4em;
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+.celda-print.radio-print {
+    width: 2em;
+}
+
+fieldset {
+    margin-bottom: 1em;
+}
+
+/* clases */
+
+.tabla-print{
+
+}
+
+.tabla-cabecera {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.fila-print {
+    border: 1px solid #555;
+    border-bottom: 0;
+}
+.fila-print:last-child {
+    border-bottom: 1px solid #555;
+}
+
+.celda-print {
+    padding: 0.25em 0.75em;
+    border-right: 1px solid #555;
+}
+.celda-print:last-child {
+    border-right: 0;
+}
+
+.bg-amarillo { background-color: #FFD320
+}
+
+.texto-centrado { text-align: center; }
+
+/* ids */
+#ddña { width: 350px ; }
+
+@media only print
+{
+    body {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact !important;
+    }
+
+    #formulario-permiso{
+        font-size: 11px;
+    }
+
+    .tabla-print {
+        font-size: 9px;
+    }
+
+    .tabla-horario input[type="text"], .tabla-horario input[type="date"], .tabla-horario input[type="time"] {
+        border: none !important;
+    }
+
+    textarea {
+        border: none !important;
+    }
+}
+
+@page {
+    size: A4 portrait;
+    margin: 50px 55px 50px 70px;
 }
 
 
