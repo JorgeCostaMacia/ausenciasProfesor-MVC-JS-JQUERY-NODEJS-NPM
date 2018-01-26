@@ -3,9 +3,7 @@
 document.onload = addEventsLogin();
 
 function addEventsLogin(){
-    addEventsformLogin();
+    $("#submitLogin").click(evalLogin);
     evalCookie();
     evalRegistroLocal();
 }
-
-function addEventsformLogin(){ $("#submitLogin").click(evalLogin); }

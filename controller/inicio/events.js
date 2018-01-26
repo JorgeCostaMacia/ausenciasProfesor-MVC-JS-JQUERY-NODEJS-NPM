@@ -1,16 +1,9 @@
 "use strict";
 
-function addEventsInicio(){
-    let cerrarSesionInicio = document.getElementById("cerrarSesionInicio");
-    if(cerrarSesionInicio != null){
-        addEventsInicio();
-        evalCookie();
-        addContent();
-    }
-}
+document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    let cerrarSesionInicio = document.getElementById("cerrarSesionInicio");
-
-    if(cerrarSesionInicio != null){  cerrarSesionInicio.addEventListener("click", returnLogin); }
+    $("#cerrarSesionInicio").click(returnLogin);
+    evalCookie();
+    getUsuarioLocal();
 }
