@@ -7,8 +7,8 @@ class UsuarioManager {
 			type:"GET",
 			data: 'id=' + idUsuario,
             cache: false,
-            error: msjDanger("No puede Conectarse US GET"),
-			success: returnFunction
+            error: function (){ msjDanger("Se ha producido un error en la conexion"); },
+            success: function(ressult){ eval(returnFunction + '(ressult)'); }
 		});
 	}
 }

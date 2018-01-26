@@ -25,12 +25,14 @@ class Gestor{
         let ressult = [];
         ressult["id"] = localStorage.getItem("id");
         ressult["permisos"] = localStorage.getItem("permisos");
+        ressult["registro"] = localStorage.getItem("registro");
         return ressult;
     }
 
-    addLocal(idUsuario, nivelUsuario){
+    addLocal(idUsuario, nivelUsuario, registro){
         localStorage.setItem("id", idUsuario);
         localStorage.setItem("nivel", nivelUsuario);
+        localStorage.setItem("registro", registro);
     }
 
     stringBase64(text){ return window.btoa(text); }

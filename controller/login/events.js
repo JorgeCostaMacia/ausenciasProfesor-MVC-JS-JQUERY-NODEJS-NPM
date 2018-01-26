@@ -4,6 +4,7 @@ function addEventsLogin(){
     if($("#logeo") != null ){
         addEventsformLogin();
         evalCookie();
+        evalRegistroLocal();
     }
 }
 
@@ -19,3 +20,4 @@ function addEventsformLogin(){
     //submitRegistrar.addEventListener("click", evalformGetAccount);
     //addLogin.addEventListener("click", addformLogin);
 }
+function addEventsformLogin(){ $("#submitLogin").click(evalLogin); }

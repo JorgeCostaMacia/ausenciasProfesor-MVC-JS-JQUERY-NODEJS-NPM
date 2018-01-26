@@ -1,9 +1,22 @@
 {
   "login": [
     {
+<<<<<<< HEAD
       "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI1IzEzOjM2OjU4",
+=======
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI1IzEzOjU0OjI2",
+>>>>>>> master
       "id": "admin",
       "pass": "YWRtaW4="
+    }
+  ],
+  "registro": [
+    {
+      "id": "admin2",
+      "pass": "YWRtaW4=",
+      "nombre": "laura",
+      "departamento": "informatica",
+      "nivel": "profesor"
     }
   ],
   "usuarios": [
