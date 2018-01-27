@@ -4,28 +4,33 @@ function validateRegistro(id, pass, pass2, nombre, departamento){
     let errores = [];
 
     if(!validateNickLogin(id)) {
-        errores.push("id");
-        msjDanger("Formato de usuario incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
+        errores.push("<strong>Formato de usuario incorrecto</strong><br>");
+        errores.push("Solo admite letras<br>");
+        errores.push("Ha de contener al menos 5 caracteres<br>");
     }
     if (!validatePassLogin(pass)) {
-        errores.push("pass");
-        msjDanger("Formato de pass incorrecto - Solo admite letras - Ha de contener al menos 5 caracterescaracteres");
+        errores.push("<strong>Formato de pass incorrecto</strong><br>");
+        errores.push("Solo admite letras<br>");
+        errores.push("Ha de contener al menos 5 caracteres<br>");
     }
     if (!validatePassLogin(pass2)) {
-        errores.push("pass2");
-        msjDanger("Formato de pass 2 incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
+        errores.push("<strong>Formato de repetir pass incorrecto</strong><br>");
+        errores.push("Solo admite letras<br>");
+        errores.push("Ha de contener al menos 5 caracteres<br>");
     }
     if(pass != pass2){
-        errores.push("pass2");
-        msjDanger("No coinciden las contraseñas");
+        errores.push("<strong>No coinciden las contraseñas</strong><br>");
     }
     if (!validateNombre(nombre)) {
-        errores.push("nombre");
-        msjDanger("Formato de nombre incorrecto - Solo admite letras y espacios - Ha de contener al menos 10 caracteres");
+        errores.push("<strong>Formato de nombre incorrecto</strong><br>");
+        errores.push("Solo admite letras y espacios<br>");
+        errores.push("Ha de contener al menos 10 caracteres<br>");
+        errores.push("Debe empezar por una letra<br>");
     }
     if (!validateDepartamento(departamento)) {
-        errores.push("departamento");
-        msjDanger("Formato de departamento incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
+        errores.push("<strong>Formato de usuario incorrecto</strong><br>");
+        errores.push("Solo admite letras<br>");
+        errores.push("Ha de contener al menos 5 caracteres<br>");
     }
 
     return errores;

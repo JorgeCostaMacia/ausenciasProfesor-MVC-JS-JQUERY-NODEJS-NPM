@@ -6,12 +6,20 @@
       "pass": "YWRtaW4="
     },
     {
-      "token": "YWRtaW5vI2FkbWluIzIwMTgtMS0yNyMxMzo5OjE=",
+      "token": "",
       "id": "admino",
       "pass": "YWRtaW4="
     }
   ],
-  "registro": [],
+  "registro": [
+    {
+      "id": "adminoo",
+      "pass": "YWRtaW4=",
+      "nombre": "jorge jorge jorge",
+      "departamento": "teleco",
+      "nivel": "profesor"
+    }
+  ],
   "usuarios": [
     {
       "id": "admin",
@@ -28,7 +36,18 @@
       "log": []
     }
   ],
-  "peticiones": [],
+  "peticiones": [
+    {
+      "id": 1,
+      "idUsuario": "admino",
+      "cola": "genPermiso",
+      "nombreSolicitante": "jorge costa macia",
+      "fechaCreacion": "2018-01-01",
+      "fechaLlegada": "2018-01-27",
+      "comentarios": [],
+      "anexos": []
+    }
+  ],
   "anexos": [],
   "contentTablas": {
     "login": [
@@ -57,7 +76,8 @@
       "nombreSolicitante",
       "fechaCreacion",
       "fechaLlegada",
-      "comentarios"
+      "comentarios",
+      "anexos"
     ],
     "anexos": [
       "id",
@@ -69,53 +89,12 @@
     "anexosPeticiones": [
       "id"
     ],
-    "colas": {
-      "genPermiso": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "comentarios"
-      ],
-      "penAutorizarPermiso": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios"
-      ],
-      "penJustificante": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios",
-        "anexos"
-      ],
-      "penAutorizarJustificante": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios",
-        "anexos"
-      ],
-      "ausenciaFinalizada": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios"
-      ]
-    }
+    "colas": [
+      "genPermiso",
+      "penAutorizarPermiso",
+      "penJustificante",
+      "penAutorizarJustificante",
+      "ausenciaFinalizada"
+    ]
   }
 }

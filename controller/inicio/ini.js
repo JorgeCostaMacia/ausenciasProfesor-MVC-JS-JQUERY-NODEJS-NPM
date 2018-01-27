@@ -29,13 +29,12 @@ function changePageInicio(ressult){ window.location.assign("../index.html"); }
 
 function getUsuarioLocal(){
     let usuario = gestor.getLocal();
-
     addUsuarioForm();
 
     if(usuario["nivel"] == 'admin'){ /* REDIRECT */ }
     else if(usuario["nivel"] == 'direccion'){ peticionManager.getPeticion('', 'getPeticionesCount'); }
     else if(usuario["nivel"] == 'profesor'){
-        peticionManager.getPeticion('id=' + usuario["id"], 'getPeticionesCount');
+        peticionManager.getPeticion('idUsuario=' + usuario["id"], 'getPeticionesCount');
         injectNombreCompletoDisable(usuario["nombre"]);
     }
 }
@@ -53,22 +52,23 @@ function getPeticionesCount(ressult){
     let countAusenciaFinalizada = 0;
 
     for(let i = 0; i < ressult.length; i++){
-        if(ressult[i]["cola"] == "genPermiso"){
-            countGenPermiso++;
-        }
-        else if(ressult[i]["cola"] == "penAutorizarPermiso"){
-            countPenAutorizarPermiso++;
-        }
-        else if(ressult[i]["cola"] == "penJustificante"){
-            countPenJustificante++;
-        }
-        else if(ressult[i]["cola"] == "penAutorizarJustificante"){
-            countPenAutorizarJustificante++;
-        }
-        else if(ressult[i]["cola"] == "ausenciaFinalizada"){
-            countAusenciaFinalizada++;
-        }
+        if(ressult[i]["cola"] == "genPermiso"){ countGenPermiso++; }
+        else if(ressult[i]["cola"] == "penAutorizarPermiso"){ countPenAutorizarPermiso++; }
+        else if(ressult[i]["cola"] == "penJustificante"){ countPenJustificante++; }
+        else if(ressult[i]["cola"] == "penAutorizarJustificante"){ countPenAutorizarJustificante++; }
+        else if(ressult[i]["cola"] == "ausenciaFinalizada"){ countAusenciaFinalizada++; }
     }
 
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
+}
+
+function addMaxDates(){
+    let ObjectDate = new Date();
+    let mes = ObjectDate.getMonth() *1  +1;
+    if(mes < 10){ mes = "" + "0" + mes; }
+
+    let fechaActual = ObjectDate.getFullYear() + "-" + mes + "-" + ObjectDate.getDate();
+
+    $("#buscador-fecha-creacion").attr("max", fechaActual);
+    $("#buscador-fecha-llegada").attr("max", fechaActual);
 }

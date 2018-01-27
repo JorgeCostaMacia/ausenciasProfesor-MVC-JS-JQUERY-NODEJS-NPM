@@ -27,14 +27,16 @@ class Gestor{
         ressult["nombre"] = localStorage.getItem("nombre");
         ressult["nivel"] = localStorage.getItem("nivel");
         ressult["registro"] = localStorage.getItem("registro");
+        ressult["idPeticion"] = localStorage.getItem("peticion");
         return ressult;
     }
 
-    addLocal(idUsuario, nombreUsuario, nivelUsuario, registro){
+    addLocal(idUsuario, nombreUsuario, nivelUsuario, registro, peticion){
         localStorage.setItem("id", idUsuario);
         localStorage.setItem("nombre", nombreUsuario);
         localStorage.setItem("nivel", nivelUsuario);
         localStorage.setItem("registro", registro);
+        localStorage.setItem("peticion", peticion);
     }
 
     stringBase64(text){ return window.btoa(text); }

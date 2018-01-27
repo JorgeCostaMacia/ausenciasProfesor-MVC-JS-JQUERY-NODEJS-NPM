@@ -19,9 +19,10 @@ function evalCookieToken(ressult){
 }
 
 function evalRegistroLocal(){
+    msjClean();
     let registro = gestor.getLocal()["registro"];
     if(registro === "registro"){
-        msjSucces("Se ha dado de alta correctamente");
+        msjSucces('REGISTRO', "<strong>Se ha dado de alta correctamente</strong>");
         gestor.delLocal();
     }
 }

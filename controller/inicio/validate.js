@@ -1,15 +1,17 @@
 "use strict";
 
-function validateLogin(loginId, loginPass){
+function validateSearch(nombre, fechaCreacion, fechaLlegada){
     let errores = [];
 
-    if(!validateNickLogin(loginId)) {
-        errores.push("idLogin");
-        msjDanger("Formato de usuario incorrecto - Solo admite letras y numeros - Ha de contener al menos 5 caracteres");
+    if (!validateNombre(nombre)) {
+        errores.push("nombre");
+        msjDanger("Formato de nombre incorrecto - Solo admite letras y espacios - Ha de contener al menos 10 caracteres");
     }
-    if (!validatePassLogin(loginPass)) {
-        errores.push("passLogin");
-        msjDanger("Formato de pass incorrecto - Solo admite letras y numeros - Ha de contener al menos 5 caracteres");
+
+    if (!validateFecha(fechaCreacion, fechaLlegada)) {
+        errores.push("fechas");
+        msjDanger("Rango de fechas incorrecto - Fecha creacion no puede ser mayor que fecha llegada");
     }
+
     return errores;
 }

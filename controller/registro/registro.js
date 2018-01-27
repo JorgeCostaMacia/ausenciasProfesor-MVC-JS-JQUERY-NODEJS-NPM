@@ -14,19 +14,26 @@ function evalRegistro(){
 
     let errores = validateRegistro(id, pass, pass2, nombre, departamento);
 
-        console.log(errores);
     if(errores.length == 0){ loginManager.getLogin(id, '', 'checkExistLogin'); }
+    else {
+        let msjError = "";
+        for(let i = 0; i < errores.length; i++){
+            msjError += errores[i];
+        }
+        msjDanger('Registro', msjError);
+    }
+
 }
 
 function checkExistLogin(ressult){
     msjClean();
 
-    if(ressult.length > 0) { msjDanger('No se puede dar de alta - Existe el usuario'); }
+    if(ressult.length > 0) { msjDanger('REGISTRO', '<strong>Existe un login con esa cuenta</strong>'); }
     else { registroManager.getRegistro($("#usuario").val(), 'checkExistRegistro'); }
 }
 
 function checkExistRegistro(ressult){
-    if(ressult.length > 0) { msjDanger('No se puede dar de alta - Existe el un registro pendiente con esa cuenta'); }
+    if(ressult.length > 0) { msjDanger('REGISTRO', '<strong>Existe un registro pendiente con esa cuenta</strong>'); }
     else {
         gestor.addLocal("", "", "", 'registro');
 
