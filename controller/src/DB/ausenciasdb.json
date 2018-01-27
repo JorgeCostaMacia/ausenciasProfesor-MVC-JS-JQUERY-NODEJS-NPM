@@ -1,12 +1,20 @@
 {
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI2IzE0OjM6MzA=",
+      "token": "",
       "id": "admin",
       "pass": "YWRtaW4="
     }
   ],
-  "registro": [],
+  "registro": [
+    {
+      "id": "admino",
+      "pass": "YWRtaW4=",
+      "nombre": "jorge costa macia",
+      "departamento": "informatica",
+      "nivel": "profesor"
+    }
+  ],
   "usuarios": [
     {
       "id": "admin",
@@ -19,94 +27,79 @@
   "peticiones": [],
   "anexos": [],
 
-  "index": {
-    "login": {
-      "key": [
-        "id",
-        "pass",
-        "token"
-      ],
-      "title": [
-        "Identificador",
-        "Password",
-        "Token"
-      ]
-    },
-    "usuarios": {
-      "key": [
-        "id",
-        "nombre",
-        "departamento",
-        "nivel",
-        "log"
-      ],
-      "title": [
-        "Identificador",
-        "Nombre",
-        "Departamento",
-        "Nivel",
-        "Registro"
-      ]
-    },
-    "genPermiso": {
-      "key": [
-        "fecha",
+  "contentTablas":{
+    "login":[
+      "id",
+      "pass",
+      "token"
+    ],
+    "registro":[
+      "id",
+      "pass",
+      "nombre",
+      "departamento",
+      "nivel"
+    ],
+    "usuarios":[
+      "id",
+      "nombre",
+      "departamento",
+      "nivel",
+      "log"
+    ],
+    "peticiones":[
+      "idPeticion",
+      "idUsuario",
+      "cola",
+      "nombreSolicitante",
+      "fechaCreacion",
+      "fechaLlegada",
+      "comentarios"
+    ],
+    "colas": {
+      "genPermiso":[
+        "idPeticion",
+        "idUsuario",
+        "cola",
+        "nombreSolicitante",
+        "fechaCreacion",
         "comentarios"
       ],
-      "title": [
-        "Fechas",
-        "Comentarios"
-      ]
-    },
-    "penAutorizarPermiso": {
-      "key": [
+      "penAutorizarPermiso":[
+        "idPeticion",
+        "idUsuario",
+        "cola",
+        "nombreSolicitante",
         "fechaCreacion",
         "fechaLlegada",
         "comentarios"
       ],
-      "title": [
-        "Fecha creacion",
-        "Fecha llegada",
-        "Comentarios"
-      ]
-    },
-    "penJustificante": {
-      "key": [
+      "penJustificante":[
+        "idPeticion",
+        "idUsuario",
+        "cola",
+        "nombreSolicitante",
         "fechaCreacion",
         "fechaLlegada",
         "comentarios"
       ],
-      "title": [
-        "Fecha creacion",
-        "Fecha llegada",
-        "Comentarios"
-      ]
-    },
-    "penAutorizarJustificante": {
-      "key": [
+      "penAutorizarJustificante":[
+        "idPeticion",
+        "idUsuario",
+        "cola",
+        "nombreSolicitante",
         "fechaCreacion",
         "fechaLlegada",
         "comentarios"
       ],
-      "title": [
-        "Fecha creacion",
-        "Fecha llegada",
-        "Comentarios"
-      ]
-    },
-
-    "ausenciaFinalizada": {
-      "key": [
-        "fecha",
+      "ausenciaFinalizada":[
+        "idPeticion",
+        "idUsuario",
+        "cola",
+        "nombreSolicitante",
         "fechaCreacion",
         "fechaLlegada",
         "comentarios"
-      ],
-      "title": [
-        "Fecha",
-        "Fecha creacion",
-        "Fecha llegada",
-        "Comentarios"
       ]
     }
   }

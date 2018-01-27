@@ -3,6 +3,6 @@
 document.onload = addEventsRegistro();
 
 function addEventsRegistro(){
-    $("#submitLogin").click(evalRegistro);
+    $("#submitRegistro").click(evalRegistro);
     evalCookie();
 }

@@ -20,11 +20,11 @@ function validateRegistro(id, pass, pass2, nombre, departamento){
         msjDanger("No coinciden las contraseñas");
     }
     if (!validateNombre(nombre)) {
-        errores.push("pass2");
+        errores.push("nombre");
         msjDanger("Formato de nombre incorrecto - Solo admite letras y espacios - Ha de contener al menos 10 caracteres");
     }
     if (!validateDepartamento(departamento)) {
-        errores.push("pass2");
+        errores.push("departamento");
         msjDanger("Formato de departamento incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
     }
 

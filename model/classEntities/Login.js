@@ -1,16 +1,16 @@
 class Login{
-    constructor(id,pass, token){
-        var _id =id;
-        var _pass = pass;
-        var _token = token
+    constructor(_id,_pass, _token){
+        var id = _id;
+        var pass = _pass;
+        var token = _token
 
-        this.getId = function(){ return _id; };
-        this.setId = function (id) { _id = id; };
+        this.getId = function(){ return id; };
+        this.setId = function (_id) { id = _id; };
 
-        this.getPass = function () { return _pass; };
-        this.setPass = function (pass) { _pass = pass; };
+        this.getPass = function () { return pass; };
+        this.setPass = function (_pass) { pass = _pass; };
 
-        this.getToken = function () { return _token; };
-        this.setToken = function (token) { _token = token; };
+        this.getToken = function () { return token; };
+        this.setToken = function (_token) { token = _token; };
     }
 }

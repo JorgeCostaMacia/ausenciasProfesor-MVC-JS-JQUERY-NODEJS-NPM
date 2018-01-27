@@ -21,9 +21,4 @@ class Usuario {
         this.getLog = function () { return _log; };
         this.setLog = function (log) { _log = log; };
     }
-
-    imprimir(elementoID) {
-        $("#" + elementoID).append("<tr><td>" + this.getId() + "</td><td>" + this.getLogin + "</td><td>" + this.getNombre + "</td><td>" + this.getDepartamento + "</td><td>" + this.getPermisos + "</td><td>" + this.getPeticiones + "</td><td>" + this.getLog + "</td></tr>");
-    }
-
 }

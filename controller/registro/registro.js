@@ -30,6 +30,7 @@ function evalRegistro(){
 
     let errores = validateRegistro(id, pass, pass2, nombre, departamento);
 
+        console.log(errores);
     if(errores.length == 0){ loginManager.getLogin(id, '', 'checkExistLogin'); }
 }
 
@@ -37,9 +38,7 @@ function checkExistLogin(ressult){
     msjClean();
 
     if(ressult.length > 0) { msjDanger('No se puede dar de alta - Existe el usuario'); }
-    else {
-        getRegistro($("#usuario").val(), 'checkExistRegistro');
-    }
+    else { registroManager.getRegistro($("#usuario").val(), 'checkExistRegistro'); }
 }
 
 function checkExistRegistro(ressult){

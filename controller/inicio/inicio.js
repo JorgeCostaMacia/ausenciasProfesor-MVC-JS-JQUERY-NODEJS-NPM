@@ -21,9 +21,8 @@ function evalCookieToken(ressult){
 
 function returnLogin(){
     let id = gestor.getLocal()["id"];
-    loginManager.delToken(id);
     gestor.delLocal();
-    window.location.href = "../login.html";
+    loginManager.delToken(id, 'changePageIndex');
 }
 
 function getUsuarioLocal(){
@@ -47,7 +46,6 @@ function getPeticionesCount(ressult){
     let countPenJustificante = 0;
     let countPenAutorizarJustificante = 0;
     let countAusenciaFinalizada = 0;
-    let countTotal = 0;
 
     for(let i = 0; i < ressult.length; i++){
         if(ressult[i]["cola"] == "genPermiso"){
@@ -65,7 +63,9 @@ function getPeticionesCount(ressult){
         else if(ressult[i]["cola"] == "ausenciaFinalizada"){
             countAusenciaFinalizada++;
         }
-        countTotal++;
     }
 
+    injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
 }
+
+function changePageIndex(ressult){ window.location.assign("../index.html"); }

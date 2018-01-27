@@ -35,12 +35,13 @@ class LoginManager {
        });
     }
 
-   delToken(loginId){
+   delToken(loginId, returnFunction){
         $.ajax({
-            url:"http://localhost:3000/login"+loginId,
+            url:"http://localhost:3000/login/"+loginId,
             type:"PATCH",
             data: {'token': ''},
             cache: false,
+            success: function(ressult){ eval(returnFunction + '(ressult)'); },
             error: function (){ msjDanger("Se ha producido un error en la conexion"); }
         });
     }
