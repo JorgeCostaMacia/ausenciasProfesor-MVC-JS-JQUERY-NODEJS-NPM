@@ -7,8 +7,18 @@ class UsuarioManager {
 			type:"GET",
 			data: 'id=' + idUsuario,
             cache: false,
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); },
-            success: function(ressult){ eval(returnFunction + '(ressult)'); }
+            success: function(ressult){ eval(returnFunction + '(ressult)'); },
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
 		});
 	}
+	addUsuario(id, nombre, departamento, nivel){
+        $.ajax({
+            url:"http://localhost:3000/usuarios",
+            type:"POST",
+            data: 'id=' + id + '&nombre=' + nombre + '&departamento=' + departamento + '&nivel=' + nivel,
+            cache: false,
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
+        });
+	}
+
 }

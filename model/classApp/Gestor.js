@@ -5,6 +5,7 @@ class Gestor{
         var logins = [];
         var usuarios = [];
         var peticiones = [];
+        var registros = [];
 
         this.getLogins = function() { return logins; }
         this.setLogins = function(loginss){ logins = loginss; }
@@ -17,6 +18,20 @@ class Gestor{
         this.getPeticiones = function() { return peticiones; }
         this.setPeticiones = function(peticioness){ peticiones = peticioness; }
         this.addPeticiones = function(peticion){ peticiones.push(peticion); }
+        this.getPeticion = function(idPeticion) {
+            for(let i = 0; i < peticiones.length; i++){
+                if(peticiones[i].getIdPeticion() == idPeticion){ return peticiones[i]; }
+            }
+        }
+
+        this.getRegistros = function() { return registros; }
+        this.setRegistros = function(_registros){ registros = _registros; }
+        this.addRegistros = function(registro){ registros.push(registro); }
+        this.getRegistro = function(idRegistro) {
+            for(let i = 0; i < registros.length; i++){
+                if(registros[i].getId() == idRegistro){ return registros[i]; }
+            }
+        }
     }
 
     delLocal(){ localStorage.clear(); }
@@ -27,15 +42,20 @@ class Gestor{
         ressult["nombre"] = localStorage.getItem("nombre");
         ressult["nivel"] = localStorage.getItem("nivel");
         ressult["registro"] = localStorage.getItem("registro");
+        ressult["idPeticion"] = localStorage.getItem("peticion");
         return ressult;
     }
 
-    addLocal(idUsuario, nombreUsuario, nivelUsuario, registro){
+    addLocal(idUsuario, nombreUsuario, nivelUsuario, registro, peticion){
         localStorage.setItem("id", idUsuario);
         localStorage.setItem("nombre", nombreUsuario);
         localStorage.setItem("nivel", nivelUsuario);
         localStorage.setItem("registro", registro);
+        localStorage.setItem("peticion", peticion);
     }
+
+    clearPeticionLocal(){ localStorage.setItem("peticion", null); }
+    addPeticionLocal(peticion){ localStorage.setItem("peticion", peticion); }
 
     stringBase64(text){ return window.btoa(text); }
 

@@ -1,22 +1,6 @@
 "use strict";
 
-let gestor = new Gestor();
-let loginManager = new LoginManager();
-let registroManager = new RegistroManager();
-
-function evalCookie(){
-    if(gestor.existCookie() ) {
-        let id = gestor.getLocal()["id"];
-        if(id != null){ loginManager.getLogin(id, '','evalCookieToken'); }
-    }
-}
-
-function evalCookieToken(ressult){
-    let cookie = gestor.getCookie("token");
-    let token = ressult[0]["token"];
-
-    if(cookie == token){ window.location.assign("../index.html"); }
-}
+// gestor - loginManager - registroManager
 
 function evalRegistro(){
     msjClean();
@@ -30,24 +14,29 @@ function evalRegistro(){
 
     let errores = validateRegistro(id, pass, pass2, nombre, departamento);
 
-        console.log(errores);
     if(errores.length == 0){ loginManager.getLogin(id, '', 'checkExistLogin'); }
+    else {
+        let msjError = "";
+        for(let i = 0; i < errores.length; i++){
+            msjError += errores[i];
+        }
+        msjDanger('Registro', msjError);
+    }
+
 }
 
 function checkExistLogin(ressult){
     msjClean();
 
-    if(ressult.length > 0) { msjDanger('No se puede dar de alta - Existe el usuario'); }
-    else { registroManager.getRegistro($("#usuario").val(), 'checkExistRegistro'); }
+    if(ressult.length > 0) { msjDanger('REGISTRO', '<strong>Existe un login con esa cuenta</strong>'); }
+    else { registroManager.getRegistro("id=" + $("#usuario").val(), 'checkExistRegistro'); }
 }
 
 function checkExistRegistro(ressult){
-    if(ressult.length > 0) { msjDanger('No se puede dar de alta - Existe el un registro pendiente con esa cuenta'); }
+    if(ressult.length > 0) { msjDanger('REGISTRO', '<strong>Existe un registro pendiente con esa cuenta</strong>'); }
     else {
         gestor.addLocal("", "", "", 'registro');
 
         registroManager.addRegistro($("#usuario").val(), gestor.stringBase64($("#pass").val()), $("#nombre").val(), $("#departamento").val(), $("#nivel").val(), 'changePageIndex');
     }
 }
-
-function changePageIndex(ressult){ window.location.assign("../index.html"); }

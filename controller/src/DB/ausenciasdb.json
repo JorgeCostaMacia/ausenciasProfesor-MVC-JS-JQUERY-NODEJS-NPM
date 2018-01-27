@@ -1,34 +1,89 @@
 {
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI3IzEyOjU0OjU5",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI3IzIyOjMxOjQ=",
       "id": "admin",
-      "pass": "YWRtaW4="
-    },
-    {
-      "token": "YWRtaW5vI2FkbWluIzIwMTgtMS0yNyMxMjoyMDoyMQ==",
-      "id": "admino",
       "pass": "YWRtaW4="
     }
   ],
-  "registro": [],
+  "registro": [
+    {
+      "id": "jorge",
+      "pass": "am9yZ2U=",
+      "nombre": "jorge jorge jorge",
+      "departamento": "jorge",
+      "nivel": "profesor"
+    },
+    {
+      "id": "jorgee",
+      "pass": "am9yZ2U=",
+      "nombre": "jorge jorge jorge",
+      "departamento": "informatica",
+      "nivel": "profesor"
+    }
+  ],
   "usuarios": [
     {
       "id": "admin",
       "nombre": "admin",
       "departamento": "admin",
-      "nivel": "admin",
-      "log": []
-    },
-    {
-      "id": "admino",
-      "nombre": "jorge costa macia",
-      "departamento": "informatica",
-      "nivel": "profesor",
-      "log": []
+      "nivel": "admin"
     }
   ],
-  "peticiones": [],
+  "log": [],
+  "peticiones": [
+    {
+      "id": 1,
+      "idUsuario": "admino",
+      "cola": "genPermiso",
+      "nombreSolicitante": "jorge costa macia",
+      "fechaCreacion": "2018-01-01",
+      "fechaLlegada": "2018-01-27",
+      "motivo": "",
+      "jornada": "",
+      "desde": "",
+      "hasta": "",
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "comentarios": [],
+      "anexos": []
+    }
+  ],
   "anexos": [],
   "contentTablas": {
     "login": [
@@ -57,7 +112,8 @@
       "nombreSolicitante",
       "fechaCreacion",
       "fechaLlegada",
-      "comentarios"
+      "comentarios",
+      "anexos"
     ],
     "anexos": [
       "id",
@@ -66,51 +122,15 @@
       "tipo",
       "anexo"
     ],
-    "colas": {
-      "genPermiso": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "comentarios"
-      ],
-      "penAutorizarPermiso": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios"
-      ],
-      "penJustificante": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios"
-      ],
-      "penAutorizarJustificante": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios"
-      ],
-      "ausenciaFinalizada": [
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios"
-      ]
-    }
+    "anexosPeticiones": [
+      "id"
+    ],
+    "colas": [
+      "genPermiso",
+      "penAutorizarPermiso",
+      "penJustificante",
+      "penAutorizarJustificante",
+      "ausenciaFinalizada"
+    ]
   }
 }

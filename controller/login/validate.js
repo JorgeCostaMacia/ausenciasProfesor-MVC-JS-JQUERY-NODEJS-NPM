@@ -4,12 +4,15 @@ function validateLogin(loginId, loginPass){
     let errores = [];
 
     if(!validateNickLogin(loginId)) {
-        errores.push("idLogin");
-        msjDanger("Formato de usuario incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
+        errores.push("<strong>Formato de usuario incorrecto</strong><br>");
+        errores.push("Solo admite letras<br>");
+        errores.push("Ha de contener al menos 5 caracteres<br>");
     }
     if (!validatePassLogin(loginPass)) {
-        errores.push("passLogin");
-        msjDanger("Formato de pass incorrecto - Solo admite letras - Ha de contener al menos 5 caracteres");
+        errores.push("<strong>Formato de pass incorrecto</strong><br>");
+        errores.push("Solo admite letras<br>");
+        errores.push("Ha de contener al menos 5 caracteres<br>");
     }
+
     return errores;
 }

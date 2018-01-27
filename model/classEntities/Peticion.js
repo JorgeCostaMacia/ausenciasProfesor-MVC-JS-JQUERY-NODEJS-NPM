@@ -1,14 +1,15 @@
 "use strict";
 
 class Peticion{
-    constructor(_idPeticion, _idUsuario, _cola, _nombreSolicitante, _fechaCreacion, _fechaLlegada, _comentarios ){
+    constructor(_idPeticion, _idUsuario, _cola, _nombreSolicitante, _fechaCreacion, _fechaLlegada, _comentarios, _anexos ){
         var idPeticion = _idPeticion;
         var idUsuario = _idUsuario;
         var cola = _cola;
         var nombreSolicitante = _nombreSolicitante;
         var fechaCreacion = _fechaCreacion;
         var fechaLlegada = _fechaLlegada;
-        var comentarios = _cosmentarios;
+        var comentarios = _comentarios;
+        var anexos = _anexos;
 
         this.getIdPeticion = function(){ return idPeticion; };
         this.setIdPeticion = function (_idPeticion) { idPeticion = _idPeticion; };
@@ -30,5 +31,8 @@ class Peticion{
 
         this.getComentarios = function () { return comentarios; };
         this.setComentarios = function (_comentarios) { comentarios = _comentarios; };
+
+        this.getAnexos = function () { return anexos; };
+        this.setAnexos = function (_anexos) { anexos = _anexos; };
     }
 }

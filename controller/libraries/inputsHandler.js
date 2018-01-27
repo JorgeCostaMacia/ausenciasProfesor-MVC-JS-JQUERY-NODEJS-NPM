@@ -27,3 +27,8 @@ function esFormatNombre(nombreCompleto){
     }
     else { return false; }
 }
+
+function validateFecha(fechaCreacion, fechaLlegada){
+    if(fechaCreacion <= fechaLlegada) { return true; }
+    else{ return false; }
+}

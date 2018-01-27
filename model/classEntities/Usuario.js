@@ -1,24 +1,20 @@
 class Usuario {
-    constructor(id, nombre, departamento, nivel, log) {
-        var _id = id;
-        var _nombre = nombre;
-        var _departamento = departamento;
-        var _nivel = nivel;
-        var _log = log;
+    constructor(_id, _nombre, _departamento, _nivel) {
+        var id = _id;
+        var nombre = _nombre;
+        var departamento = _departamento;
+        var nivel = _nivel;
 
-        this.getId = function () { return _id; };
-        this.setId = function (id) { _id = id; };
+        this.getId = function () { return id; };
+        this.setId = function (_id) { id = _id; };
 
-        this.getNombre = function () { return _nombre; };
-        this.setNombre = function (nombre) { _nombre = nombre; };
+        this.getNombre = function () { return nombre; };
+        this.setNombre = function (_nombre) { nombre = _nombre; };
 
-        this.getDepartamento = function () { return _departamento; };
-        this.setDepartamento = function (departamento) { _departamento = departamento; };
+        this.getDepartamento = function () { return departamento; };
+        this.setDepartamento = function (_departamento) { departamento = _departamento; };
 
-        this.getNivel = function () { return _nivel; };
-        this.setNivel = function (nivel) { _nivel = nivel };
-
-        this.getLog = function () { return _log; };
-        this.setLog = function (log) { _log = log; };
+        this.getNivel = function () { return nivel; };
+        this.setNivel = function (_nivel) { nivel = _nivel };
     }
 }
