@@ -6,4 +6,5 @@ function addEventsInicio(){
     $("#cerrarSesionInicio").click(returnLogin);
     evalCookie();
     getUsuarioLocal();
+    $("#buscar").click(evalSearch);
 }

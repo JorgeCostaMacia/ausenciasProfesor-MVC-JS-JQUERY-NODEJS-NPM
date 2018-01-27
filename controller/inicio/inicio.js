@@ -1,71 +1,7 @@
 "use strict";
 
-var gestor = new Gestor();
-var loginManager = new LoginManager();
-var peticionManager = new PeticionManager();
+// gestor - loginManager - peticionManager
 
-function evalCookie(){
-    if(gestor.existCookie()) {
+function evalSearch(){
 
-        let id = gestor.getLocal()["id"];
-        loginManager.getLogin(id, '','evalCookieToken');
-    }
 }
-
-function evalCookieToken(ressult){
-    let cookie = gestor.getCookie("token");
-    let token = ressult[0]["token"];
-
-    if(cookie != token){ window.location.href = "../index.html"; }
-}
-
-function returnLogin(){
-    let id = gestor.getLocal()["id"];
-    gestor.delLocal();
-    loginManager.delToken(id, 'changePageIndex');
-}
-
-function getUsuarioLocal(){
-    let usuario = gestor.getLocal();
-
-    addUsuarioForm();
-
-    if(usuario["nivel"] == 'admin'){ /* REDIRECT */ }
-    else if(usuario["nivel"] == 'direccion'){ peticionManager.getPeticion('', 'getPeticionesCount'); }
-    else if(usuario["nivel"] == 'profesor'){ peticionManager.getPeticion('id=' + usuario["id"], 'getPeticionesCount'); }
-}
-
-function addUsuarioForm(){
-    let usuario = gestor.getLocal();
-    injectUsuarioForm(usuario["nombre"].split(" ")[0]);
-}
-
-function getPeticionesCount(ressult){
-    let countGenPermiso = 0;
-    let countPenAutorizarPermiso = 0;
-    let countPenJustificante = 0;
-    let countPenAutorizarJustificante = 0;
-    let countAusenciaFinalizada = 0;
-
-    for(let i = 0; i < ressult.length; i++){
-        if(ressult[i]["cola"] == "genPermiso"){
-            countGenPermiso++;
-        }
-        else if(ressult[i]["cola"] == "penAutorizarPermiso"){
-            countPenAutorizarPermiso++;
-        }
-        else if(ressult[i]["cola"] == "penJustificante"){
-            countPenJustificante++;
-        }
-        else if(ressult[i]["cola"] == "penAutorizarJustificante"){
-            countPenAutorizarJustificante++;
-        }
-        else if(ressult[i]["cola"] == "ausenciaFinalizada"){
-            countAusenciaFinalizada++;
-        }
-    }
-
-    injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
-}
-
-function changePageIndex(ressult){ window.location.assign("../index.html"); }

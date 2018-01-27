@@ -6,7 +6,7 @@
       "pass": "YWRtaW4="
     },
     {
-      "token": "YWRtaW5vI2FkbWluIzIwMTgtMS0yNyMxMjoyMDoyMQ==",
+      "token": "YWRtaW5vI2FkbWluIzIwMTgtMS0yNyMxMzo5OjE=",
       "id": "admino",
       "pass": "YWRtaW4="
     }
@@ -66,6 +66,9 @@
       "tipo",
       "anexo"
     ],
+    "anexosPeticiones": [
+      "id"
+    ],
     "colas": {
       "genPermiso": [
         "idPeticion",
@@ -91,7 +94,8 @@
         "nombreSolicitante",
         "fechaCreacion",
         "fechaLlegada",
-        "comentarios"
+        "comentarios",
+        "anexos"
       ],
       "penAutorizarJustificante": [
         "idPeticion",
@@ -100,7 +104,8 @@
         "nombreSolicitante",
         "fechaCreacion",
         "fechaLlegada",
-        "comentarios"
+        "comentarios",
+        "anexos"
       ],
       "ausenciaFinalizada": [
         "idPeticion",
