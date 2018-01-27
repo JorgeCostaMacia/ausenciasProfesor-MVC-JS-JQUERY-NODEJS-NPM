@@ -30,7 +30,7 @@ function changePageInicio(ressult){ window.location.assign("../index.html"); }
 
 function getUsuarioLocal(){
     let usuario = gestor.getLocal();
-    console.log(usuario);
+
     addUsuarioForm();
 
     if(usuario["nivel"] == 'admin'){
