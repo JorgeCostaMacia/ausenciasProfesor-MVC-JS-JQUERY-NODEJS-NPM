@@ -15,7 +15,7 @@ function evalCookieToken(ressult){
     let cookie = gestor.getCookie("token");
     let token = ressult[0]["token"];
 
-    if(cookie == token){ window.location.assign("inicio.html"); }
+    if(cookie == token){ window.location.assign("view/inicio.html"); }
 }
 
 function evalRegistroLocal(){
@@ -53,9 +53,12 @@ function addUsuarioLocal(ressult){
     gestor.addUsuarios(new Usuario(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], ressult[0]["log"]));
 
     let token = gestor.genToken();
-    loginManager.addToken(ressult[0]["id"], token);
-    gestor.addLocal(ressult[0]["id"], ressult[0]["nivel"]);
-    gestor.addCookie('token', token, 300);
+    gestor.addLocal(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], "");
+    gestor.addCookie('token', token, 300000);
 
+    loginManager.addToken(ressult[0]["id"], token, 'changePageInicio');
+}
+
+function changePageInicio(ressult){
     window.location.assign("view/inicio.html");
 }

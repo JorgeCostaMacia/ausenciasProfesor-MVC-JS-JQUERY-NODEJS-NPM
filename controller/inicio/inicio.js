@@ -29,22 +29,43 @@ function returnLogin(){
 function getUsuarioLocal(){
     let usuario = gestor.getLocal();
 
+    addUsuarioForm();
+
     if(usuario["nivel"] == 'admin'){ /* REDIRECT */ }
-    if(usuario["nivel"] == 'direccion'){ peticionManager.getPeticion('', 'getPeticiones'); }
-    if(usuario["nivel"] == 'profesor'){ peticionManager.getPeticion(usuario["id"], 'getPeticiones'); }
+    else if(usuario["nivel"] == 'direccion'){ peticionManager.getPeticion('', 'getPeticionesCount'); }
+    else if(usuario["nivel"] == 'profesor'){ peticionManager.getPeticion('id=' + usuario["id"], 'getPeticionesCount'); }
 }
 
-function getPeticiones(ressult){
-    let countGenPeticion = 0;
-    let countPendientePeticion = 0;
-    let countJustificante = 0;
-    let countPendienteJustificante = 0;
+function addUsuarioForm(){
+    let usuario = gestor.getLocal();
+    injectUsuarioForm(usuario["nombre"].split(" ")[0]);
+}
+
+function getPeticionesCount(ressult){
+    let countGenPermiso = 0;
+    let countPenAutorizarPermiso = 0;
+    let countPenJustificante = 0;
+    let countPenAutorizarJustificante = 0;
+    let countAusenciaFinalizada = 0;
     let countTotal = 0;
 
     for(let i = 0; i < ressult.length; i++){
-        if(ressult[i]["cola"] == "genPeticion"){
-
+        if(ressult[i]["cola"] == "genPermiso"){
+            countGenPermiso++;
         }
+        else if(ressult[i]["cola"] == "penAutorizarPermiso"){
+            countPenAutorizarPermiso++;
+        }
+        else if(ressult[i]["cola"] == "penJustificante"){
+            countPenJustificante++;
+        }
+        else if(ressult[i]["cola"] == "penAutorizarJustificante"){
+            countPenAutorizarJustificante++;
+        }
+        else if(ressult[i]["cola"] == "ausenciaFinalizada"){
+            countAusenciaFinalizada++;
+        }
+        countTotal++;
     }
 
 }

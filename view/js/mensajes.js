@@ -25,5 +25,3 @@ function msjInfo(text){
 }
 
 function msjClean(){ $("#mensajes").empty(); }
-
-function addClassHome(){ $("#mensajes").attr('class', 'container col-xs-12 col-sm-10 col-md-10 col-lg-10'); }

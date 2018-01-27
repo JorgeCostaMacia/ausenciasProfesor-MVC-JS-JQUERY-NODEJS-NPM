@@ -1,20 +1,12 @@
 {
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI1IzEzOjU0OjI2",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI2IzE0OjM6MzA=",
       "id": "admin",
       "pass": "YWRtaW4="
     }
   ],
-  "registro": [
-    {
-      "id": "admin2",
-      "pass": "YWRtaW4=",
-      "nombre": "laura",
-      "departamento": "informatica",
-      "nivel": "profesor"
-    }
-  ],
+  "registro": [],
   "usuarios": [
     {
       "id": "admin",
@@ -26,6 +18,7 @@
   ],
   "peticiones": [],
   "anexos": [],
+
   "index": {
     "login": {
       "key": [
@@ -55,7 +48,7 @@
         "Registro"
       ]
     },
-    "genPeticion": {
+    "genPermiso": {
       "key": [
         "fecha",
         "comentarios"
@@ -65,7 +58,7 @@
         "Comentarios"
       ]
     },
-    "penAutorizar": {
+    "penAutorizarPermiso": {
       "key": [
         "fechaCreacion",
         "fechaLlegada",
@@ -77,7 +70,7 @@
         "Comentarios"
       ]
     },
-    "penJustificar": {
+    "penJustificante": {
       "key": [
         "fechaCreacion",
         "fechaLlegada",
@@ -89,7 +82,20 @@
         "Comentarios"
       ]
     },
-    "finalizadas": {
+    "penAutorizarJustificante": {
+      "key": [
+        "fechaCreacion",
+        "fechaLlegada",
+        "comentarios"
+      ],
+      "title": [
+        "Fecha creacion",
+        "Fecha llegada",
+        "Comentarios"
+      ]
+    },
+
+    "ausenciaFinalizada": {
       "key": [
         "fecha",
         "fechaCreacion",
@@ -102,86 +108,6 @@
         "Fecha llegada",
         "Comentarios"
       ]
-    }
-  },
-  "nivel": {
-    "admin": {
-      "nombre": "Administrador",
-      "permisos": {
-        "insert": [
-          "usuario",
-          "login",
-          "justificante",
-          "privileges",
-          "index"
-        ],
-        "update": [
-          "usuario",
-          "login",
-          "justificante",
-          "privileges",
-          "index"
-        ],
-        "delete": [
-          "usuario",
-          "login",
-          "justificante",
-          "privileges",
-          "index"
-        ],
-        "select": [
-          "usuarios",
-          "login",
-          "privileges",
-          "index"
-        ]
-      }
-    },
-    "direcc": {
-      "nombre": "Dirección",
-      "permisos": {
-        "insert": [
-          "usuario",
-          "justificante"
-        ],
-        "update": [
-          "usuario",
-          "justificante"
-        ],
-        "delete": [
-          "usuario",
-          "justificante"
-        ],
-        "select": [
-          "usuarios",
-          "login",
-          "privileges",
-          "index"
-        ]
-      }
-    },
-    "profe": {
-      "nombre": "Profesor",
-      "permisos": {
-        "insert": [
-          "usuario",
-          "justificante"
-        ],
-        "update": [
-          "usuario",
-          "justificante"
-        ],
-        "delete": [
-          "usuario",
-          "justificante"
-        ],
-        "select": [
-          "usuarios",
-          "login",
-          "privileges",
-          "index"
-        ]
-      }
     }
   }
 }

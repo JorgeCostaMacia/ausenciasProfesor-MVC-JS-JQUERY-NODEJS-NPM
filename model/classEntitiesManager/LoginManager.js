@@ -24,12 +24,13 @@ class LoginManager {
       });
     }
 
-    addToken(loginId, token){
+    addToken(loginId, token, returnFunction){
        $.ajax({
            url:"http://localhost:3000/login/" + loginId,
            type:"PATCH",
            data: {'token': token},
            cache: false,
+           success: function(ressult){ eval(returnFunction + '(ressult)'); },
            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
        });
     }
