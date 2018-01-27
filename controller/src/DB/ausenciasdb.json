@@ -8,7 +8,7 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI3IzIzOjQ4OjI2"
+      "token": ""
     }
   ],
   "registro": [],
@@ -37,16 +37,17 @@
       "fechaLlegada": "2018-01-27",
       "motivo": "",
       "jornada": {
-        "1":{
+        "1": {
           "diaInicio": "",
-          "diaFin": "",
+          "diaFin": ""
         },
-        "2":{
+        "2": {
           "diaInicio": "",
           "horaInicio": "",
           "diaFin": "",
           "horaFin": ""
-        },
+        }
+      },
       "horario": {
         "1": {
           "dia": "2018-01-",
@@ -116,8 +117,39 @@
       "nombreSolicitante",
       "fechaCreacion",
       "fechaLlegada",
+      "motivo",
+      "jornada",
+      "horario",
       "comentarios",
       "anexos"
+    ],
+    "jornada": [
+      "1",
+      "2"
+    ],
+    "jornada1": [
+      "diaInicio",
+      "diaFin"
+    ],
+    "jornada2":[
+      "diaInicio",
+      "horaInicio",
+      "diaFin",
+      "horaFin"
+    ],
+    "horario": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "horario12345":[
+      "dia",
+      "hora",
+      "curso",
+      "asignatura",
+      "sustituto"
     ],
     "anexos": [
       "id",
