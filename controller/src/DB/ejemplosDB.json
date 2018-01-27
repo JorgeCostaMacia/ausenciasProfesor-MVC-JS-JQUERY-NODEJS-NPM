@@ -4,14 +4,16 @@
       "token": "",
       "id": "admin",
       "pass": "YWRtaW4="
-    },
-    {
-      "id": "jorge",
-      "pass": "am9yZ2U=",
-      "token": ""
     }
   ],
   "registro": [
+    {
+      "id": "prueba",
+      "pass": "cHJ1ZWJh",
+      "nombre": "prueba prueba prueba",
+      "departamento": "prueba",
+      "nivel": "profesor"
+    }
   ],
   "usuarios": [
     {
@@ -19,15 +21,8 @@
       "nombre": "admin",
       "departamento": "admin",
       "nivel": "admin"
-    },
-    {
-      "id": "jorge",
-      "nombre": "jorge jorge jorge",
-      "departamento": "jorge",
-      "nivel": "profesor"
     }
   ],
-  "log": [],
   "peticiones": [
     {
       "id": 1,
@@ -38,7 +33,16 @@
       "fechaLlegada": "2018-01-27",
       "motivo": "",
       "jornada": {
-        "1": {}
+        "1":{
+          "diaInicio": "",
+          "diaFin": "",
+        },
+        "2":{
+          "diaInicio": "",
+          "horaInicio": "",
+          "diaFin": "",
+          "horaFin": ""
+        }
       },
       "desde": "",
       "hasta": "",
@@ -82,54 +86,5 @@
       "comentarios": "",
       "anexos": []
     }
-  ],
-  "anexos": [],
-  "contentTablas": {
-    "login": [
-      "id",
-      "pass",
-      "token"
-    ],
-    "registro": [
-      "id",
-      "pass",
-      "nombre",
-      "departamento",
-      "nivel"
-    ],
-    "usuarios": [
-      "id",
-      "nombre",
-      "departamento",
-      "nivel",
-      "log"
-    ],
-    "peticiones": [
-      "id",
-      "idUsuario",
-      "cola",
-      "nombreSolicitante",
-      "fechaCreacion",
-      "fechaLlegada",
-      "comentarios",
-      "anexos"
-    ],
-    "anexos": [
-      "id",
-      "idPeticion",
-      "idUsuario",
-      "tipo",
-      "anexo"
-    ],
-    "anexosPeticiones": [
-      "id"
-    ],
-    "colas": [
-      "genPermiso",
-      "penAutorizarPermiso",
-      "penJustificante",
-      "penAutorizarJustificante",
-      "ausenciaFinalizada"
-    ]
-  }
+  ]
 }

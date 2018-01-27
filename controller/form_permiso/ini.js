@@ -70,5 +70,5 @@ function iniFormGenPeticion(){
 }
 
 function formGetPeticion(ressult){
-
+    console.log(ressult);
 }
