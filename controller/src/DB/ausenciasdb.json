@@ -37,10 +37,16 @@
       "fechaLlegada": "2018-01-27",
       "motivo": "",
       "jornada": {
-        "1": {}
-      },
-      "desde": "",
-      "hasta": "",
+        "1":{
+          "diaInicio": "",
+          "diaFin": "",
+        },
+        "2":{
+          "diaInicio": "",
+          "horaInicio": "",
+          "diaFin": "",
+          "horaFin": ""
+        },
       "horario": {
         "1": {
           "dia": "2018-01-",
