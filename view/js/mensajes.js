@@ -61,7 +61,7 @@ function msjSucces(accion, text){
     $("#succes").modal("show");
 }
 
-function msjInfo(text){
+function msjInfo(accion, text){
     $("#mensajes").append(
         '<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog">' +

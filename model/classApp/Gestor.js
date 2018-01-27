@@ -17,6 +17,11 @@ class Gestor{
         this.getPeticiones = function() { return peticiones; }
         this.setPeticiones = function(peticioness){ peticiones = peticioness; }
         this.addPeticiones = function(peticion){ peticiones.push(peticion); }
+        this.getPeticion = function(idPeticion) {
+            for(let i = 0; i < peticiones.length; i++){
+                if(peticiones[i].getIdPeticion() == idPeticion){ return peticiones[i]; }
+            }
+        }
     }
 
     delLocal(){ localStorage.clear(); }
@@ -38,6 +43,9 @@ class Gestor{
         localStorage.setItem("registro", registro);
         localStorage.setItem("peticion", peticion);
     }
+
+    clearPeticionLocal(){ localStorage.setItem("peticion", null); }
+    addPeticionLocal(peticion){ localStorage.setItem("peticion", peticion); }
 
     stringBase64(text){ return window.btoa(text); }
 

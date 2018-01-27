@@ -32,5 +32,31 @@ function checkPeticiones(ressult){
             gestor.addPeticiones(peticion);
         }
         injectPeticiones(gestor.getPeticiones());
+        eventPeticiones(gestor.getPeticiones());
     }
+}
+
+function showComents(event){
+    let inputName = event.target.id;
+    let arrayId = inputName.split("-");
+    let idPeticion = arrayId[1];
+
+    let peticion = gestor.getPeticion(idPeticion);
+    let comentarios = peticion.getComentarios()
+
+    let msjComentarios = "";
+    for(let i = 0; i < comentarios.length; i++){
+        msjComentarios += comentarios[i] + '<br>';
+    }
+    msjInfo('COMENTARIOS', msjComentarios);
+}
+
+function handlerDetalles(event){
+    let inputName = event.target.id;
+    let arrayId = inputName.split("-");
+    let idPeticion = arrayId[1];
+
+    gestor.addPeticionLocal(idPeticion);
+
+    window.location.assign("form_permiso.html");
 }

@@ -72,3 +72,5 @@ function addMaxDates(){
     $("#buscador-fecha-creacion").attr("max", fechaActual);
     $("#buscador-fecha-llegada").attr("max", fechaActual);
 }
+
+function clearPetLocal(){ gestor.clearPeticionLocal(); }
