@@ -4,7 +4,7 @@ class PeticionManager {
     getPeticion(where, returnFunction){
         $.ajax({
             cache: false,
-            url:"http://localhost:3000/peticion",
+            url:"http://localhost:3000/peticiones",
             type:"GET",
             data: where,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
@@ -14,7 +14,7 @@ class PeticionManager {
 
     addPeticion(id, pass, nombre, departamento, nivel){
         $.ajax({
-            url:"http://localhost:3000/registro",
+            url:"http://localhost:3000/peticiones",
             type:"POST",
             data: 'id=' + id + '&pass=' + pass + '&nombre=' + nombre + '&departamento=' + departamento + '&nivel=' + nivel,
             cache: false,

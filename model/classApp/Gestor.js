@@ -25,7 +25,7 @@ class Gestor{
         let ressult = [];
         ressult["id"] = localStorage.getItem("id");
         ressult["nombre"] = localStorage.getItem("nombre");
-        ressult["permisos"] = localStorage.getItem("permisos");
+        ressult["nivel"] = localStorage.getItem("nivel");
         ressult["registro"] = localStorage.getItem("registro");
         return ressult;
     }

@@ -4,17 +4,14 @@
       "token": "",
       "id": "admin",
       "pass": "YWRtaW4="
-    }
-  ],
-  "registro": [
+    },
     {
+      "token": "YWRtaW5vI2FkbWluIzIwMTgtMS0yNyMxMjoyMDoyMQ==",
       "id": "admino",
-      "pass": "YWRtaW4=",
-      "nombre": "jorge costa macia",
-      "departamento": "informatica",
-      "nivel": "profesor"
+      "pass": "YWRtaW4="
     }
   ],
+  "registro": [],
   "usuarios": [
     {
       "id": "admin",
@@ -22,33 +19,39 @@
       "departamento": "admin",
       "nivel": "admin",
       "log": []
+    },
+    {
+      "id": "admino",
+      "nombre": "jorge costa macia",
+      "departamento": "informatica",
+      "nivel": "profesor",
+      "log": []
     }
   ],
   "peticiones": [],
   "anexos": [],
-
-  "contentTablas":{
-    "login":[
+  "contentTablas": {
+    "login": [
       "id",
       "pass",
       "token"
     ],
-    "registro":[
+    "registro": [
       "id",
       "pass",
       "nombre",
       "departamento",
       "nivel"
     ],
-    "usuarios":[
+    "usuarios": [
       "id",
       "nombre",
       "departamento",
       "nivel",
       "log"
     ],
-    "peticiones":[
-      "idPeticion",
+    "peticiones": [
+      "id",
       "idUsuario",
       "cola",
       "nombreSolicitante",
@@ -56,8 +59,15 @@
       "fechaLlegada",
       "comentarios"
     ],
+    "anexos": [
+      "id",
+      "idPeticion",
+      "idUsuario",
+      "tipo",
+      "anexo"
+    ],
     "colas": {
-      "genPermiso":[
+      "genPermiso": [
         "idPeticion",
         "idUsuario",
         "cola",
@@ -65,16 +75,7 @@
         "fechaCreacion",
         "comentarios"
       ],
-      "penAutorizarPermiso":[
-        "idPeticion",
-        "idUsuario",
-        "cola",
-        "nombreSolicitante",
-        "fechaCreacion",
-        "fechaLlegada",
-        "comentarios"
-      ],
-      "penJustificante":[
+      "penAutorizarPermiso": [
         "idPeticion",
         "idUsuario",
         "cola",
@@ -83,7 +84,7 @@
         "fechaLlegada",
         "comentarios"
       ],
-      "penAutorizarJustificante":[
+      "penJustificante": [
         "idPeticion",
         "idUsuario",
         "cola",
@@ -92,7 +93,16 @@
         "fechaLlegada",
         "comentarios"
       ],
-      "ausenciaFinalizada":[
+      "penAutorizarJustificante": [
+        "idPeticion",
+        "idUsuario",
+        "cola",
+        "nombreSolicitante",
+        "fechaCreacion",
+        "fechaLlegada",
+        "comentarios"
+      ],
+      "ausenciaFinalizada": [
         "idPeticion",
         "idUsuario",
         "cola",
