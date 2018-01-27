@@ -6,7 +6,7 @@
       "pass": "YWRtaW4="
     },
     {
-      "token": "YWRtaW5vI2FkbWluIzIwMTgtMS0yNyMxNjozMTo2",
+      "token": "",
       "id": "admino",
       "pass": "YWRtaW4="
     }
@@ -16,7 +16,7 @@
       "id": "adminoo",
       "pass": "YWRtaW4=",
       "nombre": "jorge jorge jorge",
-      "departamento": "teleco",
+      "departamento": "jorge",
       "nivel": "profesor"
     }
   ],
@@ -25,17 +25,10 @@
       "id": "admin",
       "nombre": "admin",
       "departamento": "admin",
-      "nivel": "admin",
-      "log": []
-    },
-    {
-      "id": "admino",
-      "nombre": "jorge costa macia",
-      "departamento": "informatica",
-      "nivel": "profesor",
-      "log": []
+      "nivel": "admin"
     }
   ],
+  "log": [],
   "peticiones": [
     {
       "id": 1,
@@ -44,6 +37,47 @@
       "nombreSolicitante": "jorge costa macia",
       "fechaCreacion": "2018-01-01",
       "fechaLlegada": "2018-01-27",
+      "motivo": "",
+      "jornada": "",
+      "desde": "",
+      "hasta": "",
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
       "comentarios": [],
       "anexos": []
     }

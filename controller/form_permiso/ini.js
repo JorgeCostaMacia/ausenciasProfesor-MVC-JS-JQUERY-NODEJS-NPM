@@ -34,14 +34,10 @@ function getUsuarioLocal(){
     console.log(usuario);
     addUsuarioForm();
 
-    if(usuario["nivel"] == 'admin'){
-        aceptarUsuarios();
-        peticionManager.getPeticion('', 'getPeticionesCount');
-    }
+    if(usuario["nivel"] == 'admin'){ /* REDIRECT */ }
     else if(usuario["nivel"] == 'direccion'){ peticionManager.getPeticion('', 'getPeticionesCount'); }
     else if(usuario["nivel"] == 'profesor'){
         peticionManager.getPeticion('nombreSolicitante=' + usuario["nombre"], 'getPeticionesCount');
-        injectNombreCompletoDisable(usuario["nombre"]);
     }
 }
 
@@ -68,15 +64,12 @@ function getPeticionesCount(ressult){
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
 }
 
-function addMaxDates(){
-    let ObjectDate = new Date();
-    let mes = ObjectDate.getMonth() *1  +1;
-    if(mes < 10){ mes = "" + "0" + mes; }
-
-    let fechaActual = ObjectDate.getFullYear() + "-" + mes + "-" + ObjectDate.getDate();
-
-    $("#buscador-fecha-creacion").attr("max", fechaActual);
-    $("#buscador-fecha-llegada").attr("max", fechaActual);
+function iniFormGenPeticion(){
+    if(gestor.getLocal()["idPeticion"] != ""){
+        peticionManager.getPeticion("id=" + gestor.getLocal()["idPeticion"], 'formGetPeticion');
+    }
 }
 
-function clearPetLocal(){ gestor.clearPeticionLocal(); }
+function formGetPeticion(ressult){
+
+}

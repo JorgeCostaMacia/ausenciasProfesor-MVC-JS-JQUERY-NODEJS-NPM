@@ -1,12 +1,12 @@
 "use strict";
 
 class RegistroManager {
-    getRegistro(id, returnFunction){
+    getRegistro(whereParameter, returnFunction){
         $.ajax({
             cache: false,
             url:"http://localhost:3000/registro",
             type:"GET",
-            data: 'id=' + id,
+            data: whereParameter,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
             error: function (){ msjDanger("Se ha producido un error en la conexion"); }
         })
@@ -21,6 +21,15 @@ class RegistroManager {
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
             error: function (){ msjDanger("Se ha producido un error en la conexion"); }
         });
+    }
+
+    delRegistro(id){
+        $.ajax({
+            cache: false,
+            url:"http://localhost:3000/registro/" + id,
+            type:"DELETE",
+            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+        })
     }
 
 }

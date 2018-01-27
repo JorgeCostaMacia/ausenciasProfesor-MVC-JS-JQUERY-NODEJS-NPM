@@ -29,7 +29,7 @@ function checkExistLogin(ressult){
     msjClean();
 
     if(ressult.length > 0) { msjDanger('REGISTRO', '<strong>Existe un login con esa cuenta</strong>'); }
-    else { registroManager.getRegistro($("#usuario").val(), 'checkExistRegistro'); }
+    else { registroManager.getRegistro("id=" + $("#usuario").val(), 'checkExistRegistro'); }
 }
 
 function checkExistRegistro(ressult){

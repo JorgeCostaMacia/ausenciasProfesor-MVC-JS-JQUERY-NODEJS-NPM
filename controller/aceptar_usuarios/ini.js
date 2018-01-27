@@ -2,6 +2,8 @@
 
 var gestor = new Gestor();
 var loginManager = new LoginManager();
+var usuarioManager = new UsuarioManager();
+var registroManager = new RegistroManager();
 var peticionManager = new PeticionManager();
 
 function evalCookie(){
@@ -31,7 +33,6 @@ function changePageInicio(ressult){ window.location.assign("../index.html"); }
 
 function getUsuarioLocal(){
     let usuario = gestor.getLocal();
-    console.log(usuario);
     addUsuarioForm();
 
     if(usuario["nivel"] == 'admin'){
@@ -68,15 +69,21 @@ function getPeticionesCount(ressult){
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
 }
 
-function addMaxDates(){
-    let ObjectDate = new Date();
-    let mes = ObjectDate.getMonth() *1  +1;
-    if(mes < 10){ mes = "" + "0" + mes; }
+function clearPetLocal(){ gestor.clearPeticionLocal(); }
 
-    let fechaActual = ObjectDate.getFullYear() + "-" + mes + "-" + ObjectDate.getDate();
-
-    $("#buscador-fecha-creacion").attr("max", fechaActual);
-    $("#buscador-fecha-llegada").attr("max", fechaActual);
+function getRegistros(){
+    registroManager.getRegistro("", 'evalRegistros');
 }
 
-function clearPetLocal(){ gestor.clearPeticionLocal(); }
+function evalRegistros(ressult){
+    if(ressult.length == 0){ injectCaption("No hay registros que mostrar"); }
+    else {
+        for (let i = 0; i < ressult.length; i++) {
+            let registro = new Registro(ressult[i]["id"], ressult[i]["pass"], ressult[i]["nombre"], ressult[i]["departamento"], ressult[i]["nivel"]);
+            gestor.addRegistros(registro);
+        }
+
+        injectRegistors(gestor.getRegistros());
+        addEventsRegistors(gestor.getRegistros());
+    }
+}

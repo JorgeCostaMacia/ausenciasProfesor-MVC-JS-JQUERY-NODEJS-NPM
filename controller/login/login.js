@@ -33,7 +33,7 @@ function checkExistLogin(ressult) {
 function addUsuarioLocal(ressult){
     msjClean();
 
-    gestor.addUsuarios(new Usuario(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], ressult[0]["log"]));
+    gestor.addUsuarios(new Usuario(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"]));
 
     let token = gestor.genToken();
     gestor.addLocal(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], "");

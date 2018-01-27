@@ -6,15 +6,14 @@ function addEventsInicio(){
     $("#cerrarSesionInicio").click(returnLogin);
     evalCookie();
     getUsuarioLocal();
-    addMaxDates();
-    $("#buscar").click(evalSearch);
     clearPetLocal();
+    getRegistros();
 }
 
-function eventPeticiones(peticiones){
-    for(let i = 0; i < peticiones.length; i++){
-        $("#comentarios-" + peticiones[i].getIdPeticion()).click(showComents);
-        $("#detalles-" + peticiones[i].getIdPeticion()).click(handlerDetalles);
+function addEventsRegistors(registros){
+    for(let i = 0; i < registros.length; i++){
+        $("#aceptar-" + registros[i].getId()).click(addRegistroLogin);
+        $("#denegar-" + registros[i].getId()).click(delRegistroLogin);
     }
 }
 
