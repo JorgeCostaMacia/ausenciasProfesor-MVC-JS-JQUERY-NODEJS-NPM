@@ -6,9 +6,7 @@ var peticionManager = new PeticionManager();
 
 function evalCookie(){
     if(gestor.existCookie()) {
-
-        let id = gestor.getLocal()["id"];
-        loginManager.getLogin(id, '','evalCookieToken');
+        loginManager.getLogin(gestor.getLocal()["id"], '','evalCookieToken');
     }
 }
 
@@ -17,8 +15,9 @@ function evalCookieToken(ressult){
         let cookie = gestor.getCookie("token");
         let token = ressult[0]["token"];
 
-        if(cookie == token){ changePageInicio(""); }
+        if(cookie != token){ changePageInicio(""); }
     }
+    else { changePageInicio(""); }
 }
 
 function returnLogin(){

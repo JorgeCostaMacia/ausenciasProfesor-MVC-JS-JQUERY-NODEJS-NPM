@@ -16,8 +16,9 @@ function evalCookieToken(ressult){
         let cookie = gestor.getCookie("token");
         let token = ressult[0]["token"];
 
-        if(cookie == token){ window.location.assign("view/inicio.html"); }
+       if(cookie == token){ window.location.assign("view/inicio.html"); }
     }
+    else { window.location.assign("view/inicio.html"); }
 }
 
 function evalRegistroLocal(){

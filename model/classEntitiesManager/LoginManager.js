@@ -10,7 +10,7 @@ class LoginManager {
         	type:"GET",
         	data: parameter,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         })
     }
 
@@ -20,7 +20,7 @@ class LoginManager {
             type:"POST",
             data: 'id=' + loginId + '&pass=' + loginPass + '&token=' + '',
             cache: false,
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
       });
     }
 
@@ -31,7 +31,7 @@ class LoginManager {
            data: {'token': token},
            cache: false,
            success: function(ressult){ eval(returnFunction + '(ressult)'); },
-           error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+           error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
        });
     }
 
@@ -42,7 +42,7 @@ class LoginManager {
             data: {'token': ''},
             cache: false,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         });
     }
 

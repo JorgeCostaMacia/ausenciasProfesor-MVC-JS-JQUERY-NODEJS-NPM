@@ -8,7 +8,7 @@ class RegistroManager {
             type:"GET",
             data: whereParameter,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         })
     }
 
@@ -19,7 +19,7 @@ class RegistroManager {
             data: 'id=' + id + '&pass=' + pass + '&nombre=' + nombre + '&departamento=' + departamento + '&nivel=' + nivel,
             cache: false,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         });
     }
 
@@ -28,7 +28,7 @@ class RegistroManager {
             cache: false,
             url:"http://localhost:3000/registro/" + id,
             type:"DELETE",
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         })
     }
 

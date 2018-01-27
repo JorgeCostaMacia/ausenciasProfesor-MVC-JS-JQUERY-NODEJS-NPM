@@ -1,22 +1,24 @@
 {
   "login": [
     {
-      "token": "",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI3IzIyOjMxOjQ=",
       "id": "admin",
-      "pass": "YWRtaW4="
-    },
-    {
-      "token": "",
-      "id": "admino",
       "pass": "YWRtaW4="
     }
   ],
   "registro": [
     {
-      "id": "adminoo",
-      "pass": "YWRtaW4=",
+      "id": "jorge",
+      "pass": "am9yZ2U=",
       "nombre": "jorge jorge jorge",
       "departamento": "jorge",
+      "nivel": "profesor"
+    },
+    {
+      "id": "jorgee",
+      "pass": "am9yZ2U=",
+      "nombre": "jorge jorge jorge",
+      "departamento": "informatica",
       "nivel": "profesor"
     }
   ],

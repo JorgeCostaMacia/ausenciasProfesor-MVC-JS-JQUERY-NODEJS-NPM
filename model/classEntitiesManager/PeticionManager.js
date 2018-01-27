@@ -8,7 +8,7 @@ class PeticionManager {
             type:"GET",
             data: where,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         })
     }
 
@@ -18,7 +18,7 @@ class PeticionManager {
             type:"POST",
             data: 'id=' + id + '&pass=' + pass + '&nombre=' + nombre + '&departamento=' + departamento + '&nivel=' + nivel,
             cache: false,
-            error: function (){ msjDanger("Se ha producido un error en la conexion"); }
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         });
     }
 }

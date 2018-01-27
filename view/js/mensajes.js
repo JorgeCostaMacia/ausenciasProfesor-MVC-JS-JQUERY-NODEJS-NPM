@@ -16,7 +16,6 @@ function msjDanger(accion, text){
         '</div>' +
         '</div>'
     );
-    console.log(text);
 
     $("#danger").modal("show");
 }
