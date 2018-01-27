@@ -48,3 +48,58 @@ function injectRegistors(registros){
 }
 
 function delTrRegistro(idTr){ $('#' + idTr).remove(); }
+
+function rellFormPermiso(obj){
+    let obj = {
+      "id": 1,
+      "idUsuario": "admino",
+      "cola": "genPermiso",
+      "nombreSolicitante": "jorge costa macia",
+      "fechaCreacion": "2018-01-01",
+      "fechaLlegada": "2018-01-27",
+      "motivo": "",
+      "jornada": "",
+      "desde": "",
+      "hasta": "",
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "comentarios": [],
+      "anexos": []
+    }
+
+}
