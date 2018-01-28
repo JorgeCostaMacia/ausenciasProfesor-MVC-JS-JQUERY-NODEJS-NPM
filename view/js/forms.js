@@ -103,7 +103,7 @@ function injectFormPermiso(peticion) {
         $("#horario-dia-" + i).val(horario["dia"]);
         $("#horario-hora-"  + i).val(horario["hora"]);
         $("#horario-curso-"  + i).val(horario["curso"]);
-        $("#horario-asignaruta-"  + i).val(horario["asignatura"]);
+        $("#horario-asignatura-"  + i).val(horario["asignatura"]);
         $("#horario-profesor-"  + i).val(horario["sustituto"]);
     }
 
@@ -164,7 +164,7 @@ function disableFormGenPeticion(){
         $("#horario-dia-" + i).attr("disabled", true);
         $("#horario-hora-" + i).attr("disabled", true);
         $("#horario-curso-" + i).attr("disabled", true);
-        $("#horario-asignaruta-" + i).attr("disabled", true);
+        $("#horario-asignatura-" + i).attr("disabled", true);
         $("#horario-profesor-" + i).attr("disabled", true);
     }
 
