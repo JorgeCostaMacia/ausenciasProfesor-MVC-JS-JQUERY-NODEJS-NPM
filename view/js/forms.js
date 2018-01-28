@@ -137,6 +137,8 @@ function injectFormPermiso(peticion) {
 }
 
 function disableFormGenPeticion(){
+    $('form').find('input, textarea, button, select').attr('disabled','disabled');
+    /*
     $("#donya").attr("disabled", true);
 
     $("#motivo-matrimonio").attr("disabled", true);
@@ -175,5 +177,5 @@ function disableFormGenPeticion(){
     $("#documentacion-observaciones").attr("disabled", true);
 
     $("#enviarGenPeticion").attr("disabled", true);
-    $("#guardarGenPeticion").attr("disabled", true);
+    $("#guardarGenPeticion").attr("disabled", true);*/
 }
