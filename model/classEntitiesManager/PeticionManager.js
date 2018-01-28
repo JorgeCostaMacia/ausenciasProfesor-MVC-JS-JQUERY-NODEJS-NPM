@@ -16,7 +16,6 @@ class PeticionManager {
         $.ajax({
             url:"http://localhost:3000/peticiones",
             type:"POST",
-            dataTypes: 'json',
             data: 'idUsuario=' + idUsuario + '&cola=' + cola + '&nombreSolicitante=' + nombreSolicitante +
             '&fechaCreacion=' + fechaCreacion + '&fechaLlegada=' + fechaLlegada + '&motivo=' + motivo +
             '&jornada=' + jornada +  '&horario=' + horario +  '&observaciones=' + observaciones +

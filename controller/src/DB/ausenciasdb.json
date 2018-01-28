@@ -111,25 +111,8 @@
       "firma": "",
       "comentarios": [],
       "anexos": []
-    },
-    {
-      "idUsuario": "jorge",
-      "cola": "genPeticion",
-      "nombreSolicitante": "asfasdf",
-      "fechaCreacion": "2018-01-28",
-      "fechaLlegada": "2018-01-28",
-      "motivo": "matrimonio",
-      "jornada": "[object Object]",
-      "horario": "[object Object]",
-      "observaciones": "",
-      "fechaFirma": "2018-01-01",
-      "firma": "",
-      "comentarios": "[]",
-      "anexos": "[]",
-      "id": 2
     }
   ],
-  "anexos": [],
   "contentTablas": {
     "login": [
       "id",

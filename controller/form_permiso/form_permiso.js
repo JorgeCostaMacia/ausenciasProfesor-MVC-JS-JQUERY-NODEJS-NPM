@@ -5,8 +5,6 @@
 function evalGenPermiso(event) {
     msjClean();
 
-    let send = {};
-
     let id = "";
 
     let idusuario = gestor.getLocal().id;
@@ -54,6 +52,6 @@ function evalGenPermiso(event) {
     let comentarios = [];
     let anexos = [];
 
-    peticionManager.addPeticion(idusuario, cola, nombreSolicitante, fechaActual, fechaActual, motivo, jornada, horario, observaciones, fechaFirma, firma, JSON.stringify(comentarios), JSON.stringify(anexos));
+    peticionManager.addPeticion(idusuario, cola, nombreSolicitante, fechaActual, fechaActual, motivo, JSON.stringify(jornada), JSON.stringify(horario), observaciones, fechaFirma, firma, JSON.stringify(comentarios), JSON.stringify(anexos));
 
 }
