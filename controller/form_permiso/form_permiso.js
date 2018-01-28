@@ -4,7 +4,6 @@
 
 function evalGenPermiso(event) {
     msjClean();
-    let id = "";
 
     let idusuario = gestor.getLocal().id;
 
@@ -25,6 +24,7 @@ function evalGenPermiso(event) {
 
     //let jornada =
 
+    peticionManager.addPeticion(idusuario,cola,nombreSolicitante,fechaActual,"",motivo,)
 
 }
 
