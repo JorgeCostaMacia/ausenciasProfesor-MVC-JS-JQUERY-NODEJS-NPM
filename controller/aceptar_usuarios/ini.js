@@ -20,7 +20,7 @@ function evalRegistros(ressult){
             gestor.addRegistros(registro);
         }
 
-        injectRegistors(gestor.getRegistros());
+        injectRegistros(gestor.getRegistros());
         addEventsRegistros(gestor.getRegistros());
     }
 }

@@ -1,14 +1,16 @@
 "use strict";
 
-// gestor - loginManager - peticionManager
+// gestor - loginManager - peticionManager - logManager
 
 function evalGenPermiso(event) {
     msjClean();
 
     let peticion = {};
     peticion["idUsuario"] = gestor.getLocal()["id"];
-    peticion["nombreSolicitante"] = $("#donya").val();
     peticion["cola"] = event.target.value;
+    peticion["nombreSolicitante"] = $("#donya").val();
+    peticion["fechaCreacion"] = gestor.getDate();
+    peticion["fechaLlegada"] = gestor.getDate();
     peticion["motivo"] = $("input[name=motivo-permiso]:checked").val();
     peticion["jornada"] = {
         "completa": {
@@ -38,12 +40,31 @@ function evalGenPermiso(event) {
     peticion["comentarios"] = [];
     peticion["anexos"] = [];
 
+    let log = {};
+    log["id"] = gestor.getLocal()["id"];
+    log["nombre"] = gestor.getLocal()["nombre"];
+    log["fecha"] = gestor.getDate();
+    log["hora"] = gestor.getTime();
+    log["colaInicio"] = "genPeticion";
+    log["colaDestino"] = event.target.value;
 
-    let fechaActual = new Date();
-    let mes = fechaActual.getMonth() * 1 + 1;
-    if (mes < 10) mes = "" + "0" + mes;
-    fechaActual = fechaActual.getFullYear() + "-" + (mes) + "-" + fechaActual.getDate();
+    gestor.addLogs(new Log(log));
 
+    peticionManager.addPeticion(peticion, 'addLog');
+}
 
-    peticionManager.addPeticion(peticion);
+function addLog(ressult){
+    msjClean();
+
+    let logObjetc = gestor.getLogs()[0];
+
+    let log = {};
+    log["idUsuario"] = logObjetc.getIdUsuario();
+    log["nombre"] = logObjetc.getNombre();
+    log["fecha"] = logObjetc.getFecha();
+    log["hora"] = logObjetc.getHora();
+    log["colaInicio"] = logObjetc.getColaInicio();
+    log["colaDestino"] = logObjetc.getColaDestino();
+
+    logManager.addLog(log, 'changePageIninicio');
 }

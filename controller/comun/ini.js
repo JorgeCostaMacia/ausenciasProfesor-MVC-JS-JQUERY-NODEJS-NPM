@@ -36,8 +36,7 @@ function returnLogin(){
 }
 
 function changePageIndex(ressult){ window.location.assign("../index.html"); }
-function changePageIninicio(ressult){ window.location.assign("../inicio.html"); }
-
+function changePageIninicio(ressult){ window.location.assign("inicio.html"); }
 
 // RECOGE USUARIO LOCAL STORAGE
 // AÑANE NOMBRE USUARIO A NAVEGADOR

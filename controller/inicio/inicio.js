@@ -11,7 +11,8 @@
 // SI NO SON CORRECTOS MUESTRA ADVERTENCIA
 // SI SON CORRECTO LLAMA BD PETICIONES
 function evalSearch(){
-    msjClean();
+     msjClean();
+    cleanTable();
 
     let nombre = $("#buscador-texto").val();
     let cola = $("#buscador-cola").val();

@@ -1,11 +1,14 @@
 "use strict";
 
+var logManager = new LogManager();
+
 // EVALUA LOCALSTORAGE
 // SI RECIBE PETICION - LLAMA PETICION BD
 function iniFormGenPeticion(){
     if(gestor.getLocal()["idPeticion"] != ""){
         peticionManager.getPeticion("id=" + gestor.getLocal()["idPeticion"], 'formGetPeticion');
     }
+    else { iniFormGenPeticionNuevo(); }
 }
 
 // RECIBE RESULTADO PETICION BD
@@ -26,4 +29,12 @@ function formGetPeticion(ressult){
     if( gestor.getLocal()["accion"] == "detalles"){
         disableFormGenPeticion();
     }
+}
+
+function iniFormGenPeticionNuevo(){
+    let nombre = gestor.getLocal()["nombre"];
+    let fechaActual = gestor.getDate().split("-");
+
+    infectFormPermisoNuevo(nombre, fechaActual[2], fechaActual[1], fechaActual[0]);
+    disableFormPermisoNuevo();
 }
