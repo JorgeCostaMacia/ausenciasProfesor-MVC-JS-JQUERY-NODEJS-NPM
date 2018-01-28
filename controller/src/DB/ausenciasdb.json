@@ -11,15 +11,7 @@
       "token": ""
     }
   ],
-  "registro": [
-    {
-      "id": "admino",
-      "pass": "YWRtaW4=",
-      "nombre": "asdf asdf asdf",
-      "departamento": "asfdasdf",
-      "nivel": "profesor"
-    }
-  ],
+  "registro": [],
   "usuarios": [
     {
       "id": "admin",
@@ -120,84 +112,5 @@
       "comentarios": [],
       "anexos": []
     }
-  ],
-  "contentTablas": {
-    "login": [
-      "id",
-      "pass",
-      "token"
-    ],
-    "registro": [
-      "id",
-      "pass",
-      "nombre",
-      "departamento",
-      "nivel"
-    ],
-    "usuarios": [
-      "id",
-      "nombre",
-      "departamento",
-      "nivel",
-      "log"
-    ],
-    "peticiones": [
-      "id",
-      "idUsuario",
-      "cola",
-      "nombreSolicitante",
-      "fechaCreacion",
-      "fechaLlegada",
-      "motivo",
-      "jornada",
-      "horario",
-      "comentarios",
-      "anexos"
-    ],
-    "jornada": [
-      "1",
-      "2"
-    ],
-    "jornada1": [
-      "diaInicio",
-      "diaFin"
-    ],
-    "jornada2": [
-      "diaInicio",
-      "horaInicio",
-      "diaFin",
-      "horaFin"
-    ],
-    "horario": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "horario12345": [
-      "dia",
-      "hora",
-      "curso",
-      "asignatura",
-      "sustituto"
-    ],
-    "anexos": [
-      "id",
-      "idPeticion",
-      "idUsuario",
-      "tipo",
-      "anexo"
-    ],
-    "anexosPeticiones": [
-      "id"
-    ],
-    "colas": [
-      "genPermiso",
-      "penAutorizarPermiso",
-      "penJustificante",
-      "penAutorizarJustificante",
-      "ausenciaFinalizada"
-    ]
-  }
+  ]
 }
