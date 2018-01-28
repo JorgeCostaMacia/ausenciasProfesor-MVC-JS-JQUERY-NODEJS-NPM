@@ -51,9 +51,9 @@ function delTrRegistro(idTr) {
     $('#' + idTr).remove();
 }
 
-function rellFormPermiso() {
+function rellFormPermiso(peticion) {
 
-    let peticion = {
+    /*let peticion = {
         "id": 1,
         "idUsuario": "jorge",
         "cola": "genPermiso",
@@ -112,7 +112,7 @@ function rellFormPermiso() {
         },
         "comentarios": "",
         "anexos": []
-    };
+    };*/
 
 
     let don = $("#ddña");
