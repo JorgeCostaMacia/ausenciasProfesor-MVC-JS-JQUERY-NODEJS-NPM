@@ -2,6 +2,12 @@
 
 // gestor - loginManager - peticionManager - usuarioManager - registroManager
 
+
+// RECIBE EVENTO QUE LO ACCIONA
+// SACA ID REGISTRO DEL BOTON QUE LO ACCIONA
+// OBTIENE REGISTRO DE GESTOR
+// AÑADE LOGIN BD - USUARIO BD
+// ELIMINA REGISTRO BD - QUITA REGISTRO DE FORMULARIO
 function addRegistroLogin(event){
     let inputName = event.target.id;
     let arrayId = inputName.split("-");
@@ -15,6 +21,9 @@ function addRegistroLogin(event){
     delTrRegistro('tr-' + registro.getId());
 }
 
+// RECIBE EVENTO QUE LO ACCIONA
+// SACA ID REGISTRO DEL BOTON QUE LO ACCIONA
+// ELIMINA REGISTRO BD - QUITA REGISTRO DE FORMULARIO
 function delRegistroLogin(event){
     let inputName = event.target.id;
     let arrayId = inputName.split("-");

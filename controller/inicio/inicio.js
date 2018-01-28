@@ -9,7 +9,7 @@
 // SI SON CORRECTOS
 // LOS EVALUA
 // SI NO SON CORRECTOS MUESTRA ADVERTENCIA
-// SI SON ERRORES LLAMA BD PETICIONES
+// SI SON CORRECTO LLAMA BD PETICIONES
 function evalSearch(){
     msjClean();
 
@@ -39,6 +39,9 @@ function evalSearch(){
     }
 }
 
+// RECIBE RESULTADO PETICIONES BD
+// SI NO HAY PETICIONES MUESTRA ADVERTENCIA
+// SI HAY PETICIONES INYECTA PETICIONES Y AÑADE EVENTOS
 function checkPeticiones(ressult){
     if(ressult.length == 0){ injectCaption("No hay documentos que mostrar"); }
     else {
@@ -51,6 +54,10 @@ function checkPeticiones(ressult){
     }
 }
 
+// RECIBE EVENTO QUE LO ACCIONA
+// SACA ID PETICION DEL BOTON QUE LO ACCIONA
+// OBTIENE PETICION DE GESTOR - OBTIENE SUS COMENTARIOS
+// MUESTRA ADVERTENCIA CON COMENTARIOS
 function showComents(event){
     let inputName = event.target.id;
     let arrayId = inputName.split("-");
@@ -66,6 +73,10 @@ function showComents(event){
     msjInfo('COMENTARIOS', msjComentarios);
 }
 
+// RECIBE EVENTO QUE LO ACCIONA
+// SACA ID PETICION DEL BOTON QUE LO ACCIONA
+// AÑADE ID A LOCAL STORAGE
+// REDIRIGE A FORM_PERMISOS
 function handlerDetalles(event){
     let inputName = event.target.id;
     let arrayId = inputName.split("-");
