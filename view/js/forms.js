@@ -88,7 +88,6 @@ function injectFormPermiso(peticion) {
             break;
     }
 
-    //jornada
     let jornadaCompleta = peticion.getJornada()["completa"];
     $("#completa-fecha-desde").val(jornadaCompleta["diaInicio"]);
     $("#completa-fecha-hasta").val(jornadaCompleta["diaFin"]);
@@ -99,7 +98,6 @@ function injectFormPermiso(peticion) {
     $("#incompleta-hora-desde").val(jornadaParcial["horaInicio"]);
     $("#incompleta-hora-hasta").val(jornadaParcial["horaFin"]);
 
-    // horario
     for(let i = 1; i < 6; i++){
         let horario = peticion.getHorario()[i];
         $("#horario-dia-" + i).val(horario["dia"]);
@@ -109,6 +107,45 @@ function injectFormPermiso(peticion) {
         $("#horario-profesor-"  + i).val(horario["sustituto"]);
     }
 
-    //observaciones
     $("#documentacion-observaciones").val(peticion.getObservaciones());
+
+
+    $("#documentacion-observaciones").val(peticion.getObservaciones());
+
+
+}
+
+function disableFormGenPeticion(){
+    $("#donya").attr("disabled", true);
+
+    $("#motivo-matrimonio").attr("disabled", true);
+    $("#motivo-prenatales").attr("disabled", true);
+    $("#motivo-lactancia").attr("disabled", true);
+    $("#motivo-embarazo").attr("disabled", true);
+    $("#motivo-permiso-medico").attr("disabled", true);
+    $("#motivo-enfermedad").attr("disabled", true);
+    $("#motivo-pruebas").attr("disabled", true);
+    $("#motivo-traslado").attr("disabled", true);
+    $("#motivo-deber-inexcusable").attr("disabled", true);
+    $("#motivo-funciones-representativas").attr("disabled", true);
+
+    $("#completa-fecha-desde").attr("disabled", true);
+    $("#completa-fecha-hasta").attr("disabled", true);
+
+    $("#incompleta-fecha-desde").attr("disabled", true);
+    $("#incompleta-fecha-hasta").attr("disabled", true);
+    $("#incompleta-hora-desde").attr("disabled", true);
+    $("#incompleta-hora-hasta").attr("disabled", true);
+
+    for(let i = 1; i < 6; i++) {
+        $("#horario-dia-" + i).attr("disabled", true);
+        $("#horario-hora-" + i).attr("disabled", true);
+        $("#horario-curso-" + i).attr("disabled", true);
+        $("#horario-asignaruta-" + i).attr("disabled", true);
+        $("#horario-profesor-" + i).attr("disabled", true);
+    }
+
+    $("#documentacion-observaciones").attr("disabled", true);
+
+
 }

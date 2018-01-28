@@ -15,7 +15,7 @@ function evalCookieToken(ressult){
         let cookie = gestor.getCookie("token");
         let token = ressult[0]["token"];
 
-        if(cookie != token){ changePageInicio(""); }
+       if(cookie != token){ changePageInicio(""); }
     }
     else { changePageInicio(""); }
 }
@@ -33,10 +33,14 @@ function getUsuarioLocal(){
 
     addUsuarioForm();
 
-    if(usuario["nivel"] == 'admin'){ /* REDIRECT */ }
+    if(usuario["nivel"] == 'admin'){
+        aceptarUsuarios();
+        peticionManager.getPeticion('', 'getPeticionesCount');
+    }
     else if(usuario["nivel"] == 'direccion'){ peticionManager.getPeticion('', 'getPeticionesCount'); }
     else if(usuario["nivel"] == 'profesor'){
         peticionManager.getPeticion('nombreSolicitante=' + usuario["nombre"], 'getPeticionesCount');
+        injectNombreCompletoDisable(usuario["nombre"]);
     }
 }
 
@@ -59,27 +63,18 @@ function getPeticionesCount(ressult){
         else if(ressult[i]["cola"] == "penAutorizarJustificante"){ countPenAutorizarJustificante++; }
         else if(ressult[i]["cola"] == "ausenciaFinalizada"){ countAusenciaFinalizada++; }
     }
-
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
 }
 
-function iniFormGenPeticion(){
-    if(gestor.getLocal()["idPeticion"] != ""){
-        peticionManager.getPeticion("id=" + gestor.getLocal()["idPeticion"], 'formGetPeticion');
-    }
+function addMaxDates(){
+    let ObjectDate = new Date();
+    let mes = ObjectDate.getMonth() *1  +1;
+    if(mes < 10){ mes = "" + "0" + mes; }
+
+    let fechaActual = ObjectDate.getFullYear() + "-" + mes + "-" + ObjectDate.getDate();
+
+    $("#buscador-fecha-creacion").attr("max", fechaActual);
+    $("#buscador-fecha-llegada").attr("max", fechaActual);
 }
 
-function formGetPeticion(ressult){
-    if(ressult.length == 0){ injectCaption("No hay documentos que mostrar"); }
-    else {
-        for(let i = 0; i < ressult.length; i++){
-            let peticion = new Peticion(ressult[i]["id"], ressult[i]["idUsuario"], ressult[i]["cola"], ressult[i]["nombreSolicitante"],  ressult[i]["fechaCreacion"], ressult[i]["fechaLlegada"], ressult[i]["motivo"], ressult[i]["jornada"], ressult[i]["horario"], ressult[i]["observaciones"], ressult[i]["fechaFirma"], ressult[i]["firma"], ressult[i]["comentarios"], ressult[i]["anexos"]);
-            gestor.addPeticiones(peticion);
-        }
-        injectFormPermiso(gestor.getPeticiones()[0]);
-    }
-
-    if( gestor.getLocal()["accion"] == "detalles"){
-        disableFormGenPeticion();
-    }
-}
+function clearPetLocal(){ gestor.clearPeticionLocal(); }

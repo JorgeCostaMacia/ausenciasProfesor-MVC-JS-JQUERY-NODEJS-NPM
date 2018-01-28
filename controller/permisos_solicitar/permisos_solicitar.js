@@ -56,7 +56,7 @@ function handlerDetalles(event){
     let arrayId = inputName.split("-");
     let idPeticion = arrayId[1];
 
-    gestor.addPeticionLocal(idPeticion, "detalles");
+    gestor.addPeticionLocal(idPeticion);
 
     window.location.assign("form_permiso.html");
 }
