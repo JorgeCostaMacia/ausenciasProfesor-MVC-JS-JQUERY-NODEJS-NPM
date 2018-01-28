@@ -1,22 +1,14 @@
 
 *.xml
 .idea/workspace.xml
-<<<<<<< HEAD
 *.xml
 *.xml
-=======
-*.xml
-*.xml
->>>>>>> master
 .idea/workspace.xml
 *.xml
 .idea/workspace.xml
 *.xml
 *.xml
-<<<<<<< HEAD
-=======
 .DS_Store
 *.xml
 *.xml
 *.xml
->>>>>>> master
