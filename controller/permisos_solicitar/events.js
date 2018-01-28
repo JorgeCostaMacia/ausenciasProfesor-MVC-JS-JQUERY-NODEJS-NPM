@@ -3,8 +3,16 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    $("#cerrarSesionInicio").click(changePageIndex);
-    $("#generar-permiso").click(function() { window.location.assign("form_permiso.html"); } );
     evalCookie();
     getUsuarioLocal();
+    addMaxDates();
+    $("#buscar-permisos").click(evalSearch);
+    clearPetLocal();
+}
+
+function eventPeticiones(peticiones){
+    for(let i = 0; i < peticiones.length; i++){
+        $("#comentarios-" + peticiones[i].getIdPeticion()).click(showComents);
+        $("#detalles-" + peticiones[i].getIdPeticion()).click(handlerDetalles);
+    }
 }

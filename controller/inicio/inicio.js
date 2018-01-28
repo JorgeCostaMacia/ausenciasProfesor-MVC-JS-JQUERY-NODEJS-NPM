@@ -12,7 +12,7 @@
 // SI SON CORRECTO LLAMA BD PETICIONES
 function evalSearch(){
      msjClean();
-    cleanTable();
+     cleanTable();
 
     let nombre = $("#buscador-texto").val();
     let cola = $("#buscador-cola").val();
@@ -21,16 +21,17 @@ function evalSearch(){
 
     let whereParameter = "cola=" + cola;
 
-    if(nombre == ""){ nombre == "aaaaa aaaa aaaa"; }
+    if(nombre == ""){ nombre = "aaaaa aaaa aaaa"; }
     else { whereParameter += "&nombre=" + nombre; }
-    if(fechaCreacion == ""){ fechaCreacion == "0000-00-00"; }
+    if(fechaCreacion == ""){ fechaCreacion = "0000-00-00"; }
     else { whereParameter += "&fechaCreacion=" + fechaCreacion; }
-    if(fechaLlegada == ""){ fechaLlegada == "9999-99-99"; }
+    if(fechaLlegada == ""){ fechaLlegada = "9999-99-99"; }
     else { whereParameter += "&fechaCreacion=" + fechaCreacion; }
+
 
     let errores = validateSearch(nombre, fechaCreacion, fechaLlegada);
 
-    if(errores.length == 0){ peticionManager.getPeticion(whereParameter, 'checkPeticiones') }
+   if(errores.length == 0){ peticionManager.getPeticion(whereParameter, 'checkPeticiones') }
     else {
         let msjError = "";
         for(let i = 0; i < errores.length; i++){
