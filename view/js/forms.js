@@ -1,7 +1,11 @@
 "use strict";
 
 function injectNombreCompletoDisable(nombre) {
+<<<<<<< HEAD
     $("#buscador-texto").attr('value', nombre);
+=======
+    $("#buscador-texto").val(nombre);
+>>>>>>> master
     $("#buscador-texto").attr('disabled', 'disabled');
 }
 
@@ -51,6 +55,7 @@ function delTrRegistro(idTr) {
     $('#' + idTr).remove();
 }
 
+<<<<<<< HEAD
 function rellFormPermiso(peticion) {
 
     /*let peticion = {
@@ -120,6 +125,13 @@ function rellFormPermiso(peticion) {
     don.attr("disabled", true);
 
     switch (peticion.motivo) {
+=======
+function injectFormPermiso(peticion) {
+    $("#donya").val(peticion.getNombreSolicitante());
+    $("#donya").attr("disabled", true);
+
+    switch (peticion.getMotivo()) {
+>>>>>>> master
         case "matrimonio":
             $("#motivo-matrimonio").attr("checked", true);
             break;
@@ -153,6 +165,7 @@ function rellFormPermiso(peticion) {
     }
 
     //jornada
+<<<<<<< HEAD
     $("#completa-fecha-desde").val(peticion.jornada.a.diaInicio);
     $("#completa-fecha-hasta").val(peticion.jornada.a.diaFin);
 
@@ -196,4 +209,28 @@ function rellFormPermiso(peticion) {
     $("#documentacion-observaciones").val(peticion.comentarios);
 
 
+=======
+    let jornadaCompleta = peticion.getJornada()["completa"];
+    $("#completa-fecha-desde").val(jornadaCompleta["diaInicio"]);
+    $("#completa-fecha-hasta").val(jornadaCompleta["diaFin"]);
+
+    let jornadaParcial = peticion.getJornada()["parcial"];
+    $("#incompleta-fecha-desde").val(jornadaParcial["diaInicio"]);
+    $("#incompleta-fecha-hasta").val(jornadaParcial["diaFin"]);
+    $("#incompleta-hora-desde").val(jornadaParcial["horaInicio"]);
+    $("#incompleta-hora-hasta").val(jornadaParcial["horaFin"]);
+
+    // horario
+    for(let i = 1; i < 6; i++){
+        let horario = peticion.getHorario()[i];
+        $("#horario-dia-" + i).val(horario["dia"]);
+        $("#horario-hora-"  + i).val(horario["hora"]);
+        $("#horario-curso-"  + i).val(horario["curso"]);
+        $("#horario-asignaruta-"  + i).val(horario["asignatura"]);
+        $("#horario-profesor-"  + i).val(horario["sustituto"]);
+    }
+
+    //observaciones
+    $("#documentacion-observaciones").val(peticion.getObservaciones());
+>>>>>>> master
 }

@@ -35,7 +35,7 @@
       "jornada": {
         "1":{
           "diaInicio": "",
-          "diaFin": "",
+          "diaFin": ""
         },
         "2":{
           "diaInicio": "",
@@ -44,11 +44,9 @@
           "horaFin": ""
         }
       },
-      "desde": "",
-      "hasta": "",
       "horario": {
         "1": {
-          "dia": "2018-01-",
+          "dia": "",
           "hora": "",
           "curso": "",
           "asignatura": "",

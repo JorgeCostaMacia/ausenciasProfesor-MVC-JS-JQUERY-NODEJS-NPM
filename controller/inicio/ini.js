@@ -30,7 +30,7 @@ function changePageInicio(ressult){ window.location.assign("../index.html"); }
 
 function getUsuarioLocal(){
     let usuario = gestor.getLocal();
-    console.log(usuario);
+
     addUsuarioForm();
 
     if(usuario["nivel"] == 'admin'){
@@ -63,7 +63,6 @@ function getPeticionesCount(ressult){
         else if(ressult[i]["cola"] == "penAutorizarJustificante"){ countPenAutorizarJustificante++; }
         else if(ressult[i]["cola"] == "ausenciaFinalizada"){ countAusenciaFinalizada++; }
     }
-
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
 }
 

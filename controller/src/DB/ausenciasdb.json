@@ -8,11 +8,10 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": ""
+      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzEwOjU2OjU0"
     }
   ],
-  "registro": [
-  ],
+  "registro": [],
   "usuarios": [
     {
       "id": "admin",
@@ -33,15 +32,22 @@
       "id": 1,
       "idUsuario": "jorge",
       "cola": "genPermiso",
-      "nombreSolicitante": "jorge costa macia",
+      "nombreSolicitante": "jorge jorge jorge",
       "fechaCreacion": "2018-01-01",
       "fechaLlegada": "2018-01-27",
-      "motivo": "",
+      "motivo": "matrimonio",
       "jornada": {
-        "1": {}
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "horaInicio": "",
+          "diaFin": "",
+          "horaFin": ""
+        }
       },
-      "desde": "",
-      "hasta": "",
       "horario": {
         "1": {
           "dia": "2018-01-",
@@ -79,7 +85,8 @@
           "sustituto": ""
         }
       },
-      "comentarios": "",
+      "observaciones": "",
+      "comentarios": [],
       "anexos": []
     }
   ],
@@ -111,8 +118,39 @@
       "nombreSolicitante",
       "fechaCreacion",
       "fechaLlegada",
+      "motivo",
+      "jornada",
+      "horario",
       "comentarios",
       "anexos"
+    ],
+    "jornada": [
+      "1",
+      "2"
+    ],
+    "jornada1": [
+      "diaInicio",
+      "diaFin"
+    ],
+    "jornada2": [
+      "diaInicio",
+      "horaInicio",
+      "diaFin",
+      "horaFin"
+    ],
+    "horario": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "horario12345": [
+      "dia",
+      "hora",
+      "curso",
+      "asignatura",
+      "sustituto"
     ],
     "anexos": [
       "id",
