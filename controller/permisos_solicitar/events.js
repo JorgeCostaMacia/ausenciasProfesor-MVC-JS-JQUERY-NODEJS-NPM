@@ -3,10 +3,11 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
+    $("#generar-permiso").click(changePageForm);
+    $("#buscar-permisos").click(evalSearch);
     evalCookie();
     getUsuarioLocal();
     addMaxDates();
-    $("#buscar-permisos").click(evalSearch);
     clearPetLocal();
 }
 

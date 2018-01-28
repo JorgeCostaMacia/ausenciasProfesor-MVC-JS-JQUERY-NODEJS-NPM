@@ -2,6 +2,10 @@
 
 // gestor - loginManager - peticionManager
 
+function changePageForm(){
+    gestor.clearPeticionLocal();
+    window.location.assign("form_permiso.html");
+}
 // LIMPIA MENSAJES
 // RECOGDE NOMBRE COLA FECHACREACION FECHA LLEGADA DE FORMULARIO
 // MONTA PARAMETROS BUSQUEDA - GESTIONA CAMPOS VACIOS
