@@ -12,13 +12,14 @@ class PeticionManager {
         })
     }
 
-    addPeticion(peticionJSON){
+    addPeticion(peticionJSON, returnFunction){
         $.ajax({
             url:"http://localhost:3000/peticiones",
             type:"POST",
             contentType: "application/json",
-            data: peticionJSON,
+            data: JSON.stringify(peticionJSON),
             cache: false,
+            success: function(ressult){ eval(returnFunction + '(ressult)'); },
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         });
     }

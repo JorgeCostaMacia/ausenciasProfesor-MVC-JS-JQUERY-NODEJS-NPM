@@ -3,21 +3,15 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    $("#cerrarSesionInicio").click(changePageIndex);
-
     evalCookie();
     getUsuarioLocal();
     clearPetLocal();
     getRegistros();
 }
 
-function addEventsRegistors(registros){
+function addEventsRegistros(registros){
     for(let i = 0; i < registros.length; i++){
         $("#aceptar-" + registros[i].getId()).click(addRegistroLogin);
         $("#denegar-" + registros[i].getId()).click(delRegistroLogin);
     }
-}
-
-function aceptarUsuarios(){
-    $("#aceptarUsuarios").click(function(){ window.location.assign("aceptar_usuarios.html"); });
 }

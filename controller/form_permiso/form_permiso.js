@@ -39,13 +39,11 @@ function evalGenPermiso(event) {
     peticion["anexos"] = [];
 
 
-
-
     let fechaActual = new Date();
     let mes = fechaActual.getMonth() * 1 + 1;
     if (mes < 10) mes = "" + "0" + mes;
     fechaActual = fechaActual.getFullYear() + "-" + (mes) + "-" + fechaActual.getDate();
 
 
-    peticionManager.addPeticion(JSON.stringify(peticion));
+    peticionManager.addPeticion(peticion);
 }

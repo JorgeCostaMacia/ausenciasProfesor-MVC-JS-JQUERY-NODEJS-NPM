@@ -11,11 +11,12 @@ class UsuarioManager {
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
 		});
 	}
-	addUsuario(id, nombre, departamento, nivel){
+	addUsuario(usuarioJSON){
         $.ajax({
             url:"http://localhost:3000/usuarios",
             type:"POST",
-            data: 'id=' + id + '&nombre=' + nombre + '&departamento=' + departamento + '&nivel=' + nivel,
+            contentType: "application/json",
+            data: JSON.stringify(usuarioJSON),
             cache: false,
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         });

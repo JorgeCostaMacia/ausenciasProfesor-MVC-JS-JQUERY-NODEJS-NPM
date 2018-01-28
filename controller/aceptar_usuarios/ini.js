@@ -21,6 +21,6 @@ function evalRegistros(ressult){
         }
 
         injectRegistors(gestor.getRegistros());
-        addEventsRegistors(gestor.getRegistros());
+        addEventsRegistros(gestor.getRegistros());
     }
 }

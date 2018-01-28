@@ -48,6 +48,13 @@ function checkExistRegistro(ressult){
     else {
         gestor.addLocal("", "", "", 'registro');
 
-        registroManager.addRegistro($("#usuario").val(), gestor.stringBase64($("#pass").val()), $("#nombre").val(), $("#departamento").val(), $("#nivel").val(), 'changePageIndex');
+        let registro = {};
+        registro["id"] = $("#usuario").val();
+        registro["pass"] = gestor.stringBase64($("#pass").val());
+        registro["nombre"] = $("#nombre").val();
+        registro["departamento"] = $("#departamento").val();
+        registro["nivel"] = $("#nivel").val();
+
+        registroManager.addRegistro(registro, 'changePageIndex');
     }
 }

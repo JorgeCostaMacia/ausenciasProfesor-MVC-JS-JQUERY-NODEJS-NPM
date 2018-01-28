@@ -15,9 +15,21 @@ function addRegistroLogin(event){
 
     let registro = gestor.getRegistro(idRegistro);
 
-    loginManager.addLogin(registro.getId(), registro.getPass());
-    usuarioManager.addUsuario(registro.getId(), registro.getNombre(), registro.getDepartamento(), registro.getNivel());
+    let login = {};
+    login["id"] = registro.getId();
+    login["pass"] = registro.getPass();
+    login["token"] = "";
+
+    let usuario = {};
+    usuario["id"] = registro.getId();
+    usuario["nombre"] = registro.getNombre();
+    usuario["departamento"] = registro.getDepartamento();
+    usuario["nivel"] = registro.getNivel();
+
+    loginManager.addLogin(login);
+    usuarioManager.addUsuario(usuario);
     registroManager.delRegistro(registro.getId());
+    
     delTrRegistro('tr-' + registro.getId());
 }
 

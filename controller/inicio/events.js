@@ -3,7 +3,6 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    $("#cerrarSesionInicio").click(changePageIndex);
     evalCookie();
     getUsuarioLocal();
     addMaxDates();
@@ -16,8 +15,4 @@ function eventPeticiones(peticiones){
         $("#comentarios-" + peticiones[i].getIdPeticion()).click(showComents);
         $("#detalles-" + peticiones[i].getIdPeticion()).click(handlerDetalles);
     }
-}
-
-function aceptarUsuarios(){
-    $("#aceptarUsuarios").click(function(){ window.location.assign("aceptar_usuarios.html"); });
 }

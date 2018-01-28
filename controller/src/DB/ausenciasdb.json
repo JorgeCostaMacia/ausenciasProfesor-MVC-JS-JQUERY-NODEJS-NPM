@@ -8,10 +8,18 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzE3OjEzOjI2"
+      "token": ""
     }
   ],
-  "registro": [],
+  "registro": [
+    {
+      "id": "admino",
+      "pass": "YWRtaW4=",
+      "nombre": "asdf asdf asdf",
+      "departamento": "asfdasdf",
+      "nivel": "profesor"
+    }
+  ],
   "usuarios": [
     {
       "id": "admin",

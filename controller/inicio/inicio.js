@@ -18,7 +18,7 @@ function evalSearch(){
     let fechaCreacion = $("#buscador-fecha-creacion").val();
     let fechaLlegada = $("#buscador-fecha-llegada").val();
 
-    let whereParameter = "1=1";
+    let whereParameter = "cola=" + cola;
 
     if(nombre == ""){ nombre == "aaaaa aaaa aaaa"; }
     else { whereParameter += "&nombre=" + nombre; }
