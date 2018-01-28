@@ -1,7 +1,7 @@
 "use strict";
 
 class Peticion{
-    constructor(_idPeticion, _idUsuario, _cola, _nombreSolicitante, _fechaCreacion, _fechaLlegada, _motivo, _jornada, _horario, _observaciones, _comentarios, _anexos ){
+    constructor(_idPeticion, _idUsuario, _cola, _nombreSolicitante, _fechaCreacion, _fechaLlegada, _motivo, _jornada, _horario, _observaciones, _fechaFirma, _firma,  _comentarios, _anexos ){
         var idPeticion = _idPeticion;
         var idUsuario = _idUsuario;
         var cola = _cola;
@@ -12,6 +12,8 @@ class Peticion{
         var jornada = _jornada;
         var horario = _horario;
         var observaciones = _observaciones;
+        var fechaFirma = _fechaFirma;
+        var firma = _firma;
         var comentarios = _comentarios;
         var anexos = _anexos;
 
@@ -44,6 +46,12 @@ class Peticion{
 
         this.getObservaciones = function () { return observaciones; };
         this.setObservaciones = function (_observaciones) { observaciones = _observaciones; };
+
+        this.getFechaFirma = function () { return fechaFirma; };
+        this.setFechaFirma = function (_fechaFirma) { fechaFirma = _fechaFirma; };
+
+        this.getFirma = function () { return firma; };
+        this.setFirma = function (_firma) { firma = _firma; };
 
         this.getComentarios = function () { return comentarios; };
         this.setComentarios = function (_comentarios) { comentarios = _comentarios; };

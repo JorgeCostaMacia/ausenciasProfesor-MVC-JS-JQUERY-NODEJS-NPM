@@ -8,7 +8,7 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzEwOjU2OjU0"
+      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzExOjE1OjUx"
     }
   ],
   "registro": [],
@@ -86,6 +86,8 @@
         }
       },
       "observaciones": "",
+      "fechaFirma": "2018-01-01",
+      "firma": "",
       "comentarios": [],
       "anexos": []
     }

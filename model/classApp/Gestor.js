@@ -43,6 +43,7 @@ class Gestor{
         ressult["nivel"] = localStorage.getItem("nivel");
         ressult["registro"] = localStorage.getItem("registro");
         ressult["idPeticion"] = localStorage.getItem("peticion");
+        ressult["accion"] = localStorage.getItem("accion");
         return ressult;
     }
 
@@ -54,8 +55,14 @@ class Gestor{
         localStorage.setItem("peticion", peticion);
     }
 
-    clearPeticionLocal(){ localStorage.setItem("peticion", null); }
-    addPeticionLocal(peticion){ localStorage.setItem("peticion", peticion); }
+    clearPeticionLocal(){
+        localStorage.setItem("peticion", null);
+        localStorage.setItem("accion", null);
+    }
+    addPeticionLocal(peticion, accion){
+        localStorage.setItem("peticion", peticion);
+        localStorage.setItem("accion", accion);
+    }
 
     stringBase64(text){ return window.btoa(text); }
 
