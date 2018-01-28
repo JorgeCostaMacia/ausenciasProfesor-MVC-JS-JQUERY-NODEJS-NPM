@@ -19,12 +19,24 @@ function evalGenPermiso(event) {
     if (mes < 10) mes = "" + "0" + mes;
     fechaActual = fechaActual.getFullYear() + "-" + (mes) + "-" + fechaActual.getDate();
 
-    let fechaLlegada = "";
 
     let motivo = $("input[name=motivo-permiso]:checked").val();
 
-    //let jornada =
 
+    let jornada = {
+        "completa": {
+            "diaInicio":""+$("#completa-fecha-desde").val(),
+            "diaFin":""+$("#completa-fecha-hasta").val(),
+        },
+        "parcial": {
+            "diaInicio":""+$("#incompleta-fecha-desde").val(),
+            "diaFin":""+$("#incompleta-fecha-hasta").val(),
+            "horaInicio":""+$("#incompleta-hora-desde").val(),
+            "horaFin":""+$("#incompleta-hora-hasta").val(),
+        }
+    }
+
+    peticionManager.addPeticion(idusuario, cola, nombreSolicitante, fechaActual, fechaActual, motivo,)
 
 }
 
