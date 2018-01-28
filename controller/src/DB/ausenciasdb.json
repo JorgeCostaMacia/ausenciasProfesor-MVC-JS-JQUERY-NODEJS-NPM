@@ -8,7 +8,7 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": ""
+      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzEwOjU2OjU0"
     }
   ],
   "registro": [],
@@ -32,16 +32,16 @@
       "id": 1,
       "idUsuario": "jorge",
       "cola": "genPermiso",
-      "nombreSolicitante": "jorge costa macia",
+      "nombreSolicitante": "jorge jorge jorge",
       "fechaCreacion": "2018-01-01",
       "fechaLlegada": "2018-01-27",
-      "motivo": "",
+      "motivo": "matrimonio",
       "jornada": {
-        "1": {
+        "completa": {
           "diaInicio": "",
           "diaFin": ""
         },
-        "2": {
+        "parcial": {
           "diaInicio": "",
           "horaInicio": "",
           "diaFin": "",
@@ -85,7 +85,8 @@
           "sustituto": ""
         }
       },
-      "comentarios": "",
+      "observaciones": "",
+      "comentarios": [],
       "anexos": []
     }
   ],
@@ -131,7 +132,7 @@
       "diaInicio",
       "diaFin"
     ],
-    "jornada2":[
+    "jornada2": [
       "diaInicio",
       "horaInicio",
       "diaFin",
@@ -144,7 +145,7 @@
       "4",
       "5"
     ],
-    "horario12345":[
+    "horario12345": [
       "dia",
       "hora",
       "curso",

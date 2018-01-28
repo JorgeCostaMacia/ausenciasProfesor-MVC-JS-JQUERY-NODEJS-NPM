@@ -1,7 +1,7 @@
 "use strict";
 
 function injectNombreCompletoDisable(nombre) {
-    $("#buscador-texto").attr('value', nombre);
+    $("#buscador-texto").val(nombre);
     $("#buscador-texto").attr('disabled', 'disabled');
 }
 
@@ -51,75 +51,11 @@ function delTrRegistro(idTr) {
     $('#' + idTr).remove();
 }
 
-function rellFormPermiso(peticion) {
+function injectFormPermiso(peticion) {
+    $("#donya").val(peticion.getNombreSolicitante());
+    $("#donya").attr("disabled", true);
 
-    /*let peticion = {
-        "id": 1,
-        "idUsuario": "jorge",
-        "cola": "genPermiso",
-        "nombreSolicitante": "jorge costa macia",
-        "fechaCreacion": "2018-01-01",
-        "fechaLlegada": "2018-01-27",
-        "motivo": "prenatales",
-        "jornada": {
-            "a": {
-                "diaInicio": "1998-10-05",
-                "diaFin": ""
-            },
-            "b": {
-                "diaInicio": "",
-                "horaInicio": "",
-                "diaFin": "",
-                "horaFin": ""
-            }
-        },
-        "horario": {
-            "a": {
-                "dia": "2018-01-01",
-                "hora": "",
-                "curso": "asa",
-                "asignatura": "asa",
-                "sustituto": "asa"
-            },
-            "b": {
-                "dia": "",
-                "hora": "",
-                "curso": "",
-                "asignatura": "",
-                "sustituto": ""
-            },
-            "c": {
-                "dia": "",
-                "hora": "",
-                "curso": "",
-                "asignatura": "",
-                "sustituto": ""
-            },
-            "d": {
-                "dia": "",
-                "hora": "",
-                "curso": "",
-                "asignatura": "",
-                "sustituto": ""
-            },
-            "e": {
-                "dia": "",
-                "hora": "",
-                "curso": "",
-                "asignatura": "",
-                "sustituto": ""
-            }
-        },
-        "comentarios": "",
-        "anexos": []
-    };*/
-
-
-    let don = $("#ddña");
-    don.val(peticion.nombreSolicitante);
-    don.attr("disabled", true);
-
-    switch (peticion.motivo) {
+    switch (peticion.getMotivo()) {
         case "matrimonio":
             $("#motivo-matrimonio").attr("checked", true);
             break;
@@ -153,47 +89,26 @@ function rellFormPermiso(peticion) {
     }
 
     //jornada
-    $("#completa-fecha-desde").val(peticion.jornada.a.diaInicio);
-    $("#completa-fecha-hasta").val(peticion.jornada.a.diaFin);
+    let jornadaCompleta = peticion.getJornada()["completa"];
+    $("#completa-fecha-desde").val(jornadaCompleta["diaInicio"]);
+    $("#completa-fecha-hasta").val(jornadaCompleta["diaFin"]);
 
-    $("#incompleta-fecha-desde").val(peticion.jornada.b.diaInicio);
-    $("#incompleta-fecha-hasta").val(peticion.jornada.b.diaFin);
-    $("#incompleta-hora-desde").val(peticion.jornada.b.horaInicio);
-    $("#incompleta-hora-hasta").val(peticion.jornada.b.horaFin);
+    let jornadaParcial = peticion.getJornada()["parcial"];
+    $("#incompleta-fecha-desde").val(jornadaParcial["diaInicio"]);
+    $("#incompleta-fecha-hasta").val(jornadaParcial["diaFin"]);
+    $("#incompleta-hora-desde").val(jornadaParcial["horaInicio"]);
+    $("#incompleta-hora-hasta").val(jornadaParcial["horaFin"]);
 
     // horario
-    $("#horario-dia-1").val(peticion.horario.a.dia);
-    $("#horario-hora-1").val(peticion.horario.a.hora);
-    $("#horario-curso-1").val(peticion.horario.a.curso);
-    $("#horario-asignaruta-1").val(peticion.horario.a.asignatura);
-    $("#horario-profesor-1").val(peticion.horario.a.sustituto);
+    for(let i = 1; i < 6; i++){
+        let horario = peticion.getHorario()[i];
+        $("#horario-dia-" + i).val(horario["dia"]);
+        $("#horario-hora-"  + i).val(horario["hora"]);
+        $("#horario-curso-"  + i).val(horario["curso"]);
+        $("#horario-asignaruta-"  + i).val(horario["asignatura"]);
+        $("#horario-profesor-"  + i).val(horario["sustituto"]);
+    }
 
-    $("#horario-dia-2").val(peticion.horario.b.dia);
-    $("#horario-hora-2").val(peticion.horario.b.hora);
-    $("#horario-curso-2").val(peticion.horario.b.curso);
-    $("#horario-asignaruta-2").val(peticion.horario.b.asignatura);
-    $("#horario-profesor-2").val(peticion.horario.b.sustituto);
-
-    $("#horario-dia-3").val(peticion.horario.c.dia);
-    $("#horario-hora-3").val(peticion.horario.c.hora);
-    $("#horario-curso-3").val(peticion.horario.c.curso);
-    $("#horario-asignaruta-3").val(peticion.horario.c.asignatura);
-    $("#horario-profesor-3").val(peticion.horario.c.sustituto);
-
-    $("#horario-dia-4").val(peticion.horario.d.dia);
-    $("#horario-hora-4").val(peticion.horario.d.hora);
-    $("#horario-curso-4").val(peticion.horario.d.curso);
-    $("#horario-asignaruta-4").val(peticion.horario.d.asignatura);
-    $("#horario-profesor-4").val(peticion.horario.d.sustituto);
-
-    $("#horario-dia-5").val(peticion.horario.e.dia);
-    $("#horario-hora-5").val(peticion.horario.e.hora);
-    $("#horario-curso-5").val(peticion.horario.e.curso);
-    $("#horario-asignaruta-5").val(peticion.horario.e.asignatura);
-    $("#horario-profesor-5").val(peticion.horario.e.sustituto);
-
-    //comentarios
-    $("#documentacion-observaciones").val(peticion.comentarios);
-
-
+    //observaciones
+    $("#documentacion-observaciones").val(peticion.getObservaciones());
 }

@@ -63,7 +63,6 @@ function getPeticionesCount(ressult){
         else if(ressult[i]["cola"] == "penAutorizarJustificante"){ countPenAutorizarJustificante++; }
         else if(ressult[i]["cola"] == "ausenciaFinalizada"){ countAusenciaFinalizada++; }
     }
-
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
 }
 
