@@ -177,5 +177,6 @@ function disableFormGenPeticion(){
     $("#documentacion-observaciones").attr("disabled", true);
 
     $("#enviarGenPeticion").attr("disabled", true);
+    $("#guardarGenPeticion").attr("disabled", true);
     $("#guardarGenPeticion").attr("disabled", true);*/
 }
