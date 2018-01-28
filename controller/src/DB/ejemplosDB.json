@@ -1,0 +1,88 @@
+{
+  "login": [
+    {
+      "token": "",
+      "id": "admin",
+      "pass": "YWRtaW4="
+    }
+  ],
+  "registro": [
+    {
+      "id": "prueba",
+      "pass": "cHJ1ZWJh",
+      "nombre": "prueba prueba prueba",
+      "departamento": "prueba",
+      "nivel": "profesor"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "admin",
+      "nombre": "admin",
+      "departamento": "admin",
+      "nivel": "admin"
+    }
+  ],
+  "peticiones": [
+    {
+      "id": 1,
+      "idUsuario": "jorge",
+      "cola": "genPermiso",
+      "nombreSolicitante": "jorge costa macia",
+      "fechaCreacion": "2018-01-01",
+      "fechaLlegada": "2018-01-27",
+      "motivo": "",
+      "jornada": {
+        "1":{
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "2":{
+          "diaInicio": "",
+          "horaInicio": "",
+          "diaFin": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "comentarios": "",
+      "anexos": []
+    }
+  ]
+}
