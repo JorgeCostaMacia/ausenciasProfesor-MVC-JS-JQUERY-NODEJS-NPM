@@ -78,7 +78,7 @@ function evalRegistros(ressult){
     if(ressult.length == 0){ injectCaption("No hay registros que mostrar"); }
     else {
         for (let i = 0; i < ressult.length; i++) {
-            let registro = new Registro(ressult[i]["id"], ressult[i]["pass"], ressult[i]["nombre"], ressult[i]["departamento"], ressult[i]["nivel"]);
+            let registro = new Registro(ressult[i]);
             gestor.addRegistros(registro);
         }
 

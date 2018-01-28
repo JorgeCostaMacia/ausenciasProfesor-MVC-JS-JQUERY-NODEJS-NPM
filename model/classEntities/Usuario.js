@@ -1,9 +1,9 @@
 class Usuario {
-    constructor(_id, _nombre, _departamento, _nivel) {
-        var id = _id;
-        var nombre = _nombre;
-        var departamento = _departamento;
-        var nivel = _nivel;
+    constructor(usuarioJSON){
+        var id = usuarioJSON["id"];
+        var nombre = usuarioJSON["nombre"];
+        var departamento = usuarioJSON["departamento"];
+        var nivel = usuarioJSON["nivel"];
 
         this.getId = function () { return id; };
         this.setId = function (_id) { id = _id; };

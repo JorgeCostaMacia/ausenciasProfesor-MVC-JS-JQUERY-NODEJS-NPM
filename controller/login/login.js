@@ -33,7 +33,7 @@ function checkExistLogin(ressult) {
     msjClean();
 
     if (ressult.length > 0) {
-        gestor.addLogins(new Login(ressult[0]["id"], ressult[0]["pass"], ressult[0]["token"]));
+        gestor.addLogins(new Login(ressult[0]));
         usuarioManager.getUsuario(ressult[0]["id"], 'addUsuarioLocal');
     }
     else { msjDanger('LOGIN', '<strong>No existe el usuario o la contraseña es erronea</strong>'); }
@@ -47,7 +47,7 @@ function checkExistLogin(ressult) {
 function addUsuarioLocal(ressult){
     msjClean();
 
-    gestor.addUsuarios(new Usuario(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"]));
+    gestor.addUsuarios(new Usuario(ressult[0]));
 
     let token = gestor.genToken();
     gestor.addLocal(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], "");

@@ -1,12 +1,12 @@
 "use strict";
 
 class Registro {
-    constructor(_id, _pass, _nombre, _departamento, _nivel) {
-        var id = _id;
-        var pass = _pass;
-        var nombre = _nombre;
-        var departamento = _departamento;
-        var nivel = _nivel;
+    constructor(registroJSON){
+        var id = registroJSON["id"];
+        var pass = registroJSON["pass"];
+        var nombre = registroJSON["nombre"];
+        var departamento = registroJSON["departamento"];
+        var nivel = registroJSON["nivel"];
 
         this.getId = function () { return id; };
         this.setId = function (_id) { id = _id; };
