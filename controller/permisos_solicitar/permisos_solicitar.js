@@ -17,14 +17,18 @@ function evalSearch(){
     let nombre = $("#buscador-texto").val();
     let cola = "genPermiso";
     let fechaCreacion = $("#buscador-fecha-creacion").val();
+    let fechaLlegada = $("#buscador-fecha-llegada").val();
 
     let whereParameter = "cola=" + cola;
 
     if(nombre == ""){ nombre = "aaaaa aaaa aaaa"; }
     else { whereParameter += "&nombre=" + nombre; }
-    if(fechaCreacion != ""){ whereParameter += "&fechaCreacion=" + fechaCreacion; }
+    if(fechaCreacion == ""){ fechaCreacion = "0000-00-00"; }
+    else { whereParameter += "&fechaCreacion=" + fechaCreacion; }
+    if(fechaLlegada == ""){ fechaLlegada = "9999-99-99"; }
+    else { whereParameter += "&fechaCreacion=" + fechaCreacion; }
 
-    let errores = validateSearch(nombre);
+    let errores = validateSearch(nombre, fechaCreacion, fechaLlegada);
 
     if(errores.length == 0){ peticionManager.getPeticion(whereParameter, 'checkPeticiones') }
     else {
