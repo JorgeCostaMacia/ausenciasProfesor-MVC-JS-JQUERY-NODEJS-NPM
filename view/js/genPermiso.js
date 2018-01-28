@@ -165,3 +165,35 @@ function disableFormGenPeticion(){
     $("#guardarGenPeticion").attr("disabled", true);
     $("#guardarGenPeticion").attr("disabled", true);
 }
+
+function addFormTramitarPeticion(){
+    $("#formTramitarGenPermiso").append(
+    '<form>' +
+    '<fieldset>' +
+    '<legend class="font-weight-bold">Tramitar peticion</legend>' +
+    '<div class="row">' +
+        '<div class="col-12 col-md-6">' +
+            '<div class="form-group row">' +
+                '<label for="comentario-texto" class="col-4 col-form-label col-form-label-sm">Comentario</label>' +
+                '<div class="col-8">' +
+                    '<input type="text" class="form-control form-control-sm" id="comentario-texto" name="buscador-texto"' +
+                    'value="" placeholder="Comentario">' +
+                '</div>' +
+            '</div>' +
+            '<div class="form-group row">' +
+                '<button type="button" id="agregarComentario" class="btn btn-warning px-5">Agregar comentario</button>' +
+            '</div>' +
+        '</div>' +
+        '<div class="col-12 col-md-6">' +
+            '<div class="form-group row">' +
+            '<button type="button" id="aceptarPermiso" class="btn btn-success px-5">Aceptar permiso</button>' +
+            '</div>' +
+            '<div class="form-group row">' +
+            '<button type="button" id="denegarPermiso" class="btn btn-danger px-5">Denegar Permiso</button>' +
+            '</div>' +
+        '</div>' +
+     '</div>' +
+    '</fieldset>' +
+    '</form>'
+    );
+}

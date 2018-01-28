@@ -5,11 +5,24 @@
 function evalGenPermiso(event) {
     msjClean();
 
+    let permiso = gestor.getPeticiones()[0];
+
     let peticion = {};
     peticion["idUsuario"] = gestor.getLocal()["id"];
     peticion["cola"] = event.target.value;
     peticion["nombreSolicitante"] = $("#donya").val();
-    peticion["fechaCreacion"] = gestor.getDate();
+
+    if(peticion.getCola() == "penAutorizarPermiso"){
+        peticion["comentarios"] = permiso.getComentarios();
+        peticion["anexos"] = permiso.getAnexos();
+        peticion["fechaCreacion"] = permiso.getFechaCreacion();
+    }
+    else{
+        peticion["comentarios"] = [];
+        peticion["anexos"] = [];
+        peticion["fechaCreacion"] = gestor.getDate();
+    }
+
     peticion["fechaLlegada"] = gestor.getDate();
     peticion["motivo"] = $("input[name=motivo-permiso]:checked").val();
     peticion["jornada"] = {
@@ -37,8 +50,6 @@ function evalGenPermiso(event) {
     peticion["observaciones"] = $("#documentacion-observaciones").val();
     peticion["fechaFirma"] = $("#firma-anyo").val()+"-"+$("#firma-mes").val()+"-"+$("#firma-dia").val();
     peticion["firma"] = $("#firma-firma").val();
-    peticion["comentarios"] = [];
-    peticion["anexos"] = [];
 
     let log = {};
     log["id"] = gestor.getLocal()["id"];
