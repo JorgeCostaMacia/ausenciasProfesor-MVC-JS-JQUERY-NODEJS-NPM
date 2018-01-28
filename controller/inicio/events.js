@@ -9,7 +9,6 @@ function addEventsInicio(){
     addMaxDates();
     $("#buscar").click(evalSearch);
     clearPetLocal();
-    $("#buscar").click(evalSearch);
 }
 
 function eventPeticiones(peticiones){
