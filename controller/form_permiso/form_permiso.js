@@ -2,10 +2,10 @@
 
 // gestor - loginManager - peticionManager
 
-function evalGenPermiso(event){
-
+function evalGenPermiso(event) {
     msjClean();
     let id = "";
+
     let idusuario = gestor.getLocal().id;
 
     let nombre = $("#donya").val();
@@ -15,17 +15,15 @@ function evalGenPermiso(event){
     let nombreSolicitante = gestor.getLocal().nombre;
 
     let fechaActual = new Date();
-    fechaActual = fechaActual.getFullYear() + "-" + (fechaActual.getMonth() *1 +1) + "-" + fechaActual.getDate();
+    let mes = fechaActual.getMonth() * 1 + 1;
+    if (mes < 10) mes = "" + "0" + mes;
+    fechaActual = fechaActual.getFullYear() + "-" + (mes) + "-" + fechaActual.getDate();
 
     let fechaLlegada = "";
 
     let motivo = $("input[name=motivo-permiso]:checked").val();
 
     //let jornada =
-
-
-
-
 
 
 }
