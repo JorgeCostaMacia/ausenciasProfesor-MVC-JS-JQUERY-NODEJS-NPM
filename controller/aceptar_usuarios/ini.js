@@ -3,9 +3,6 @@
 var usuarioManager = new UsuarioManager();
 var registroManager = new RegistroManager();
 
-// BORRA PETICIONES DE LOCALSTORAGE
-function clearPetLocal(){ gestor.clearPeticionLocal(); }
-
 // LLAMA BD REGISTRO
 function getRegistros(){
     registroManager.getRegistro("", 'evalRegistros');

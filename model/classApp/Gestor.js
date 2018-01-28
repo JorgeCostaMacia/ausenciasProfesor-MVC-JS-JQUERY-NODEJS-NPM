@@ -56,8 +56,8 @@ class Gestor{
     }
 
     clearPeticionLocal(){
-        localStorage.setItem("peticion", null);
-        localStorage.setItem("accion", null);
+        localStorage.setItem("peticion", "");
+        localStorage.setItem("accion", "");
     }
     addPeticionLocal(peticion, accion){
         localStorage.setItem("peticion", peticion);

@@ -21,9 +21,9 @@ function evalCookieToken(ressult){
         let cookie = gestor.getCookie("token");
         let token = ressult[0]["token"];
 
-        if(cookie != token){ changePageInicio(""); }
+        if(cookie != token){ changePageIndex(""); }
     }
-    else { changePageInicio(""); }
+    else { changePageIndex(""); }
 }
 
 // RECOGE ID LOCAL STORAGE
@@ -32,10 +32,12 @@ function evalCookieToken(ressult){
 function returnLogin(){
     let id = gestor.getLocal()["id"];
     gestor.delLocal();
-    loginManager.delToken(id, 'changePageInicio');
+    loginManager.delToken(id, 'changePageIndex');
 }
 
-function changePageInicio(ressult){ window.location.assign("../index.html"); }
+function changePageIndex(ressult){ window.location.assign("../index.html"); }
+function changePageIninicio(ressult){ window.location.assign("../inicio.html"); }
+
 
 // RECOGE USUARIO LOCAL STORAGE
 // AÑANE NOMBRE USUARIO A NAVEGADOR
@@ -83,4 +85,10 @@ function getPeticionesCount(ressult){
         else if(ressult[i]["cola"] == "ausenciaFinalizada"){ countAusenciaFinalizada++; }
     }
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
+}
+
+function clearPetLocal(){ gestor.clearPeticionLocal(); }
+
+function aceptarUsuarios(){
+    $("#aceptarUsuarios").click(function(){ window.location.assign("aceptar_usuarios.html"); });
 }

@@ -3,22 +3,8 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    $("#cerrarSesionInicio").click(returnLogin);
+    $("#cerrarSesionInicio").click(changePageIndex);
+    $("#generar-permiso").click(function() { window.location.assign("form_permiso.html"); } );
     evalCookie();
     getUsuarioLocal();
-    addMaxDates();
-    $("#buscar").click(evalSearch);
-    clearPetLocal();
-    $("#buscar").click(evalSearch);
-}
-
-function eventPeticiones(peticiones){
-    for(let i = 0; i < peticiones.length; i++){
-        $("#comentarios-" + peticiones[i].getIdPeticion()).click(showComents);
-        $("#detalles-" + peticiones[i].getIdPeticion()).click(handlerDetalles);
-    }
-}
-
-function aceptarUsuarios(){
-    $("#aceptarUsuarios").click(function(){ window.location.assign("aceptar_usuarios.html"); });
 }

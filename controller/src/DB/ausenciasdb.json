@@ -8,7 +8,7 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzE1OjIyOjQz"
+      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzE1OjU5OjE5"
     }
   ],
   "registro": [],
@@ -111,6 +111,38 @@
       "firma": "",
       "comentarios": [],
       "anexos": []
+    },
+    {
+      "idUsuario": "jorge",
+      "cola": "genPeticion",
+      "nombreSolicitante": "",
+      "fechaCreacion": "2018-01-28",
+      "fechaLlegada": "2018-01-28",
+      "motivo": "undefined",
+      "jornada": "",
+      "horario": ",,,,,,,,",
+      "observaciones": "",
+      "fechaFirma": "2018-01-01",
+      "firma": "",
+      "comentarios": "[object Object]",
+      "anexos": "[object Object]",
+      "id": 2
+    },
+    {
+      "idUsuario": "jorge",
+      "cola": "genPeticion",
+      "nombreSolicitante": "",
+      "fechaCreacion": "2018-01-28",
+      "fechaLlegada": "2018-01-28",
+      "motivo": "undefined",
+      "jornada": "[]",
+      "horario": "[null,[],[],[],[],[],[],[],[]]",
+      "observaciones": "",
+      "fechaFirma": "2018-01-01",
+      "firma": "",
+      "comentarios": "[object Object]",
+      "anexos": "[object Object]",
+      "id": 3
     }
   ],
   "anexos": [],

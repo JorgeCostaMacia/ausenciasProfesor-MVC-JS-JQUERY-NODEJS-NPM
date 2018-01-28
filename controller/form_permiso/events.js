@@ -3,7 +3,7 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    $("#cerrarSesionInicio").click(returnLogin);
+    $("#cerrarSesionInicio").click(changePageIndex);
     $("#imprimirGenPeticion").click(function() { window.print(); });
     $("#enviarGenPeticion").click(evalGenPermiso);
     $("#guardarGenPeticion").click(evalGenPermiso);

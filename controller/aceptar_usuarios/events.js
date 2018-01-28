@@ -3,7 +3,8 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    $("#cerrarSesionInicio").click(returnLogin);
+    $("#cerrarSesionInicio").click(changePageIndex);
+
     evalCookie();
     getUsuarioLocal();
     clearPetLocal();
