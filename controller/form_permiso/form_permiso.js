@@ -3,10 +3,6 @@
 // gestor - loginManager - peticionManager
 
 function evalGenPermiso(event){
-    let tableDestinaction = event.target.value;
-
-    msjClean();
-
     msjClean();
     let id = "";
     let idusuario = gestor.getLocal().id;
