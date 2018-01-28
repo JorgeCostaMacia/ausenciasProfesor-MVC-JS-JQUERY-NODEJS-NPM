@@ -8,7 +8,7 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzExOjE1OjUx"
+      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzEyOjQ0OjM2"
     }
   ],
   "registro": [],
@@ -83,10 +83,31 @@
           "curso": "",
           "asignatura": "",
           "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
         }
       },
       "observaciones": "",
-      "fechaFirma": "2018-01-01",
+      "fechaFirma": "2018-03-02",
       "firma": "",
       "comentarios": [],
       "anexos": []

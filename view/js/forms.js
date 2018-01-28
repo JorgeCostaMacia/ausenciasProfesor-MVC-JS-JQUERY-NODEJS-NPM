@@ -98,7 +98,7 @@ function injectFormPermiso(peticion) {
     $("#incompleta-hora-desde").val(jornadaParcial["horaInicio"]);
     $("#incompleta-hora-hasta").val(jornadaParcial["horaFin"]);
 
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 9; i++){
         let horario = peticion.getHorario()[i];
         $("#horario-dia-" + i).val(horario["dia"]);
         $("#horario-hora-"  + i).val(horario["hora"]);
@@ -109,10 +109,31 @@ function injectFormPermiso(peticion) {
 
     $("#documentacion-observaciones").val(peticion.getObservaciones());
 
+    let fechaCompleta = peticion.getFechaFirma().split("-");
+    let firmaDiaNode = $("#firma-dia")[0];
+    for(let i = 0; i < firmaDiaNode.length; i++){
+        if(firmaDiaNode[i].value == fechaCompleta[2]){
+            firmaDiaNode[i].setAttribute("selected", "true");
+        }
+    }
+
+    let firmaMesNode = $("#firma-mes")[0];
+    for(let i = 0; i < firmaMesNode.length; i++){
+        if(firmaMesNode[i].value == fechaCompleta[1]){
+            firmaMesNode[i].setAttribute("selected", "true");
+        }
+    }
+
+    let firmaAnyoNode = $("#firma-anyo")[0];
+    for(let i = 0; i < firmaAnyoNode.length; i++){
+        if(firmaAnyoNode[i].value == fechaCompleta[0]){
+            firmaAnyoNode[i].setAttribute("selected", "true");
+        }
+    }
+
+    $("#firma-firma").val(peticion.getFirma());
 
     $("#documentacion-observaciones").val(peticion.getObservaciones());
-
-
 }
 
 function disableFormGenPeticion(){
@@ -137,7 +158,7 @@ function disableFormGenPeticion(){
     $("#incompleta-hora-desde").attr("disabled", true);
     $("#incompleta-hora-hasta").attr("disabled", true);
 
-    for(let i = 1; i < 6; i++) {
+    for(let i = 1; i < 9; i++) {
         $("#horario-dia-" + i).attr("disabled", true);
         $("#horario-hora-" + i).attr("disabled", true);
         $("#horario-curso-" + i).attr("disabled", true);
@@ -145,7 +166,14 @@ function disableFormGenPeticion(){
         $("#horario-profesor-" + i).attr("disabled", true);
     }
 
+    $("#firma-dia").attr("disabled", true);
+    $("#firma-mes").attr("disabled", true);
+    $("#firma-anyo").attr("disabled", true);
+
+    $("#firma-firma").attr("disabled", true);
+
     $("#documentacion-observaciones").attr("disabled", true);
 
-
+    $("#enviarGenPeticion").attr("disabled", true);
+    $("#guardarGenPeticion").attr("disabled", true);
 }

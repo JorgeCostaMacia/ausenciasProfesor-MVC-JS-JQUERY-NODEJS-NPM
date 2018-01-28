@@ -28,7 +28,7 @@ function checkPeticiones(ressult){
     if(ressult.length == 0){ injectCaption("No hay documentos que mostrar"); }
     else {
         for(let i = 0; i < ressult.length; i++){
-            let peticion = new Peticion(ressult[i]["id"], ressult[i]["idUsuario"], ressult[i]["cola"], ressult[i]["nombreSolicitante"],  ressult[i]["fechaCreacion"], ressult[i]["fechaLlegada"], ressult[i]["motivo"], ressult[i]["jornada"], ressult[i]["horario"], ressult[i]["comentarios"], ressult[i]["anexos"]);
+            let peticion = new Peticion(ressult[i]["id"], ressult[i]["idUsuario"], ressult[i]["cola"], ressult[i]["nombreSolicitante"],  ressult[i]["fechaCreacion"], ressult[i]["fechaLlegada"], ressult[i]["motivo"], ressult[i]["jornada"], ressult[i]["horario"], ressult[i]["observaciones"], ressult[i]["fechaFirma"], ressult[i]["firma"], ressult[i]["comentarios"], ressult[i]["anexos"]);
             gestor.addPeticiones(peticion);
         }
         injectPeticiones(gestor.getPeticiones());
