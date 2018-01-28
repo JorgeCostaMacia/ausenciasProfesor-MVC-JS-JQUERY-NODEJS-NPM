@@ -4,6 +4,9 @@ let gestor = new Gestor();
 let loginManager = new LoginManager();
 let usuarioManager = new UsuarioManager();
 
+// SI EXISTE COOKIE
+// RECOGE ID DE LOCALSTORAGE
+// SI ID != NULL PIDE LOGIN A BD
 function evalCookie(){
     if(gestor.existCookie() ) {
         let id = gestor.getLocal()["id"];
@@ -11,6 +14,9 @@ function evalCookie(){
     }
 }
 
+// RECIBE RESULTADO LOGIN BD
+// SI RECIBE EVALUA QUE TOKEN BD = TOKEN COOKIE
+// SI SON IGUALES LOGEA
 function evalCookieToken(ressult){
     if(ressult.length != 0){
         let cookie = gestor.getCookie("token");
@@ -18,9 +24,12 @@ function evalCookieToken(ressult){
 
        if(cookie == token){ window.location.assign("view/inicio.html"); }
     }
-    else { window.location.assign("view/inicio.html"); }
 }
 
+// LIMPIA MENSAJES
+// RECOGE REGISTRO DE LOCALSTORAGE
+// SI HAY ALGUN REGISTRO MUESTRA ADVERTENCIA
+// BORRA LOCALSTORAGE
 function evalRegistroLocal(){
     msjClean();
     let registro = gestor.getLocal()["registro"];

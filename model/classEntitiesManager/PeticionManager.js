@@ -12,11 +12,15 @@ class PeticionManager {
         })
     }
 
-    addPeticion(id, pass, nombre, departamento, nivel){
+    addPeticion(idUsuario, cola, nombreSolicitante, fechaCreacion, fechaLlegada, motivo, jornada, horario, observaciones, fechaFirma, firma,  comentarios, anexos ){
         $.ajax({
             url:"http://localhost:3000/peticiones",
             type:"POST",
-            data: 'id=' + id + '&pass=' + pass + '&nombre=' + nombre + '&departamento=' + departamento + '&nivel=' + nivel,
+            data: 'idUsuario=' + idUsuario + '&cola=' + cola + '&nombreSolicitante=' + nombreSolicitante +
+            '&fechaCreacion=' + fechaCreacion + '&fechaLlegada=' + fechaLlegada + '&motivo=' + motivo +
+            '&jornada=' + jornada +  '&horario=' + horario +  '&observaciones=' + observaciones +
+            '&fechaFirma=' + fechaFirma + '&firma=' + firma + '&comentarios=' + comentarios +
+            '&anexos=' + anexos,
             cache: false,
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         });

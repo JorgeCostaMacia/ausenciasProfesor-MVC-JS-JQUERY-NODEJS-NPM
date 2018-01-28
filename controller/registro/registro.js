@@ -2,6 +2,11 @@
 
 // gestor - loginManager - registroManager
 
+// LIMPIA MENSAJES
+// RECOGDE ID PASS PASS2 NOMBRE DEPARTAMENTO DE FORMULARIO
+// LOS EVALUA
+// SI NO SON CORRECTOS MUESTRA ADVERTENCIA
+// SI SON ERRORES LLAMA BD LOGIN
 function evalRegistro(){
     msjClean();
 
@@ -22,9 +27,12 @@ function evalRegistro(){
         }
         msjDanger('Registro', msjError);
     }
-
 }
 
+// RECIBE RESULTADO LOGIN BD
+// LIMPIA MENSAJES
+// SI NO RECIBE LLAMA BD REGISTRO
+// SI RECIBE MUESTRA ADVERTENCIA
 function checkExistLogin(ressult){
     msjClean();
 
@@ -32,6 +40,9 @@ function checkExistLogin(ressult){
     else { registroManager.getRegistro("id=" + $("#usuario").val(), 'checkExistRegistro'); }
 }
 
+// RECIBE RESULTADO REGISTRO BD
+// SI NO RECIBE LLAMA BD REGISTRO
+// SI RECIBE MUESTRA ADVERTENCIA
 function checkExistRegistro(ressult){
     if(ressult.length > 0) { msjDanger('REGISTRO', '<strong>Existe un registro pendiente con esa cuenta</strong>'); }
     else {

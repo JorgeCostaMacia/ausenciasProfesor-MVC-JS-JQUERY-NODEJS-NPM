@@ -2,6 +2,14 @@
 
 // gestor - loginManager - peticionManager
 
+// LIMPIA MENSAJES
+// RECOGDE NOMBRE COLA FECHACREACION FECHA LLEGADA DE FORMULARIO
+// MONTA PARAMETROS BUSQUEDA - GESTIONA CAMPOS VACIOS
+// EVALUA VALORES
+// SI SON CORRECTOS
+// LOS EVALUA
+// SI NO SON CORRECTOS MUESTRA ADVERTENCIA
+// SI SON ERRORES LLAMA BD PETICIONES
 function evalSearch(){
     msjClean();
 
@@ -22,6 +30,13 @@ function evalSearch(){
     let errores = validateSearch(nombre, fechaCreacion, fechaLlegada);
 
     if(errores.length == 0){ peticionManager.getPeticion(whereParameter, 'checkPeticiones') }
+    else {
+        let msjError = "";
+        for(let i = 0; i < errores.length; i++){
+            msjError += errores[i];
+        }
+        msjDanger('BUSQUEDA', msjError);
+    }
 }
 
 function checkPeticiones(ressult){

@@ -4,12 +4,18 @@ var gestor = new Gestor();
 var loginManager = new LoginManager();
 var peticionManager = new PeticionManager();
 
+// SI EXISTE COOKIE
+// RECOGE ID DE LOCALSTORAGE
+// SI ID != NULL PIDE LOGIN A BD
 function evalCookie(){
     if(gestor.existCookie()) {
         loginManager.getLogin(gestor.getLocal()["id"], '','evalCookieToken');
     }
 }
 
+// RECIBE RESULTADO LOGIN BD
+// SI RECIBE EVALUA QUE TOKEN BD != TOKEN COOKIE
+// SI NO SON IGUALES DESLOGUEA
 function evalCookieToken(ressult){
     if(ressult.length != 0){
         let cookie = gestor.getCookie("token");
@@ -20,6 +26,9 @@ function evalCookieToken(ressult){
     else { changePageInicio(""); }
 }
 
+// RECOGE ID LOCAL STORAGE
+// BORRA LOCALSTORAGE
+// LLAMA LOGIN - BORRA TOKEN
 function returnLogin(){
     let id = gestor.getLocal()["id"];
     gestor.delLocal();
@@ -28,6 +37,11 @@ function returnLogin(){
 
 function changePageInicio(ressult){ window.location.assign("../index.html"); }
 
+// RECOGE USUARIO LOCAL STORAGE
+// AÑANE NOMBRE USUARIO A NAVEGADOR
+// EVALUA NIVEL - LLAMA PETICIONES
+// SI ES PROFESOR NO DEJA CAMBIAR NOMBRE BUSQUEDA
+// SI ES ADMIN HABILITA ENLACE ACEPTARUSUARIOS
 function getUsuarioLocal(){
     let usuario = gestor.getLocal();
 
@@ -44,11 +58,16 @@ function getUsuarioLocal(){
     }
 }
 
+// RECOGE USUARIO LOCAL STORAGE
+// AÑANE NOMBRE USUARIO A NAVEGADOR
 function addUsuarioForm(){
     let usuario = gestor.getLocal();
     injectUsuarioForm(usuario["nombre"].split(" ")[0]);
 }
 
+// RECIBE RESULTADO PETICIONES BD
+// LAS RECORRE Y CUENTA CANTIDAD CADA UNA
+// INJECTA EN NAV LA CANTIDAD DE CADA UNA
 function getPeticionesCount(ressult){
     let countGenPermiso = 0;
     let countPenAutorizarPermiso = 0;
@@ -66,6 +85,9 @@ function getPeticionesCount(ressult){
     injectCountForm(countGenPermiso, countPenAutorizarPermiso, countPenJustificante, countPenAutorizarJustificante, countAusenciaFinalizada);
 }
 
+// CREA OBJETO DATE CON FECHA ACTUAL
+// FORMATEA FECHA ACTUAL
+// AÑADE MAXIMOS A CAMPOS DATE CON FECHA ACTUAL
 function addMaxDates(){
     let ObjectDate = new Date();
     let mes = ObjectDate.getMonth() *1  +1;
@@ -77,4 +99,5 @@ function addMaxDates(){
     $("#buscador-fecha-llegada").attr("max", fechaActual);
 }
 
+// BORRA PETICIONES DE LOCALSTORAGE
 function clearPetLocal(){ gestor.clearPeticionLocal(); }
