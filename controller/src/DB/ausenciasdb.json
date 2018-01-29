@@ -1,7 +1,7 @@
 {
   "login": [
     {
-      "token": "",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5IzE3OjUzOjE0",
       "id": "admin",
       "pass": "YWRtaW4="
     },
@@ -27,7 +27,123 @@
     }
   ],
   "log": [
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "18:24:11",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 1
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "18:24:18",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "penJustificante",
+      "id": 2
+    }
   ],
   "peticiones": [
+    {
+      "idUsuario": "admin",
+      "cola": "penJustificante",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "anexos": [],
+      "fechaCreacion": "2018-01-29",
+      "fechaLlegada": "2018-01-29",
+      "motivo": "matrimonio",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-29",
+      "firma": "admin",
+      "tipoAusencia": "",
+      "motivoAusencia": "",
+      "horAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "id": 1
+    }
   ]
 }
