@@ -24,10 +24,10 @@ class PeticionManager {
         });
     }
 
-    updatePeticion(peticionJSON, returnFunction){
+    updatePeticion(peticionJSON, idPeticion, returnFunction){
         $.ajax({
-            url:"http://localhost:3000/peticiones",
-            type:"PUT",
+            url:"http://localhost:3000/peticiones/" + idPeticion,
+            type:"PATCH",
             contentType: "application/json",
             data: JSON.stringify(peticionJSON),
             cache: false,
