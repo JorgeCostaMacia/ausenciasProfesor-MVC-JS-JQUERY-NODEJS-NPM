@@ -8,7 +8,7 @@ function iniFormPeticion(){
     if(gestor.getLocal()["idPeticion"] != ""){
         peticionManager.getPeticion("id=" + gestor.getLocal()["idPeticion"], 'formPeticion');
     }
-    else { iniFormGenPeticionNuevo(); }
+    else { iniFormPeticionNuevo(); }
 }
 
 // RECIBE RESULTADO PETICION BD
@@ -23,15 +23,17 @@ function formPeticion(ressult){
             let peticion = new Peticion(ressult[i]);
             gestor.addPeticiones(peticion);
         }
-        injectFormPermiso(gestor.getPeticiones()[0]);
+        injectFormBasicPeticion(gestor.getPeticiones()[0]);
+        injectFormEspecificPeticion(gestor.getPeticiones()[0]);
+
     }
 
     if(gestor.getLocal()["accion"] == "detalles"){
         if(gestor.getPeticiones()[0].getNombreSolicitante() != gestor.getLocal()["nombre"]){
-            disableFormGenPeticion();
+            disableFormPeticion();
         }
         if(gestor.getPeticiones()[0].getCola() == "penAutorizarPermiso"){
-            disableFormGenPeticion();
+            disableFormPeticion();
             if(gestor.getLocal()["nivel"] != "profesor"){
                 addFormTramitarPeticion();
                 addEventsComentarios();
