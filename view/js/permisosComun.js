@@ -2,6 +2,7 @@
 
 function cleanTable(){
     $("#tbody").empty();
+    $("#caption").empty();
 }
 
 function injectPeticiones(peticiones) {

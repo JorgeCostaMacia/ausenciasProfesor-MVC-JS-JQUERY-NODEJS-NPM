@@ -25,6 +25,9 @@ function evalGenPermiso(event) {
 
     peticion["fechaLlegada"] = gestor.getDate();
     peticion["motivo"] = $("input[name=motivo-permiso]:checked").val();
+    peticion["motivoRepresentativas"] = $("#valor-funciones-representativas").val();
+    peticion["motivoInexcusable"] = $("#valor-deber-inexcusable").val();
+
     peticion["jornada"] = {
         "completa": {
             "diaInicio": $("#completa-fecha-desde").val(),
@@ -37,6 +40,7 @@ function evalGenPermiso(event) {
             "horaFin": $("#incompleta-hora-hasta").val(),
         }
     };
+
     peticion["horario"] = {};
     for(let i = 1; i < 9; i++){
         peticion["horario"][i] = {
@@ -47,9 +51,17 @@ function evalGenPermiso(event) {
             "sustituto": $("#horario-profesor-" + i).val(),
         };
     }
+
     peticion["observaciones"] = $("#documentacion-observaciones").val();
     peticion["fechaFirma"] = $("#firma-anyo").val()+"-"+$("#firma-mes").val()+"-"+$("#firma-dia").val();
     peticion["firma"] = $("#firma-firma").val();
+
+    peticion["tipoAusencia"] = "";
+    peticion["motivoAusencia"] = "";
+    peticion["motivoAusencia"] = {
+        "lectivas": "", "otras": "", "complementarias": "","evaluacion": "", "claustro": "", "ccp": "",
+        "consejo": "", "reunionDep": "", "reunionTutores": ""
+    };
 
     let log = {};
     log["id"] = gestor.getLocal()["id"];
@@ -61,7 +73,10 @@ function evalGenPermiso(event) {
 
     gestor.addLogs(new Log(log));
 
-    peticionManager.addPeticion(peticion, 'addLog');
+    if(gestor.getLocal()["idPeticion"] != ""){
+        peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogCancel');
+    }
+    else { peticionManager.addPeticion(peticion, 'addLog'); }
 }
 
 function addLog(ressult){
@@ -91,24 +106,36 @@ function addComentariosPeticion(ressult) {
 
 function aceptPermiso(){
     let peticion = { "fechaLlegada": gestor.getDate(), "cola": "penJustificante"};
-
-    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updatePeticion');
+    console.log(gestor.getPeticiones()[0].getIdPeticion());
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogOk');
 }
 
 function cancelPermiso(){
     let peticion = { "fechaLlegada": gestor.getDate(), "cola": "genPermiso"};
 
-    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updatePeticion');
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogCancel');
 }
 
-function updatePeticion(ressult){
+function updateLogOk(ressult){
     let log = {};
-    log["id"] = gestor.getLocal()["id"];
+    log["idUsuario"] = gestor.getLocal()["id"];
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();
-    log["colaInicio"] = "genPermiso";
+    log["colaInicio"] = "penAutorizarPermiso";
     log["colaDestino"] = "penJustificante";
+
+    logManager.addLog(log, 'changePageIninicio');
+}
+
+function updateLogCancel(ressult){
+    let log = {};
+    log["idUsuario"] = gestor.getLocal()["id"];
+    log["nombre"] = gestor.getLocal()["nombre"];
+    log["fecha"] = gestor.getDate();
+    log["hora"] = gestor.getTime();
+    log["colaInicio"] = "penAutorizarPermiso";
+    log["colaDestino"] = "genPermiso";
 
     logManager.addLog(log, 'changePageIninicio');
 }

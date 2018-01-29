@@ -45,5 +45,4 @@ function iniFormGenPeticionNuevo(){
     let fechaActual = gestor.getDate().split("-");
 
     infectFormPermisoNuevo(nombre, fechaActual[2], fechaActual[1], fechaActual[0]);
-    disableFormPermisoNuevo();
 }

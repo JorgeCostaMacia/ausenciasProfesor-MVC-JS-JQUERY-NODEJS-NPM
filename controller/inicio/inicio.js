@@ -29,7 +29,6 @@ function evalSearch(){
     if(fechaLlegada == ""){ fechaLlegada = "9999-99-99"; }
     else { whereParameter += "&fechaCreacion=" + fechaCreacion; }
 
-console.log(whereParameter);
     let errores = validateSearch(nombre, fechaCreacion, fechaLlegada);
 
    if(errores.length == 0){ peticionManager.getPeticion(whereParameter, 'checkPeticiones') }

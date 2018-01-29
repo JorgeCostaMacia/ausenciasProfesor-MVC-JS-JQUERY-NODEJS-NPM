@@ -27,16 +27,6 @@ function infectFormPermisoNuevo(nombre, dia, mes, anyo){
     $("#firma-firma").val(nombre);
 }
 
-function disableFormPermisoNuevo(){
-    $("#donya").attr("disabled", true);
-
-    $("#firma-dia").attr("disabled", true);
-    $("#firma-mes").attr("disabled", true);
-    $("#firma-anyo").attr("disabled", true);
-
-    $("#firma-firma").attr("disabled", true);
-}
-
 function injectFormPermiso(peticion) {
     $("#donya").val(peticion.getNombreSolicitante());
 
@@ -72,6 +62,9 @@ function injectFormPermiso(peticion) {
             $("#motivo-funciones-representativas").attr("checked", true);
             break;
     }
+
+    $("#valor-deber-inexcusable").val(peticion.getMotivoInexcusable());
+    $("#valor-funciones-representativas").val(peticion.getMotivoRepresentativas());
 
     let jornadaCompleta = peticion.getJornada()["completa"];
     $("#completa-fecha-desde").val(jornadaCompleta["diaInicio"]);
@@ -124,46 +117,8 @@ function injectFormPermiso(peticion) {
 function disableFormGenPeticion(){
     $('form').find('input, textarea, button, select').attr('disabled','disabled');
 
-   /* $("#donya").attr("disabled", true);
-
-    $("#motivo-matrimonio").attr("disabled", true);
-    $("#motivo-prenatales").attr("disabled", true);
-    $("#motivo-lactancia").attr("disabled", true);
-    $("#motivo-embarazo").attr("disabled", true);
-    $("#motivo-permiso-medico").attr("disabled", true);
-    $("#motivo-enfermedad").attr("disabled", true);
-    $("#motivo-pruebas").attr("disabled", true);
-    $("#motivo-traslado").attr("disabled", true);
-    $("#motivo-deber-inexcusable").attr("disabled", true);
-    $("#motivo-funciones-representativas").attr("disabled", true);
-
-    $("#completa-fecha-desde").attr("disabled", true);
-    $("#completa-fecha-hasta").attr("disabled", true);
-
-    $("#incompleta-fecha-desde").attr("disabled", true);
-    $("#incompleta-fecha-hasta").attr("disabled", true);
-    $("#incompleta-hora-desde").attr("disabled", true);
-    $("#incompleta-hora-hasta").attr("disabled", true);
-
-    for(let i = 1; i < 9; i++) {
-        $("#horario-dia-" + i).attr("disabled", true);
-        $("#horario-hora-" + i).attr("disabled", true);
-        $("#horario-curso-" + i).attr("disabled", true);
-        $("#horario-asignatura-" + i).attr("disabled", true);
-        $("#horario-profesor-" + i).attr("disabled", true);
-    }
-
-    $("#firma-dia").attr("disabled", true);
-    $("#firma-mes").attr("disabled", true);
-    $("#firma-anyo").attr("disabled", true);
-
-    $("#firma-firma").attr("disabled", true);
-
-    $("#documentacion-observaciones").attr("disabled", true);
-
     $("#enviarGenPeticion").attr("disabled", true);
     $("#guardarGenPeticion").attr("disabled", true);
-    $("#guardarGenPeticion").attr("disabled", true);*/
 }
 
 function addFormTramitarPeticion(){

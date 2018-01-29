@@ -9,6 +9,8 @@ class Peticion{
         var fechaCreacion = peticionJSON["fechaCreacion"];
         var fechaLlegada = peticionJSON["fechaLlegada"];
         var motivo = peticionJSON["motivo"];
+        var motivoRepresentativas = peticionJSON["motivoRepresentativas"];
+        var motivoInexcusable = peticionJSON["motivoInexcusable"];
         var jornada = peticionJSON["jornada"];
         var horario = peticionJSON["horario"];
         var observaciones = peticionJSON["observaciones"];
@@ -16,6 +18,10 @@ class Peticion{
         var firma = peticionJSON["firma"];
         var comentarios = peticionJSON["comentarios"];
         var anexos = peticionJSON["anexos"];
+
+        var tipoAusencia = peticionJSON["tipoAusencia"];
+        var motivoAusencia = peticionJSON["motivoAusencia"];
+        var horasAusencia = peticionJSON["horAusencias"];
 
         this.getIdPeticion = function(){ return idPeticion; };
         this.setIdPeticion = function (_idPeticion) { idPeticion = _idPeticion; };
@@ -34,6 +40,12 @@ class Peticion{
 
         this.getFechaLlegada = function () { return fechaLlegada; };
         this.setFechaLlegada = function (_fechaLlegada) { fechaLlegada = _fechaLlegada; };
+
+        this.getMotivoRepresentativas = function () { return motivoRepresentativas; };
+        this.setMotivoRepresentativas = function (_motivoRepresentativas) { motivoRepresentativas = _motivoRepresentativas; };
+
+        this.getMotivoInexcusable = function () { return motivoInexcusable; };
+        this.setMotivoInexcusable = function (_motivoInexcusable) { motivoInexcusable = _motivoInexcusable; };
 
         this.getMotivo = function () { return motivo; };
         this.setMotivo = function (_motivo) { motivo = _motivo; };
@@ -59,5 +71,14 @@ class Peticion{
 
         this.getAnexos = function () { return anexos; };
         this.setAnexos = function (_anexos) { anexos = _anexos; };
+
+        this.getTipoAusencia = function () { return tipoAusencia; };
+        this.setTipoAusencia = function (_tipoAusencia) { tipoAusencia = _tipoAusencia; };
+
+        this.getMotivoAusencia = function () { return motivoAusencia; };
+        this.setMotivoAusencia = function (_motivoAusencia) { motivoAusencia = _motivoAusencia; };
+
+        this.getHorasAusencia = function () { return horasAusencia; };
+        this.setHorasAusencia = function (_horasAusencia) { horasAusencia = _horasAusencia; };
     }
 }
