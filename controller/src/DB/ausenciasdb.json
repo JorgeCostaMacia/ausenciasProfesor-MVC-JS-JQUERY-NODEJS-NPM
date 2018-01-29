@@ -1,14 +1,14 @@
 {
   "login": [
     {
-      "token": "",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5Izg6MzI6MzQ=",
       "id": "admin",
       "pass": "YWRtaW4="
     },
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI5IzA6MTY6NTM="
+      "token": ""
     }
   ],
   "registro": [],

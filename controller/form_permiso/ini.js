@@ -26,13 +26,13 @@ function formGetPeticion(ressult){
         injectFormPermiso(gestor.getPeticiones()[0]);
     }
 
-    if( gestor.getLocal()["accion"] == "detalles"){
+    if(gestor.getLocal()["accion"] == "detalles"){
         if(gestor.getPeticiones()[0].getNombreSolicitante() != gestor.getLocal()["nombre"]){
             disableFormGenPeticion();
         }
         if(gestor.getPeticiones()[0].getCola() == "penAutorizarPermiso"){
             disableFormGenPeticion();
-            if(gestor.getLocal()["nivel"] == "admin" || gestor.getLocal()["nivel"] == "direccion"){
+            if(gestor.getLocal()["nivel"] != "profesor"){
                 addFormTramitarPeticion();
             }
         }
@@ -45,5 +45,4 @@ function iniFormGenPeticionNuevo(){
 
     infectFormPermisoNuevo(nombre, fechaActual[2], fechaActual[1], fechaActual[0]);
     disableFormPermisoNuevo();
-    addFormTramitarPeticion();
 }

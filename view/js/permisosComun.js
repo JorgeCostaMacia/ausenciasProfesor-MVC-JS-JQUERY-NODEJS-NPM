@@ -1,6 +1,8 @@
 "use strict";
 
-function cleanTable(){ $("#tbody").empty(); }
+function cleanTable(){
+    $("#tbody").empty();
+}
 
 function injectPeticiones(peticiones) {
     for (let i = 0; i < peticiones.length; i++) {
