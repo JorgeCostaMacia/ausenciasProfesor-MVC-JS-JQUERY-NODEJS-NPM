@@ -12,7 +12,7 @@ function evalGenPermiso(event) {
     peticion["cola"] = event.target.value;
     peticion["nombreSolicitante"] = $("#donya").val();
 
-    if(peticion.getCola() == "penAutorizarPermiso"){
+    if(gestor.getLocal()["accion"] == "detalles"){
         peticion["comentarios"] = permiso.getComentarios();
         peticion["anexos"] = permiso.getAnexos();
         peticion["fechaCreacion"] = permiso.getFechaCreacion();
@@ -110,14 +110,57 @@ function evalGenPermiso(event) {
     peticion["firma"] = $("#firma-firma").val();
 
     let log = {};
+<<<<<<< HEAD
+=======
+    log["idUsuario"] = logObjetc.getIdUsuario();
+    log["nombre"] = logObjetc.getNombre();
+    log["fecha"] = logObjetc.getFecha();
+    log["hora"] = logObjetc.getHora();
+    log["colaInicio"] = logObjetc.getColaInicio();
+    log["colaDestino"] = logObjetc.getColaDestino();
+
+    logManager.addLog(log, 'changePageIninicio');
+}
+
+function addComment(){
+    gestor.getPeticiones()[0].addComentarios($("#comentario-texto").val());
+    peticionManager.addComent({ "comentarios": gestor.getPeticiones()[0].getComentarios() }, gestor.getLocal()["idPeticion"], 'addComentariosPeticion');
+}
+
+function addComentariosPeticion(ressult) {
+    msjSucces('COMENTARIO', '<strong>Añadido comentario correctament</strong>');
+}
+
+function aceptPermiso(){
+    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "penJustificante"};
+
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updatePeticion');
+}
+
+function cancelPermiso(){
+    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "genPermiso"};
+
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updatePeticion');
+}
+
+function updatePeticion(ressult){
+    let log = {};
+>>>>>>> master
     log["id"] = gestor.getLocal()["id"];
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();
+<<<<<<< HEAD
     log["colaInicio"] = "genPeticion";
     log["colaDestino"] = event.target.value;
 
     gestor.addLogs(new Log(log));
 
     peticionManager.addPeticion(peticion, 'addLog');
+=======
+    log["colaInicio"] = "genPermiso";
+    log["colaDestino"] = "penJustificante";
+
+    logManager.addLog(log, 'changePageIninicio');
+>>>>>>> master
 }

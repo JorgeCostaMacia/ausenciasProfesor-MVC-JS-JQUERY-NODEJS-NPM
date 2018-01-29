@@ -1,6 +1,10 @@
 "use strict";
 
+<<<<<<< HEAD
 function cleanTable() {
+=======
+function cleanTable(){
+>>>>>>> master
     $("#tbody").empty();
 }
 

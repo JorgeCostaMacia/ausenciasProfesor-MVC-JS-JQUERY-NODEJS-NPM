@@ -123,8 +123,13 @@ function injectFormPermiso(peticion) {
 
 function disableFormGenPeticion(){
     $('form').find('input, textarea, button, select').attr('disabled','disabled');
+<<<<<<< HEAD
 /*
     $("#donya").attr("disabled", true);
+=======
+
+   /* $("#donya").attr("disabled", true);
+>>>>>>> master
 
     $("#motivo-matrimonio").attr("disabled", true);
     $("#motivo-prenatales").attr("disabled", true);
@@ -168,32 +173,17 @@ function disableFormGenPeticion(){
 
 function addFormTramitarPeticion(){
     $("#formTramitarGenPermiso").append(
-    '<form>' +
-    '<fieldset>' +
-    '<legend class="font-weight-bold">Tramitar peticion</legend>' +
-    '<div class="row">' +
-        '<div class="col-12 col-md-6">' +
-            '<div class="form-group row">' +
-                '<label for="comentario-texto" class="col-4 col-form-label col-form-label-sm">Comentario</label>' +
-                '<div class="col-8">' +
-                    '<input type="text" class="form-control form-control-sm" id="comentario-texto" name="buscador-texto"' +
-                    'value="" placeholder="Comentario">' +
-                '</div>' +
-            '</div>' +
-            '<div class="form-group row">' +
-                '<button type="button" id="agregarComentario" class="btn btn-warning px-5">Agregar comentario</button>' +
-            '</div>' +
-        '</div>' +
-        '<div class="col-12 col-md-6">' +
-            '<div class="form-group row">' +
-            '<button type="button" id="aceptarPermiso" class="btn btn-success px-5">Aceptar permiso</button>' +
-            '</div>' +
-            '<div class="form-group row">' +
-            '<button type="button" id="denegarPermiso" class="btn btn-danger px-5">Denegar Permiso</button>' +
-            '</div>' +
-        '</div>' +
-     '</div>' +
-    '</fieldset>' +
-    '</form>'
+    "<div>" +
+    "<hr>" +
+    "<h4>Autorizar permiso</h4>" +
+    "<p class='lead'>Autorizar, rechazar o comentar solicitud</p>" +
+    "<div class='form-group'>" +
+        "<label for='comentario-texto'' class='col-form-label'>Comentario</label>" +
+        "<textarea name='comentario-texto' id='comentario-texto' rows='3' class='form-control' placeholder='Ej. Motivo de rechazo'></textarea>" +
+        "</div>" +
+        "<button type='button' id='agregarComentario' class='btn btn-primary px-5 mr-4'>Enviar comentario</button>" +
+    "<button type='button' id='aceptarPermiso' class='btn btn-success px-5 mr-2'>Autorizar permiso</button>" +
+    "<button type='button' id='denegarPermiso' class='btn btn-danger px-5'>Rechazar permiso</button>" +
+    "</div>"
     );
 }
