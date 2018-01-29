@@ -1,7 +1,7 @@
 {
   "login": [
     {
-      "token": "",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5Izg6MTc6NDU=",
       "id": "admin",
       "pass": "YWRtaW4="
     },
@@ -146,37 +146,6 @@
       "anexos": []
     },
     {
-<<<<<<< HEAD
-      "idUsuario": "null",
-      "cola": "genPeticion",
-      "nombreSolicitante": "",
-      "fechaCreacion": "2018-01-28",
-      "fechaLlegada": "2018-01-28",
-      "motivo": "undefined",
-      "jornada": "[object Object]",
-      "horario": "[object Object]",
-      "observaciones": "",
-      "fechaFirma": "2018-12-01",
-      "firma": "",
-      "comentarios": "undefined",
-      "anexos": "undefined",
-      "id": 2
-    },
-    {
-      "idUsuario": "null",
-      "cola": "genPeticion",
-      "nombreSolicitante": "",
-      "fechaCreacion": "2018-01-28",
-      "fechaLlegada": "2018-01-28",
-      "motivo": "undefined",
-      "jornada": "[object Object]",
-      "horario": "[object Object]",
-      "observaciones": "",
-      "fechaFirma": "2018-12-01",
-      "firma": "",
-      "comentarios": "",
-      "anexos": "",
-=======
       "idUsuario": "jorge",
       "cola": "penAutorizarPermiso",
       "nombreSolicitante": "jorge jorge jorge",
@@ -340,7 +309,6 @@
       "firma": "jorge jorge jorge",
       "comentarios": [],
       "anexos": [],
->>>>>>> master
       "id": 3
     }
   ]
