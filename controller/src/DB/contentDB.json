@@ -1,0 +1,85 @@
+{
+    "login": [
+      "id",
+      "pass",
+      "token"
+    ],
+    "registro": [
+      "id",
+      "pass",
+      "nombre",
+      "departamento",
+      "nivel"
+    ],
+    "usuarios": [
+      "id",
+      "nombre",
+      "departamento",
+      "nivel",
+      "log"
+    ],
+    "peticiones": [
+      "id",
+      "idUsuario",
+      "cola",
+      "nombreSolicitante",
+      "fechaCreacion",
+      "fechaLlegada",
+      "motivo",
+      "jornada",
+      "horario",
+      "observaciones",
+      "fechaFirma",
+      "firma",
+      "comentarios",
+      "anexos"
+    ],
+    "jornada": [
+      "completa",
+      "incompleta"
+    ],
+    "jornadaCompleta": [
+      "diaInicio",
+      "diaFin"
+    ],
+    "jornadaInCompleta": [
+      "diaInicio",
+      "horaInicio",
+      "diaFin",
+      "horaFin"
+    ],
+    "horario": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "horario12345678": [
+      "dia",
+      "hora",
+      "curso",
+      "asignatura",
+      "sustituto"
+    ],
+    "anexos": [
+      "id",
+      "idPeticion",
+      "idUsuario",
+      "tipo",
+      "anexo"
+    ],
+    "anexosPeticiones": [
+      "id"
+    ],
+    "colas": [
+      "genPermiso",
+      "penAutorizarPermiso",
+      "penJustificante",
+      "penAutorizarJustificante",
+      "ausenciaFinalizada"
+    ]
+}

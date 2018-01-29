@@ -57,7 +57,7 @@ function msjSucces(accion, text){
         '</div>'
     );
 
-    $("#succes").modal("show");
+    $("#success").modal("show");
 }
 
 function msjInfo(accion, text){

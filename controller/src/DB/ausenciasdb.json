@@ -8,7 +8,7 @@
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI4IzEyOjQ0OjM2"
+      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI5IzA6MTY6NTM="
     }
   ],
   "registro": [],
@@ -26,7 +26,40 @@
       "nivel": "profesor"
     }
   ],
-  "log": [],
+  "log": [
+    {
+      "nombre": "jorge jorge jorge",
+      "fecha": "2018-01-28",
+      "hora": "21:30:13",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 1
+    },
+    {
+      "nombre": "jorge jorge jorge",
+      "fecha": "2018-01-28",
+      "hora": "21:30:30",
+      "colaInicio": "genPeticion",
+      "colaDestino": "genPermiso",
+      "id": 2
+    },
+    {
+      "nombre": "jorge jorge jorge",
+      "fecha": "2018-01-28",
+      "hora": "21:42:5",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 3
+    },
+    {
+      "nombre": "jorge jorge jorge",
+      "fecha": "2018-01-28",
+      "hora": "22:0:43",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 4
+    }
+  ],
   "peticiones": [
     {
       "id": 1,
@@ -50,7 +83,7 @@
       },
       "horario": {
         "1": {
-          "dia": "2018-01-",
+          "dia": "",
           "hora": "",
           "curso": "",
           "asignatura": "",
@@ -113,6 +146,7 @@
       "anexos": []
     },
     {
+<<<<<<< HEAD
       "idUsuario": "null",
       "cola": "genPeticion",
       "nombreSolicitante": "",
@@ -142,87 +176,172 @@
       "firma": "",
       "comentarios": "",
       "anexos": "",
+=======
+      "idUsuario": "jorge",
+      "cola": "penAutorizarPermiso",
+      "nombreSolicitante": "jorge jorge jorge",
+      "fechaCreacion": "2018-01-28",
+      "fechaLlegada": "2018-01-28",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-28",
+      "firma": "jorge jorge jorge",
+      "comentarios": [],
+      "anexos": [],
+      "id": 2
+    },
+    {
+      "idUsuario": "jorge",
+      "cola": "penAutorizarPermiso",
+      "nombreSolicitante": "jorge jorge jorge",
+      "fechaCreacion": "2018-01-28",
+      "fechaLlegada": "2018-01-28",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-28",
+      "firma": "jorge jorge jorge",
+      "comentarios": [],
+      "anexos": [],
+>>>>>>> master
       "id": 3
     }
-  ],
-  "anexos": [],
-  "contentTablas": {
-    "login": [
-      "id",
-      "pass",
-      "token"
-    ],
-    "registro": [
-      "id",
-      "pass",
-      "nombre",
-      "departamento",
-      "nivel"
-    ],
-    "usuarios": [
-      "id",
-      "nombre",
-      "departamento",
-      "nivel",
-      "log"
-    ],
-    "peticiones": [
-      "id",
-      "idUsuario",
-      "cola",
-      "nombreSolicitante",
-      "fechaCreacion",
-      "fechaLlegada",
-      "motivo",
-      "jornada",
-      "horario",
-      "comentarios",
-      "anexos"
-    ],
-    "jornada": [
-      "1",
-      "2"
-    ],
-    "jornada1": [
-      "diaInicio",
-      "diaFin"
-    ],
-    "jornada2": [
-      "diaInicio",
-      "horaInicio",
-      "diaFin",
-      "horaFin"
-    ],
-    "horario": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "horario12345": [
-      "dia",
-      "hora",
-      "curso",
-      "asignatura",
-      "sustituto"
-    ],
-    "anexos": [
-      "id",
-      "idPeticion",
-      "idUsuario",
-      "tipo",
-      "anexo"
-    ],
-    "anexosPeticiones": [
-      "id"
-    ],
-    "colas": [
-      "genPermiso",
-      "penAutorizarPermiso",
-      "penJustificante",
-      "penAutorizarJustificante",
-      "ausenciaFinalizada"
-    ]
-  }
+  ]
 }

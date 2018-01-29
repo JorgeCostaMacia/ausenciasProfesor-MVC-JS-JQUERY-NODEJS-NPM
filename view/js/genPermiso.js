@@ -1,59 +1,44 @@
 "use strict";
 
-function injectNombreCompletoDisable(nombre) {
-    $("#buscador-texto").val(nombre);
-    $("#buscador-texto").attr('disabled', 'disabled');
-}
+function infectFormPermisoNuevo(nombre, dia, mes, anyo){
+    $("#donya").val(nombre);
 
-function injectCaption(text) {
-    $("#caption").append(text);
-}
-
-function injectPeticiones(peticiones) {
-    for (let i = 0; i < peticiones.length; i++) {
-        let fechaAux = peticiones[i].getFechaCreacion().split("-");
-        let fechaCreacion = fechaAux[2] + "/" + fechaAux[1] + "/" + fechaAux[0];
-        fechaAux = peticiones[i].getFechaLlegada().split("-");
-        let fechaLlegada = fechaAux[2] + "/" + fechaAux[1] + "/" + fechaAux[0];
-
-        $("#tbody").append(
-            '<tr>' +
-            '<td>' + peticiones[i].getNombreSolicitante() + '</td>' +
-            '<td>' + fechaCreacion + '</td>' +
-            '<td>' + fechaLlegada + '</td>' +
-            '<td><div id="comentarios-' + peticiones[i].getIdPeticion() + '" class="link">' + peticiones[i].getComentarios().length + '</div></td>' +
-            '<td><div id="detalles-' + peticiones[i].getIdPeticion() + '" class="link">Detalles</div></td>' +
-            '</tr>'
-        );
+    let firmaDiaNode = $("#firma-dia")[0];
+    for(let i = 0; i < firmaDiaNode.length; i++){
+        if(firmaDiaNode[i].value == dia){
+            firmaDiaNode[i].setAttribute("selected", "true");
+        }
     }
-}
 
-function injectRegistors(registros) {
-    for (let i = 0; i < registros.length; i++) {
-        $("#tbody").append(
-            '<tr id="tr-' + registros[i].getId() + '">' +
-            '<td>' + registros[i].getId() + '</td>' +
-            '<td>' + registros[i].getNombre() + '</td>' +
-            '<td>' + registros[i].getDepartamento() + '</td>' +
-            '<td>' + registros[i].getNivel() + '</td>' +
-            '<td>' +
-            '<div class="d-flex">' +
-            '<button id="aceptar-' + registros[i].getId() + '" class="btn btn-success btn-sm text-uppercase mr-3">Aceptar</button>' +
-            '<button id="denegar-' + registros[i].getId() + '" class="btn btn-danger btn-sm text-uppercase">Rechazar</button>' +
-            '</div>' +
-            '</td>' +
-            '</tr>'
-        );
+    let firmaMesNode = $("#firma-mes")[0];
+    for(let i = 0; i < firmaMesNode.length; i++){
+        if(firmaMesNode[i].value == mes){
+            firmaMesNode[i].setAttribute("selected", "true");
+        }
     }
+
+    let firmaAnyoNode = $("#firma-anyo")[0];
+    for(let i = 0; i < firmaAnyoNode.length; i++){
+        if(firmaAnyoNode[i].value == anyo){
+            firmaAnyoNode[i].setAttribute("selected", "true");
+        }
+    }
+
+    $("#firma-firma").val(nombre);
 }
 
-function delTrRegistro(idTr) {
-    $('#' + idTr).remove();
+function disableFormPermisoNuevo(){
+    $("#donya").attr("disabled", true);
+
+    $("#firma-dia").attr("disabled", true);
+    $("#firma-mes").attr("disabled", true);
+    $("#firma-anyo").attr("disabled", true);
+
+    $("#firma-firma").attr("disabled", true);
 }
 
 function injectFormPermiso(peticion) {
     $("#donya").val(peticion.getNombreSolicitante());
-    $("#donya").attr("disabled", true);
 
     switch (peticion.getMotivo()) {
         case "matrimonio":
@@ -103,7 +88,7 @@ function injectFormPermiso(peticion) {
         $("#horario-dia-" + i).val(horario["dia"]);
         $("#horario-hora-"  + i).val(horario["hora"]);
         $("#horario-curso-"  + i).val(horario["curso"]);
-        $("#horario-asignaruta-"  + i).val(horario["asignatura"]);
+        $("#horario-asignatura-"  + i).val(horario["asignatura"]);
         $("#horario-profesor-"  + i).val(horario["sustituto"]);
     }
 
@@ -138,7 +123,7 @@ function injectFormPermiso(peticion) {
 
 function disableFormGenPeticion(){
     $('form').find('input, textarea, button, select').attr('disabled','disabled');
-    /*
+
     $("#donya").attr("disabled", true);
 
     $("#motivo-matrimonio").attr("disabled", true);
@@ -164,7 +149,7 @@ function disableFormGenPeticion(){
         $("#horario-dia-" + i).attr("disabled", true);
         $("#horario-hora-" + i).attr("disabled", true);
         $("#horario-curso-" + i).attr("disabled", true);
-        $("#horario-asignaruta-" + i).attr("disabled", true);
+        $("#horario-asignatura-" + i).attr("disabled", true);
         $("#horario-profesor-" + i).attr("disabled", true);
     }
 
@@ -178,5 +163,37 @@ function disableFormGenPeticion(){
 
     $("#enviarGenPeticion").attr("disabled", true);
     $("#guardarGenPeticion").attr("disabled", true);
-    $("#guardarGenPeticion").attr("disabled", true);*/
+    $("#guardarGenPeticion").attr("disabled", true);
+}
+
+function addFormTramitarPeticion(){
+    $("#formTramitarGenPermiso").append(
+    '<form>' +
+    '<fieldset>' +
+    '<legend class="font-weight-bold">Tramitar peticion</legend>' +
+    '<div class="row">' +
+        '<div class="col-12 col-md-6">' +
+            '<div class="form-group row">' +
+                '<label for="comentario-texto" class="col-4 col-form-label col-form-label-sm">Comentario</label>' +
+                '<div class="col-8">' +
+                    '<input type="text" class="form-control form-control-sm" id="comentario-texto" name="buscador-texto"' +
+                    'value="" placeholder="Comentario">' +
+                '</div>' +
+            '</div>' +
+            '<div class="form-group row">' +
+                '<button type="button" id="agregarComentario" class="btn btn-warning px-5">Agregar comentario</button>' +
+            '</div>' +
+        '</div>' +
+        '<div class="col-12 col-md-6">' +
+            '<div class="form-group row">' +
+            '<button type="button" id="aceptarPermiso" class="btn btn-success px-5">Aceptar permiso</button>' +
+            '</div>' +
+            '<div class="form-group row">' +
+            '<button type="button" id="denegarPermiso" class="btn btn-danger px-5">Denegar Permiso</button>' +
+            '</div>' +
+        '</div>' +
+     '</div>' +
+    '</fieldset>' +
+    '</form>'
+    );
 }

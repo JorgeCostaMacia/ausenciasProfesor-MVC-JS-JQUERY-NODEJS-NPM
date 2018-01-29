@@ -14,11 +14,12 @@ class LoginManager {
         })
     }
 
-    addLogin(loginId, loginPass){
+    addLogin(loginJSON){
         $.ajax({
             url:"http://localhost:3000/login",
             type:"POST",
-            data: 'id=' + loginId + '&pass=' + loginPass + '&token=' + '',
+            contentType: "application/json",
+            data: JSON.stringify(loginJSON),
             cache: false,
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
       });
@@ -28,7 +29,7 @@ class LoginManager {
        $.ajax({
            url:"http://localhost:3000/login/" + loginId,
            type:"PATCH",
-           data: {'token': token},
+           data: "token=" + token,
            cache: false,
            success: function(ressult){ eval(returnFunction + '(ressult)'); },
            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
@@ -39,7 +40,7 @@ class LoginManager {
         $.ajax({
             url:"http://localhost:3000/login/"+loginId,
             type:"PATCH",
-            data: {'token': ''},
+            data: "token=" + "",
             cache: false,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }

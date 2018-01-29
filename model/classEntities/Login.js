@@ -1,8 +1,8 @@
 class Login{
-    constructor(_id,_pass, _token){
-        var id = _id;
-        var pass = _pass;
-        var token = _token
+    constructor(loginJSON) {
+        var id = loginJSON["id"];
+        var pass = loginJSON["pass"];
+        var token = loginJSON["token"];
 
         this.getId = function(){ return id; };
         this.setId = function (_id) { id = _id; };

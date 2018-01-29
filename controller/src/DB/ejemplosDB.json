@@ -2,42 +2,43 @@
   "login": [
     {
       "token": "",
-      "id": "admin",
-      "pass": "YWRtaW4="
+      "id": "",
+      "pass": ""
     }
   ],
   "registro": [
     {
-      "id": "prueba",
-      "pass": "cHJ1ZWJh",
-      "nombre": "prueba prueba prueba",
-      "departamento": "prueba",
-      "nivel": "profesor"
+      "id": "",
+      "pass": "",
+      "nombre": "",
+      "departamento": "",
+      "nivel": ""
     }
   ],
   "usuarios": [
     {
-      "id": "admin",
-      "nombre": "admin",
-      "departamento": "admin",
-      "nivel": "admin"
+      "id": "",
+      "nombre": "",
+      "departamento": "",
+      "nivel": ""
     }
   ],
+  "log": [],
   "peticiones": [
     {
       "id": 1,
-      "idUsuario": "jorge",
-      "cola": "genPermiso",
-      "nombreSolicitante": "jorge costa macia",
-      "fechaCreacion": "2018-01-01",
-      "fechaLlegada": "2018-01-27",
+      "idUsuario": "",
+      "cola": "",
+      "nombreSolicitante": "",
+      "fechaCreacion": "",
+      "fechaLlegada": "",
       "motivo": "",
       "jornada": {
-        "1":{
+        "completa": {
           "diaInicio": "",
           "diaFin": ""
         },
-        "2":{
+        "parcial": {
           "diaInicio": "",
           "horaInicio": "",
           "diaFin": "",
@@ -46,7 +47,7 @@
       },
       "horario": {
         "1": {
-          "dia": "",
+          "dia": "2018-01-",
           "hora": "",
           "curso": "",
           "asignatura": "",
@@ -79,9 +80,33 @@
           "curso": "",
           "asignatura": "",
           "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
         }
       },
-      "comentarios": "",
+      "observaciones": "",
+      "fechaFirma": "",
+      "firma": "",
+      "comentarios": [],
       "anexos": []
     }
   ]

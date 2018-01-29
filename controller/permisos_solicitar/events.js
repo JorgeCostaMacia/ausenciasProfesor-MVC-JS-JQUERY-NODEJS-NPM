@@ -3,13 +3,12 @@
 document.onload = addEventsInicio();
 
 function addEventsInicio(){
-    $("#cerrarSesionInicio").click(returnLogin);
+    $("#generar-permiso").click(changePageForm);
+    $("#buscar-permisos").click(evalSearch);
     evalCookie();
     getUsuarioLocal();
     addMaxDates();
-    $("#buscar").click(evalSearch);
     clearPetLocal();
-    $("#buscar").click(evalSearch);
 }
 
 function eventPeticiones(peticiones){
@@ -17,8 +16,4 @@ function eventPeticiones(peticiones){
         $("#comentarios-" + peticiones[i].getIdPeticion()).click(showComents);
         $("#detalles-" + peticiones[i].getIdPeticion()).click(handlerDetalles);
     }
-}
-
-function aceptarUsuarios(){
-    $("#aceptarUsuarios").click(function(){ window.location.assign("aceptar_usuarios.html"); });
 }

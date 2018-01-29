@@ -11,11 +11,11 @@
 // SI NO SON CORRECTOS MUESTRA ADVERTENCIA
 // SI SON CORRECTO LLAMA BD PETICIONES
 function evalSearch(){
-     msjClean();
-     cleanTable();
+    msjClean();
+    cleanTable();
 
     let nombre = $("#buscador-texto").val();
-    let cola = $("#buscador-cola").val();
+    let cola = "penAutorizarPermiso";
     let fechaCreacion = $("#buscador-fecha-creacion").val();
     let fechaLlegada = $("#buscador-fecha-llegada").val();
 
@@ -28,10 +28,9 @@ function evalSearch(){
     if(fechaLlegada == ""){ fechaLlegada = "9999-99-99"; }
     else { whereParameter += "&fechaCreacion=" + fechaCreacion; }
 
-
     let errores = validateSearch(nombre, fechaCreacion, fechaLlegada);
 
-   if(errores.length == 0){ peticionManager.getPeticion(whereParameter, 'checkPeticiones') }
+    if(errores.length == 0){ peticionManager.getPeticion(whereParameter, 'checkPeticiones') }
     else {
         let msjError = "";
         for(let i = 0; i < errores.length; i++){

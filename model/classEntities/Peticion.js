@@ -1,21 +1,21 @@
 "use strict";
 
 class Peticion{
-    constructor(_idPeticion, _idUsuario, _cola, _nombreSolicitante, _fechaCreacion, _fechaLlegada, _motivo, _jornada, _horario, _observaciones, _fechaFirma, _firma,  _comentarios, _anexos ){
-        var idPeticion = _idPeticion;
-        var idUsuario = _idUsuario;
-        var cola = _cola;
-        var nombreSolicitante = _nombreSolicitante;
-        var fechaCreacion = _fechaCreacion;
-        var fechaLlegada = _fechaLlegada;
-        var motivo = _motivo;
-        var jornada = _jornada;
-        var horario = _horario;
-        var observaciones = _observaciones;
-        var fechaFirma = _fechaFirma;
-        var firma = _firma;
-        var comentarios = _comentarios;
-        var anexos = _anexos;
+    constructor(peticionJSON){
+        var idPeticion = peticionJSON["id"];
+        var idUsuario = peticionJSON["idUsuario"];
+        var cola = peticionJSON["cola"];
+        var nombreSolicitante = peticionJSON["nombreSolicitante"];
+        var fechaCreacion = peticionJSON["fechaCreacion"];
+        var fechaLlegada = peticionJSON["fechaLlegada"];
+        var motivo = peticionJSON["motivo"];
+        var jornada = peticionJSON["jornada"];
+        var horario = peticionJSON["horario"];
+        var observaciones = peticionJSON["observaciones"];
+        var fechaFirma = peticionJSON["fechaFirma"];
+        var firma = peticionJSON["firma"];
+        var comentarios = peticionJSON["comentarios"];
+        var anexos = peticionJSON["anexos"];
 
         this.getIdPeticion = function(){ return idPeticion; };
         this.setIdPeticion = function (_idPeticion) { idPeticion = _idPeticion; };

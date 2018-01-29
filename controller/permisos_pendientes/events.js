@@ -6,7 +6,7 @@ function addEventsInicio(){
     evalCookie();
     getUsuarioLocal();
     addMaxDates();
-    $("#buscar").click(evalSearch);
+    $("#buscar-permisos").click(evalSearch);
     clearPetLocal();
 }
 

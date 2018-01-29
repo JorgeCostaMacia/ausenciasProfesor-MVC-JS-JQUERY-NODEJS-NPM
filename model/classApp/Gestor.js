@@ -6,6 +6,7 @@ class Gestor{
         var usuarios = [];
         var peticiones = [];
         var registros = [];
+        var logs = [];
 
         this.getLogins = function() { return logins; }
         this.setLogins = function(loginss){ logins = loginss; }
@@ -32,6 +33,10 @@ class Gestor{
                 if(registros[i].getId() == idRegistro){ return registros[i]; }
             }
         }
+
+        this.getLogs = function() { return logs; }
+        this.setLogs = function(_logs){ logs = _logs; }
+        this.addLogs = function(log){ logs.push(log); }
     }
 
     delLocal(){ localStorage.clear(); }
@@ -56,8 +61,8 @@ class Gestor{
     }
 
     clearPeticionLocal(){
-        localStorage.setItem("peticion", null);
-        localStorage.setItem("accion", null);
+        localStorage.setItem("peticion", "");
+        localStorage.setItem("accion", "");
     }
     addPeticionLocal(peticion, accion){
         localStorage.setItem("peticion", peticion);
@@ -68,15 +73,27 @@ class Gestor{
 
     base64String(text){ return window.atob(text); }
 
-    genDate(){
+    getDateTime(){
         let fechaActual = new Date();
         return fechaActual.getFullYear() + "-" + (fechaActual.getMonth() *1 +1) + "-" + fechaActual.getDate() + '#' +
         fechaActual.getHours() + ':' + fechaActual.getMinutes() + ':' + fechaActual.getSeconds();
     }
 
+    getDate(){
+        let fechaActual = new Date();
+        let mes = fechaActual.getMonth() * 1 + 1;
+        if (mes < 10) mes = "0" + mes;
+        return fechaActual.getFullYear() + "-" + mes + "-" + fechaActual.getDate();
+    }
+
+    getTime(){
+        let fechaActual = new Date();
+        return fechaActual.getHours() + ':' + fechaActual.getMinutes() + ':' + fechaActual.getSeconds();
+    }
+
     genToken(){
         let login = this.getLogins()[0];
-        let token = login.getId() + '#' + this.base64String(login.getPass()) + '#' + this.genDate();
+        let token = login.getId() + '#' + this.base64String(login.getPass()) + '#' + this.getDateTime();
         return this.stringBase64(token);
     }
 
