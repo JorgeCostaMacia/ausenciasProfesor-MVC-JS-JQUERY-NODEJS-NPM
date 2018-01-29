@@ -267,6 +267,16 @@ body{
 /*input::-webkit-datetime-edit{ color: transparent; }
 input:focus::-webkit-datetime-edit{ color: #000; }*/
 
+#logos-formulario div {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#logos-formulario img {
+    max-height: 46px;
+}
+
 .formulario-imprimir{
     font-size: 14px;
 }
@@ -362,11 +372,15 @@ input:focus::-webkit-datetime-edit{ color: #000; }*/
     textarea {
         border: none !important;
     }
+
+    input[disabled], textarea[disabled] {
+        background-color: inherit;
+    }
 }
 
 @page {
     size: A4 portrait;
-    margin: 50px 55px 50px 70px;
+    margin: 10px 55px 50px 70px;
 }
 
 
