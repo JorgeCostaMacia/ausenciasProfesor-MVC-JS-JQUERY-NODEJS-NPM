@@ -42,8 +42,3 @@ $(window).ready(function() {
 /*
     Datepicker JQUERY
 ------------------------------------------------------------------ */
-$(".datepicker").datepicker( $.datepicker.regional[ "es" ] );
-
-$( function() {
-    $( ".datepicker" ).datepicker();
-} );
