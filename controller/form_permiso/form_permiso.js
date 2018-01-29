@@ -58,7 +58,7 @@ function evalPermiso(event) {
 
     peticion["tipoAusencia"] = "";
     peticion["motivoAusencia"] = "";
-    peticion["horAusencias"] = {
+    peticion["horaAusencias"] = {
         "lectivas": "", "otras": "", "complementarias": "","evaluacion": "", "claustro": "", "ccp": "",
         "consejo": "", "reunionDep": "", "reunionTutores": ""
     };

@@ -7,3 +7,4 @@ function iniFormPeticionNuevo(){
     infectFormPermisoNuevo(nombre, fechaActual[2], fechaActual[1], fechaActual[0]);
 }
 
+function evalDirectorFirma(){}

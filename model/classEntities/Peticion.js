@@ -21,7 +21,7 @@ class Peticion{
 
         var tipoAusencia = peticionJSON["tipoAusencia"];
         var motivoAusencia = peticionJSON["motivoAusencia"];
-        var horasAusencia = peticionJSON["horAusencias"];
+        var horasAusencia = peticionJSON["horaAusencias"];
 
         this.getIdPeticion = function(){ return idPeticion; };
         this.setIdPeticion = function (_idPeticion) { idPeticion = _idPeticion; };

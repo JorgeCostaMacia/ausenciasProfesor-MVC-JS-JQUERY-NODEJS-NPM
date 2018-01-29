@@ -59,3 +59,6 @@ function injectFormEspecificPeticion(peticion) {
         }
     }
 }
+
+function disableFormPeticionEspecific(){}
+function injectActualDate(a){}

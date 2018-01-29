@@ -26,14 +26,30 @@ function formPeticion(ressult){
         injectFormBasicPeticion(gestor.getPeticiones()[0]);
         injectFormEspecificPeticion(gestor.getPeticiones()[0]);
 
+        if(gestor.getPeticiones()[0].getCola() == "penJustificante"){
+            injectActualDate(gestor.getPeticiones()[0]);
+        }
+        evalDirectorFirma();
     }
 
+    disables();
+}
+
+function disables(){
+    let petition = gestor.getPeticiones()[0];
     if(gestor.getLocal()["accion"] == "detalles"){
-        if(gestor.getPeticiones()[0].getNombreSolicitante() != gestor.getLocal()["nombre"]){
+        if(petition.getNombreSolicitante() != gestor.getLocal()["nombre"]){
             disableFormPeticion();
+            disableFormPeticionEspecific();
         }
-        if(gestor.getPeticiones()[0].getCola() == "penAutorizarPermiso"){
+
+        if(petition.getCola() == "penAutorizarPermiso" || petition.getCola() == "penAutorizarJustificante"){
             disableFormPeticion();
+
+            if(petition.getCola() == "penAutorizarJustificante"){
+                disableFormPeticionEspecific();
+            }
+
             if(gestor.getLocal()["nivel"] != "profesor"){
                 addFormTramitarPeticion();
                 addEventsComentarios();

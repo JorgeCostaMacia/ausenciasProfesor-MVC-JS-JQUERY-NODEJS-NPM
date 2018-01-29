@@ -72,8 +72,46 @@ function addFormTramitarPeticion(){
 }
 
 function disableFormPeticion(){
-    $('form').find('input, textarea, button, select').attr('disabled','disabled');
+    $("#motivo-matrimonio").attr("disabled", true);
+    $("#motivo-prenatales").attr("disabled", true);
+    $("#motivo-lactancia").attr("disabled", true);
+    $("#motivo-embarazo").attr("disabled", true);
+    $("#motivo-permiso-medico").attr("disabled", true);
+    $("#motivo-enfermedad").attr("disabled", true);
+    $("#motivo-pruebas").attr("disabled", true);
+    $("#motivo-traslado").attr("disabled", true);
+    $("#motivo-deber-inexcusable").attr("disabled", true);
+
+    $("#motivo-funciones-representativas").attr("disabled", true);
+    $("#valor-funciones-representativas").attr("disabled", true);
+    $("#completa-fecha-desde").attr("disabled", true);
+    $("#completa-fecha-hasta").attr("disabled", true);
+    $("#incompleta-fecha-desde").attr("disabled", true);
+    $("#incompleta-fecha-hasta").attr("disabled", true);
+    $("#incompleta-hora-desde").attr("disabled", true);
+    $("#incompleta-hora-hasta").attr("disabled", true);
+
+    for(let i = 1; i < 9; i++){
+        $("#horario-dia-" + i).attr("disabled", true);
+        $("#horario-hora-" + i).attr("disabled", true);
+        $("#horario-curso-" + i).attr("disabled", true);
+        $("#horario-asignatura-" + i).attr("disabled", true);
+        $("#horario-profesor-" + i).attr("disabled", true);
+    }
+
+    $("#documentacion-observaciones").attr("disabled", true);
+
+    $("#firma-dia").attr("disabled", true);
+    $("#firma-mes").attr("disabled", true);
+    $("#firma-anyo").attr("disabled", true);
+
+    $("#firma-firma").attr("disabled", true);
 
     $("#enviarPeticion").attr("disabled", true);
     $("#guardarPeticion").attr("disabled", true);
+}
+
+function injectNombreCompletoDisable(nombre) {
+    $("#buscador-texto").val(nombre);
+    $("#buscador-texto").attr('disabled', 'disabled');
 }
