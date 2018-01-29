@@ -8,21 +8,12 @@ function evalPermiso(event) {
     let permiso = gestor.getPeticiones()[0];
 
     let peticion = {};
-    peticion["idUsuario"] = gestor.getLocal()["id"];
+    peticion["idUsuario"] = permiso.getIdUsuario();
     peticion["cola"] = event.target.value;
     peticion["nombreSolicitante"] = $("#donya").val();
-
-    if(gestor.getLocal()["accion"] == "detalles"){
-        peticion["comentarios"] = permiso.getComentarios();
-        peticion["anexos"] = permiso.getAnexos();
-        peticion["fechaCreacion"] = permiso.getFechaCreacion();
-    }
-    else{
-        peticion["comentarios"] = [];
-        peticion["anexos"] = [];
-        peticion["fechaCreacion"] = gestor.getDate();
-    }
-
+    peticion["comentarios"] = permiso.getComentarios();
+    peticion["anexos"] = permiso.getAnexos();
+    peticion["fechaCreacion"] = gestor.getDate();
     peticion["fechaLlegada"] = gestor.getDate();
     peticion["motivo"] = $("input[name=motivo-permiso]:checked").val();
     peticion["motivoRepresentativas"] = $("#valor-funciones-representativas").val();
@@ -55,6 +46,22 @@ function evalPermiso(event) {
     peticion["observaciones"] = $("#documentacion-observaciones").val();
     peticion["fechaFirma"] = $("#firma-anyo").val()+"-"+$("#firma-mes").val()+"-"+$("#firma-dia").val();
     peticion["firma"] = $("#firma-firma").val();
+
+
+    if(peticion.getTipoAusencia() == "ausencia"){
+        $("#tipoAusencia").attr("checked", true);
+    }
+    if(peticion.getTipoAusencia() == "retraso"){
+        $("#tipoRetraso").attr("checked", true);
+    }
+
+    if(peticion.getMotivoAusencia() == "enfermedad"){
+        $("#motivoEnfermedad").attr("checked", true);
+    }
+    if(peticion.getMotivoAusencia() == "permiso"){
+        $("#motivoPermiso").attr("checked", true);
+    }
+
 
     peticion["tipoAusencia"] = "";
     peticion["motivoAusencia"] = "";

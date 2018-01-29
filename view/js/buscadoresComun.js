@@ -28,3 +28,7 @@ function injectNombreCompletoDisable(nombre) {
     $("#buscador-texto").val(nombre);
     $("#buscador-texto").attr('disabled', 'disabled');
 }
+
+function injectAnexos(anexos){
+
+}
