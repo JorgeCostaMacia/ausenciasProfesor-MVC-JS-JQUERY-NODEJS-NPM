@@ -34,6 +34,7 @@ function formGetPeticion(ressult){
             disableFormGenPeticion();
             if(gestor.getLocal()["nivel"] != "profesor"){
                 addFormTramitarPeticion();
+                addEventsComentarios();
             }
         }
     }

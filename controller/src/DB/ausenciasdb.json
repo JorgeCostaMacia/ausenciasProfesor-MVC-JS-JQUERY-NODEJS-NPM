@@ -58,6 +58,38 @@
       "colaInicio": "genPeticion",
       "colaDestino": "penAutorizarPermiso",
       "id": 4
+    },
+    {
+      "id": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "10:20:18",
+      "colaInicio": "genPermiso",
+      "colaDestino": "penJustificante"
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "10:29:18",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 5
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "10:32:4",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 6
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "10:34:8",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 7
     }
   ],
   "peticiones": [
@@ -146,11 +178,13 @@
       "anexos": []
     },
     {
-      "idUsuario": "jorge",
+      "idUsuario": "admin",
       "cola": "penAutorizarPermiso",
-      "nombreSolicitante": "jorge jorge jorge",
-      "fechaCreacion": "2018-01-28",
-      "fechaLlegada": "2018-01-28",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "anexos": [],
+      "fechaCreacion": "2018-01-29",
+      "fechaLlegada": "2018-01-29",
       "jornada": {
         "completa": {
           "diaInicio": "",
@@ -222,93 +256,11 @@
         }
       },
       "observaciones": "",
-      "fechaFirma": "2018-01-28",
-      "firma": "jorge jorge jorge",
-      "comentarios": [],
-      "anexos": [],
+      "fechaFirma": "2018-01-29",
+      "firma": "admin",
       "id": 2
     },
     {
-      "idUsuario": "jorge",
-      "cola": "penAutorizarPermiso",
-      "nombreSolicitante": "jorge jorge jorge",
-      "fechaCreacion": "2018-01-28",
-      "fechaLlegada": "2018-01-28",
-      "jornada": {
-        "completa": {
-          "diaInicio": "",
-          "diaFin": ""
-        },
-        "parcial": {
-          "diaInicio": "",
-          "diaFin": "",
-          "horaInicio": "",
-          "horaFin": ""
-        }
-      },
-      "horario": {
-        "1": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "2": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "3": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "4": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "5": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "6": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "7": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "8": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        }
-      },
-      "observaciones": "",
-      "fechaFirma": "2018-01-28",
-      "firma": "jorge jorge jorge",
-      "comentarios": [],
-      "anexos": [],
       "id": 3
     }
   ]
