@@ -27,7 +27,7 @@ class PeticionManager {
     updatePeticion(peticionJSON, returnFunction){
         $.ajax({
             url:"http://localhost:3000/peticiones",
-            type:"POST",
+            type:"PUT",
             contentType: "application/json",
             data: JSON.stringify(peticionJSON),
             cache: false,

@@ -90,6 +90,22 @@
       "colaInicio": "genPeticion",
       "colaDestino": "penAutorizarPermiso",
       "id": 7
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "10:47:4",
+      "colaInicio": "genPeticion",
+      "colaDestino": "genPermiso",
+      "id": 8
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "10:47:26",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 9
     }
   ],
   "peticiones": [
@@ -262,6 +278,173 @@
     },
     {
       "id": 3
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "genPermiso",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "anexos": [],
+      "fechaCreacion": "2018-01-29",
+      "fechaLlegada": "2018-01-29",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-29",
+      "firma": "admin",
+      "id": 4
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "penAutorizarPermiso",
+      "nombreSolicitante": "jorge jorge jorge",
+      "comentarios": [],
+      "anexos": [],
+      "fechaCreacion": "2018-01-01",
+      "fechaLlegada": "2018-01-29",
+      "motivo": "matrimonio",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-03-02",
+      "firma": "",
+      "id": 5
     }
   ]
 }
