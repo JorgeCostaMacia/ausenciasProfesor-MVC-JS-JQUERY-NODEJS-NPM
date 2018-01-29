@@ -12,6 +12,30 @@ class PeticionManager {
         })
     }
 
+    addComent(commentJSON, idPeticion, returnFunction){
+        $.ajax({
+            url:"http://localhost:3000/peticiones/" + idPeticion,
+            type:"PATCH",
+            contentType: "application/json",
+            data: JSON.stringify(commentJSON),
+            cache: false,
+            success: function(ressult){ eval(returnFunction + '(ressult)'); },
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
+        });
+    }
+
+    updatePeticion(peticionJSON, returnFunction){
+        $.ajax({
+            url:"http://localhost:3000/peticiones",
+            type:"POST",
+            contentType: "application/json",
+            data: JSON.stringify(peticionJSON),
+            cache: false,
+            success: function(ressult){ eval(returnFunction + '(ressult)'); },
+            error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
+        });
+    }
+
     addPeticion(peticionJSON, returnFunction){
         $.ajax({
             url:"http://localhost:3000/peticiones",

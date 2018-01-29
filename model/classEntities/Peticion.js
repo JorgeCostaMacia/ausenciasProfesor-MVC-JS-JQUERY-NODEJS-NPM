@@ -55,6 +55,7 @@ class Peticion{
 
         this.getComentarios = function () { return comentarios; };
         this.setComentarios = function (_comentarios) { comentarios = _comentarios; };
+        this.addComentarios = function (_comentarios) { comentarios.push(_comentarios); };
 
         this.getAnexos = function () { return anexos; };
         this.setAnexos = function (_anexos) { anexos = _anexos; };

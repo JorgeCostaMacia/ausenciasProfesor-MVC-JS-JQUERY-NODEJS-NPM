@@ -10,3 +10,9 @@ function addEventsInicio(){
     getUsuarioLocal();
     iniFormGenPeticion();
 }
+
+function addEventsComentarios(){
+    $("#agregarComentario").click(addComment);
+    $("#aceptarPermiso").click(aceptPermiso);
+    $("#denegarPermiso").click(cancelPermiso);
+}
