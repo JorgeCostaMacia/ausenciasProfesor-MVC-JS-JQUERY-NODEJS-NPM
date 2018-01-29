@@ -76,11 +76,11 @@ function evalPermiso(event) {
         peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogCancel');
         console.log("AA");
     }
-    else { peticionManager.addPeticion(peticion, 'addLog'); }
+    else { peticionManager.addPeticion(peticion, 'createAnexo'); }
 }
 
 function createAnexo(ressult){
-    addAnexxo({"id": gestor.getPeticiones()[0].getIdPeticion()}, 'updateLogCancel');
+    anexoManager.addAnexo({"id": ""}, 'addLog');
 }
 
 function aceptPermiso(){

@@ -1,6 +1,7 @@
 "use strict";
 
 var logManager = new LogManager();
+var anexoManager = new AnexosManager();
 
 // EVALUA LOCALSTORAGE
 // SI RECIBE PETICION - LLAMA PETICION BD

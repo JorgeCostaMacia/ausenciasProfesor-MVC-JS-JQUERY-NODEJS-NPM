@@ -28,9 +28,10 @@
   ],
   "log": [
     {
+      "idUsuario": "admin",
       "nombre": "admin",
       "fecha": "2018-01-29",
-      "hora": "22:34:42",
+      "hora": "23:9:45",
       "colaInicio": "genPeticion",
       "colaDestino": "penAutorizarPermiso",
       "id": 1
@@ -42,7 +43,6 @@
       "cola": "penAutorizarPermiso",
       "nombreSolicitante": "admin",
       "comentarios": [],
-      "anexos": [],
       "fechaCreacion": "2018-01-29",
       "fechaLlegada": "2018-01-29",
       "motivo": "matrimonio",
@@ -135,6 +135,11 @@
         "reunionTutores": ""
       },
       "firmaDireccion": "",
+      "id": 1
+    }
+  ],
+  "anexos": [
+    {
       "id": 1
     }
   ]

@@ -7,6 +7,7 @@ class Gestor{
         var peticiones = [];
         var registros = [];
         var logs = [];
+        var anexos = [];
 
         this.getLogins = function() { return logins; }
         this.setLogins = function(loginss){ logins = loginss; }
@@ -37,6 +38,10 @@ class Gestor{
         this.getLogs = function() { return logs; }
         this.setLogs = function(_logs){ logs = _logs; }
         this.addLogs = function(log){ logs.push(log); }
+
+        this.getAnexos = function() { return anexos; }
+        this.setAnexos = function(_anexos){ anexos = _anexos; }
+        this.addAnexos = function(anexo){ anexos.push(anexo); }
     }
 
     delLocal(){ localStorage.clear(); }
