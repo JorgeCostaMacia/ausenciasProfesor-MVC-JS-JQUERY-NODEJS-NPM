@@ -123,13 +123,8 @@ function injectFormPermiso(peticion) {
 
 function disableFormGenPeticion(){
     $('form').find('input, textarea, button, select').attr('disabled','disabled');
-<<<<<<< HEAD
-/*
-    $("#donya").attr("disabled", true);
-=======
 
    /* $("#donya").attr("disabled", true);
->>>>>>> master
 
     $("#motivo-matrimonio").attr("disabled", true);
     $("#motivo-prenatales").attr("disabled", true);

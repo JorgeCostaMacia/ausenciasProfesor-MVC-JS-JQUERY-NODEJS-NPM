@@ -1,11 +1,7 @@
 {
   "login": [
     {
-<<<<<<< HEAD
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5Izk6NDQ6MTg=",
-=======
       "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5IzExOjI6NDQ=",
->>>>>>> master
       "id": "admin",
       "pass": "YWRtaW4="
     },
