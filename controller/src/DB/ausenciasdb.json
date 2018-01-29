@@ -1,14 +1,14 @@
 {
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5IzEwOjM2Ojc=",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5IzExOjI6NDQ=",
       "id": "admin",
       "pass": "YWRtaW4="
     },
     {
       "id": "jorge",
       "pass": "am9yZ2U=",
-      "token": "am9yZ2Ujam9yZ2UjMjAxOC0xLTI5IzEwOjc6MTM="
+      "token": ""
     }
   ],
   "registro": [],
@@ -28,79 +28,39 @@
   ],
   "log": [
     {
-      "nombre": "jorge jorge jorge",
-      "fecha": "2018-01-28",
-      "hora": "21:30:13",
+      "nombre": "admin",
+      "fecha": "2018-01-29",
+      "hora": "11:7:33",
       "colaInicio": "genPeticion",
       "colaDestino": "penAutorizarPermiso",
       "id": 1
     },
     {
-      "nombre": "jorge jorge jorge",
-      "fecha": "2018-01-28",
-      "hora": "21:30:30",
-      "colaInicio": "genPeticion",
-      "colaDestino": "genPermiso",
-      "id": 2
-    },
-    {
-      "nombre": "jorge jorge jorge",
-      "fecha": "2018-01-28",
-      "hora": "21:42:5",
-      "colaInicio": "genPeticion",
-      "colaDestino": "penAutorizarPermiso",
-      "id": 3
-    },
-    {
-      "nombre": "jorge jorge jorge",
-      "fecha": "2018-01-28",
-      "hora": "22:0:43",
-      "colaInicio": "genPeticion",
-      "colaDestino": "penAutorizarPermiso",
-      "id": 4
-    },
-    {
       "id": "admin",
       "nombre": "admin",
       "fecha": "2018-01-29",
-      "hora": "10:20:18",
+      "hora": "11:8:28",
       "colaInicio": "genPermiso",
       "colaDestino": "penJustificante"
     },
     {
       "nombre": "admin",
       "fecha": "2018-01-29",
-      "hora": "10:29:18",
+      "hora": "11:8:58",
       "colaInicio": "genPeticion",
       "colaDestino": "penAutorizarPermiso",
-      "id": 5
-    },
-    {
-      "nombre": "admin",
-      "fecha": "2018-01-29",
-      "hora": "10:32:4",
-      "colaInicio": "genPeticion",
-      "colaDestino": "penAutorizarPermiso",
-      "id": 6
-    },
-    {
-      "nombre": "admin",
-      "fecha": "2018-01-29",
-      "hora": "10:34:8",
-      "colaInicio": "genPeticion",
-      "colaDestino": "penAutorizarPermiso",
-      "id": 7
+      "id": 2
     }
   ],
   "peticiones": [
     {
-      "id": 1,
-      "idUsuario": "jorge",
+      "idUsuario": "admin",
       "cola": "genPermiso",
-      "nombreSolicitante": "jorge jorge jorge",
-      "fechaCreacion": "2018-01-01",
-      "fechaLlegada": "2018-01-27",
-      "motivo": "matrimonio",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "anexos": [],
+      "fechaCreacion": "2018-01-29",
+      "fechaLlegada": "2018-01-29",
       "jornada": {
         "completa": {
           "diaInicio": "",
@@ -108,8 +68,8 @@
         },
         "parcial": {
           "diaInicio": "",
-          "horaInicio": "",
           "diaFin": "",
+          "horaInicio": "",
           "horaFin": ""
         }
       },
@@ -172,10 +132,9 @@
         }
       },
       "observaciones": "",
-      "fechaFirma": "2018-03-02",
-      "firma": "",
-      "comentarios": [],
-      "anexos": []
+      "fechaFirma": "2018-01-29",
+      "firma": "admin",
+      "id": 1
     },
     {
       "idUsuario": "admin",
@@ -259,9 +218,6 @@
       "fechaFirma": "2018-01-29",
       "firma": "admin",
       "id": 2
-    },
-    {
-      "id": 3
     }
   ]
 }

@@ -90,24 +90,18 @@ function addComentariosPeticion(ressult) {
 }
 
 function aceptPermiso(){
-    let peticion = gestor.getPeticiones()[0];
-    peticion.setFechaLlegada(gestor.getDate());
-    peticion.setCola("penJustificante");
+    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "penJustificante"};
 
-    peticionManager.updatePeticion(peticion,'updatePeticion');
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updatePeticion');
 }
 
 function cancelPermiso(){
-    let peticion = gestor.getPeticiones()[0];
-    peticion.setFechaLlegada(gestor.getDate());
-    peticion.setCola("genPermiso");
+    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "genPermiso"};
 
-    peticionManager.updatePeticion(peticion, 'updatePeticion');
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updatePeticion');
 }
 
 function updatePeticion(ressult){
-    msjClean();
-
     let log = {};
     log["id"] = gestor.getLocal()["id"];
     log["nombre"] = gestor.getLocal()["nombre"];
