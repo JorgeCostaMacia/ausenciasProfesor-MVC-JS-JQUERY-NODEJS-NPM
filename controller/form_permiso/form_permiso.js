@@ -14,12 +14,10 @@ function evalPermiso(event) {
 
     if(gestor.getLocal()["accion"] == "detalles"){
         peticion["comentarios"] = permiso.getComentarios();
-        peticion["anexos"] = permiso.getAnexos();
         peticion["fechaCreacion"] = permiso.getFechaCreacion();
     }
     else{
         peticion["comentarios"] = [];
-        peticion["anexos"] = [];
         peticion["fechaCreacion"] = gestor.getDate();
     }
 
@@ -62,9 +60,10 @@ function evalPermiso(event) {
         "lectivas": "", "otras": "", "complementarias": "","evaluacion": "", "claustro": "", "ccp": "",
         "consejo": "", "reunionDep": "", "reunionTutores": ""
     };
+    peticion["firmaDireccion"] = "";
 
     let log = {};
-    log["id"] = gestor.getLocal()["id"];
+    log["idUsuario"] = gestor.getLocal()["id"];
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();
@@ -75,8 +74,13 @@ function evalPermiso(event) {
 
     if(gestor.getLocal()["idPeticion"] != ""){
         peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogCancel');
+        console.log("AA");
     }
     else { peticionManager.addPeticion(peticion, 'addLog'); }
+}
+
+function createAnexo(ressult){
+    addAnexxo({"id": gestor.getPeticiones()[0].getIdPeticion()}, 'updateLogCancel');
 }
 
 function aceptPermiso(){

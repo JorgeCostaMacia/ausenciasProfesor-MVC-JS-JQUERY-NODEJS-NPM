@@ -1,3 +1,5 @@
+"use strict";
+
 class Login{
     constructor(loginJSON) {
         var id = loginJSON["id"];

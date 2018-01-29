@@ -12,7 +12,6 @@ function evalPermiso(event) {
     peticion["cola"] = event.target.value;
     peticion["nombreSolicitante"] = $("#donya").val();
     peticion["comentarios"] = permiso.getComentarios();
-    peticion["anexos"] = permiso.getAnexos();
     peticion["fechaCreacion"] = gestor.getDate();
     peticion["fechaLlegada"] = gestor.getDate();
     peticion["motivo"] = $("input[name=motivo-permiso]:checked").val();
@@ -46,44 +45,47 @@ function evalPermiso(event) {
     peticion["observaciones"] = $("#documentacion-observaciones").val();
     peticion["fechaFirma"] = $("#firma-anyo").val()+"-"+$("#firma-mes").val()+"-"+$("#firma-dia").val();
     peticion["firma"] = $("#firma-firma").val();
+    peticion["firmaDireccion"] = $("#direccion-visto-firma").val();
 
 
-    if(peticion.getTipoAusencia() == "ausencia"){
-        $("#tipoAusencia").attr("checked", true);
+    if( $("#tipoAusencia").prop("checked")){
+        peticion["tipoAusencia"] = "ausencia";
     }
-    if(peticion.getTipoAusencia() == "retraso"){
-        $("#tipoRetraso").attr("checked", true);
-    }
-
-    if(peticion.getMotivoAusencia() == "enfermedad"){
-        $("#motivoEnfermedad").attr("checked", true);
-    }
-    if(peticion.getMotivoAusencia() == "permiso"){
-        $("#motivoPermiso").attr("checked", true);
+    else if( $("#tipoRetraso").prop("checked")){
+        peticion["tipoAusencia"] = "retraso";
     }
 
+    if( $("#motivoEnfermedad").prop("checked")){
+        peticion["motivoAusencia"] = "enfermedad";
+    }
+    else if( $("#motivoPermiso").prop("checked")){
+        peticion["motivoAusencia"] = "permiso";
+    }
 
-    peticion["tipoAusencia"] = "";
-    peticion["motivoAusencia"] = "";
     peticion["horAusencias"] = {
-        "lectivas": "", "otras": "", "complementarias": "","evaluacion": "", "claustro": "", "ccp": "",
-        "consejo": "", "reunionDep": "", "reunionTutores": ""
+        "lectivas": $("#horas-lectivas-ausencia").val(),
+        "otras": $("#horas-otras-ausencia").val(),
+        "complementarias": $("#horas-complementarias-ausencia").val(),
+        "evaluacion": $("#horas-evaluacion-ausencia").val(),
+        "claustro": $("#horas-claustro-ausencia").val(),
+        "ccp": $("#horas-ccp-ausencia").val(),
+        "consejo": $("#horas-consejo-ausencia").val(),
+        "reunionDep": $("#horas-reunion-dep-ausencia").val(),
+        "reunionTutores": $("#horas-reunion-tutores-ausencia").val()
     };
+
 
     let log = {};
     log["id"] = gestor.getLocal()["id"];
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();
-    log["colaInicio"] = "genPeticion";
+    log["colaInicio"] = permiso.getCola();
     log["colaDestino"] = event.target.value;
 
     gestor.addLogs(new Log(log));
 
-    if(gestor.getLocal()["idPeticion"] != ""){
-        peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogCancel');
-    }
-    else { peticionManager.addPeticion(peticion, 'addLog'); }
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'addLog');
 }
 
 function aceptPermiso(){

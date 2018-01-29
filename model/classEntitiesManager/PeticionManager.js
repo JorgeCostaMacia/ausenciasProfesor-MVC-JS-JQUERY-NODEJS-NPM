@@ -23,7 +23,7 @@ class PeticionManager {
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         });
     }
-
+    
     updatePeticion(peticionJSON, idPeticion, returnFunction){
         $.ajax({
             url:"http://localhost:3000/peticiones/" + idPeticion,

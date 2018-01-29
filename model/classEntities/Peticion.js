@@ -17,11 +17,10 @@ class Peticion{
         var fechaFirma = peticionJSON["fechaFirma"];
         var firma = peticionJSON["firma"];
         var comentarios = peticionJSON["comentarios"];
-        var anexos = peticionJSON["anexos"];
-
         var tipoAusencia = peticionJSON["tipoAusencia"];
         var motivoAusencia = peticionJSON["motivoAusencia"];
         var horasAusencia = peticionJSON["horaAusencias"];
+        var firmaDireccion = peticionJSON["firmaDireccion"];
 
         this.getIdPeticion = function(){ return idPeticion; };
         this.setIdPeticion = function (_idPeticion) { idPeticion = _idPeticion; };
@@ -69,9 +68,6 @@ class Peticion{
         this.setComentarios = function (_comentarios) { comentarios = _comentarios; };
         this.addComentarios = function (_comentarios) { comentarios.push(_comentarios); };
 
-        this.getAnexos = function () { return anexos; };
-        this.setAnexos = function (_anexos) { anexos = _anexos; };
-
         this.getTipoAusencia = function () { return tipoAusencia; };
         this.setTipoAusencia = function (_tipoAusencia) { tipoAusencia = _tipoAusencia; };
 
@@ -80,5 +76,8 @@ class Peticion{
 
         this.getHorasAusencia = function () { return horasAusencia; };
         this.setHorasAusencia = function (_horasAusencia) { horasAusencia = _horasAusencia; };
+
+        this.getFirmaDireccion = function () { return firmaDireccion; };
+        this.setFirmaDireccion = function (_firmaDireccion) { firmaDireccion = _firmaDireccion; };
     }
 }

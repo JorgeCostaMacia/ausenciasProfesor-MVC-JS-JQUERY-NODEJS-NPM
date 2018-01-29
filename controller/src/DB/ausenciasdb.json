@@ -30,33 +30,16 @@
     {
       "nombre": "admin",
       "fecha": "2018-01-29",
-      "hora": "21:1:49",
+      "hora": "22:34:42",
       "colaInicio": "genPeticion",
       "colaDestino": "penAutorizarPermiso",
       "id": 1
-    },
-    {
-      "idUsuario": "admin",
-      "nombre": "admin",
-      "fecha": "2018-01-29",
-      "hora": "21:3:55",
-      "colaInicio": "penAutorizarPermiso",
-      "colaDestino": "penJustificante",
-      "id": 2
-    },
-    {
-      "nombre": "jorge jorge jorge",
-      "fecha": "2018-01-29",
-      "hora": "22:5:9",
-      "colaInicio": "genPeticion",
-      "colaDestino": "penAutorizarPermiso",
-      "id": 3
     }
   ],
   "peticiones": [
     {
       "idUsuario": "admin",
-      "cola": "penJustificante",
+      "cola": "penAutorizarPermiso",
       "nombreSolicitante": "admin",
       "comentarios": [],
       "anexos": [],
@@ -151,106 +134,8 @@
         "reunionDep": "",
         "reunionTutores": ""
       },
+      "firmaDireccion": "",
       "id": 1
-    },
-    {
-      "idUsuario": "jorge",
-      "cola": "penAutorizarPermiso",
-      "nombreSolicitante": "jorge jorge jorge",
-      "comentarios": [],
-      "anexos": [],
-      "fechaCreacion": "2018-01-29",
-      "fechaLlegada": "2018-01-29",
-      "motivo": "matrimonio",
-      "motivoRepresentativas": "",
-      "motivoInexcusable": "",
-      "jornada": {
-        "completa": {
-          "diaInicio": "",
-          "diaFin": ""
-        },
-        "parcial": {
-          "diaInicio": "",
-          "diaFin": "",
-          "horaInicio": "",
-          "horaFin": ""
-        }
-      },
-      "horario": {
-        "1": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "2": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "3": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "4": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "5": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "6": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "7": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "8": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        }
-      },
-      "observaciones": "",
-      "fechaFirma": "2018-01-29",
-      "firma": "jorge jorge jorge",
-      "tipoAusencia": "",
-      "motivoAusencia": "",
-      "horaAusencias": {
-        "lectivas": "",
-        "otras": "",
-        "complementarias": "",
-        "evaluacion": "",
-        "claustro": "",
-        "ccp": "",
-        "consejo": "",
-        "reunionDep": "",
-        "reunionTutores": ""
-      },
-      "id": 2
     }
   ]
 }
