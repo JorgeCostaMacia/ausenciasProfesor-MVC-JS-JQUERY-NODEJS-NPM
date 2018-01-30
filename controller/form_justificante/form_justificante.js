@@ -31,7 +31,7 @@ function evalPermiso(event) {
             "horaFin": $("#incompleta-hora-hasta").val(),
         }
     };
-    
+
     peticion["horario"] = gestor.getPeticiones()[0].getHorario();
 
     peticion["observaciones"] = $("#documentacion-observaciones").val();
