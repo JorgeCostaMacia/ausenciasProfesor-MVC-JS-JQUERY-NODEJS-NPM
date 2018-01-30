@@ -5,11 +5,6 @@
       "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzk6MjY6NDY=",
       "id": "admin",
       "pass": "YWRtaW4="
-    },
-    {
-      "id": "jorge",
-      "pass": "am9yZ2U=",
-      "token": ""
     }
   ],
   "registro": [],
@@ -19,12 +14,6 @@
       "nombre": "admin",
       "departamento": "admin",
       "nivel": "admin"
-    },
-    {
-      "id": "jorge",
-      "nombre": "jorge jorge jorge",
-      "departamento": "jorge",
-      "nivel": "profesor"
     }
   ],
   "peticiones": [],

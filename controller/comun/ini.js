@@ -3,6 +3,7 @@
 var gestor = new Gestor();
 var loginManager = new LoginManager();
 var peticionManager = new PeticionManager();
+var logManager = new LogManager();
 
 // SI EXISTE COOKIE
 // RECOGE ID DE LOCALSTORAGE
@@ -90,4 +91,12 @@ function clearPetLocal(){ gestor.clearPeticionLocal(); }
 
 function aceptarUsuarios(){
     $("#aceptarUsuarios").click(function(){ window.location.assign("aceptar_usuarios.html"); });
+}
+
+function getLogs(){
+
+}
+
+function formatLogs(ressult){
+
 }
