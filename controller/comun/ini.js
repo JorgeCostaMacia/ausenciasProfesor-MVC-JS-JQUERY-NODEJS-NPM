@@ -94,10 +94,6 @@ function aceptarUsuarios(){
 }
 
 function getLogs(){
-    logManager.getLog("formatLogs");
-}
-
-function formatLogs(ressult){
-    console.log(ressult);
-
+    msjClean();
+    logManager.getLog("formatLogTable");
 }
