@@ -73,8 +73,7 @@ function evalPermiso(event) {
     gestor.addLogs(new Log(log));
 
     if(gestor.getLocal()["idPeticion"] != ""){
-        peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogCancel');
-        console.log("AA");
+        peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogOK');
     }
     else { peticionManager.addPeticion(peticion, 'createAnexo'); }
 }

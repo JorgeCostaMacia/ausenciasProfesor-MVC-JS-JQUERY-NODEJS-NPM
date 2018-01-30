@@ -18,6 +18,7 @@ function evalPermiso(event) {
     peticion["motivoRepresentativas"] = $("#valor-funciones-representativas").val();
     peticion["motivoInexcusable"] = $("#valor-deber-inexcusable").val();
 
+
     peticion["jornada"] = {
         "completa": {
             "diaInicio": $("#completa-fecha-desde").val(),
@@ -30,17 +31,8 @@ function evalPermiso(event) {
             "horaFin": $("#incompleta-hora-hasta").val(),
         }
     };
-
-    peticion["horario"] = {};
-    for(let i = 1; i < 9; i++){
-        peticion["horario"][i] = {
-            "dia": $("#horario-dia-" + i).val(),
-            "hora": $("#horario-hora-" + i).val(),
-            "curso": $("#horario-curso-" + i).val(),
-            "asignatura": $("#horario-asignatura-" + i).val(),
-            "sustituto": $("#horario-profesor-" + i).val(),
-        };
-    }
+    
+    peticion["horario"] = gestor.getPeticiones()[0].getHorario();
 
     peticion["observaciones"] = $("#documentacion-observaciones").val();
     peticion["fechaFirma"] = $("#firma-anyo").val()+"-"+$("#firma-mes").val()+"-"+$("#firma-dia").val();
