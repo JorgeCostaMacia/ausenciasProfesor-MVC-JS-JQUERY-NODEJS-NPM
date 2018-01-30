@@ -1,7 +1,5 @@
 "use strict";
 
-var anexosManager = new AnexosManager();
-
 // CREA OBJETO DATE CON FECHA ACTUAL
 // FORMATEA FECHA ACTUAL
 // AÑADE MAXIMOS A CAMPOS DATE CON FECHA ACTUAL

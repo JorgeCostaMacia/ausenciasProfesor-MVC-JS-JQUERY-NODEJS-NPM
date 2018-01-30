@@ -1,8 +1,5 @@
 "use strict";
 
-var logManager = new LogManager();
-var anexosManager = new AnexosManager();
-
 // EVALUA LOCALSTORAGE
 // SI RECIBE PETICION - LLAMA PETICION BD
 function iniFormPeticion(){

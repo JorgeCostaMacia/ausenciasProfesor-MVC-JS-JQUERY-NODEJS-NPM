@@ -1,9 +1,8 @@
 {
-  "log": [
-  ],
+  "log": [],
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzE4OjIxOjE=",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzE5Ojg6Mjk=",
       "id": "admin",
       "pass": "YWRtaW4="
     }
@@ -17,8 +16,6 @@
       "nivel": "admin"
     }
   ],
-  "peticiones": [
-  ],
-  "anexos": [
-  ]
+  "peticiones": [],
+  "anexos": []
 }

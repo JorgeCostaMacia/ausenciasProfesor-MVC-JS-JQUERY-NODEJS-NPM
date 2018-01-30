@@ -4,6 +4,7 @@ var gestor = new Gestor();
 var loginManager = new LoginManager();
 var peticionManager = new PeticionManager();
 var logManager = new LogManager();
+var anexosManager = new AnexosManager();
 
 // SI EXISTE COOKIE
 // RECOGE ID DE LOCALSTORAGE
@@ -12,6 +13,7 @@ function evalCookie(){
     if(gestor.existCookie()) {
         loginManager.getLogin(gestor.getLocal()["id"], '','evalCookieToken');
     }
+    else { changePageIndex(""); }
 }
 
 // RECIBE RESULTADO LOGIN BD

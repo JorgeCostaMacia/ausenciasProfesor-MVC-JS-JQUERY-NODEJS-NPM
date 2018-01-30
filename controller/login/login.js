@@ -51,7 +51,7 @@ function addUsuarioLocal(ressult){
 
     let token = gestor.genToken();
     gestor.addLocal(ressult[0]["id"], ressult[0]["nombre"], ressult[0]["nivel"], "");
-    gestor.addCookie('token', token, 300000);
+    gestor.addCookie('token', token, 600);
 
     loginManager.addToken(ressult[0]["id"], token, 'changePageInicio');
 }
