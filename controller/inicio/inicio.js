@@ -94,5 +94,10 @@ function handlerAnexos(event){
     let arrayId = inputName.split("-");
     let idPeticion = arrayId[1];
 
+    anexosManager.getAnexos(idPeticion, "returnAnexos");
+}
 
+function returnAnexos(ressult){
+    console.log(ressult);
+    formatAnexos(ressult["anexos"]);
 }

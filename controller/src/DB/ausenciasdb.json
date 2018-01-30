@@ -8,6 +8,15 @@
       "colaInicio": "genPermiso",
       "colaDestino": "genPermiso",
       "id": 1
+    },
+    {
+      "idUsuario": "prueba",
+      "nombre": "asdf asdf asdf",
+      "fecha": "2018-01-30",
+      "hora": "17:47:5",
+      "colaInicio": "genPermiso",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 2
     }
   ],
   "login": [
@@ -147,11 +156,114 @@
       },
       "firmaDireccion": "",
       "id": 1
+    },
+    {
+      "idUsuario": "prueba",
+      "cola": "penAutorizarPermiso",
+      "nombreSolicitante": "asdf asdf asdf",
+      "comentarios": [],
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
+      "motivo": "matrimonio",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-30",
+      "firma": "asdf asdf asdf",
+      "tipoAusencia": "",
+      "motivoAusencia": "",
+      "horaAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "firmaDireccion": "",
+      "id": 2
     }
   ],
   "anexos": [
     {
       "id": 1,
+      "anexos": []
+    },
+    {
+      "id": 2,
       "anexos": []
     }
   ]
