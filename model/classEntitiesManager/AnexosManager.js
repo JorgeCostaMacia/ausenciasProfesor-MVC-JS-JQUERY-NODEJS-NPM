@@ -13,12 +13,11 @@ class AnexosManager {
         });
     }
 
-    getAnexos(whereParameter, returnFunction){
+    getAnexos(idAnexos, returnFunction){
         $.ajax({
             cache: false,
-            url:"http://localhost:3000/anexos",
+            url:"http://localhost:3000/anexos/" + idAnexos,
             type:"GET",
-            data: whereParameter,
             success: function(ressult){ eval(returnFunction + '(ressult)'); },
             error: function (){ msjDanger('CONEXION', "<strong>Se ha producido un error en la conexion</strong>"); }
         })
