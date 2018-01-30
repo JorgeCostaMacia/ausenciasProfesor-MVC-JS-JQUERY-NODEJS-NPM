@@ -1,9 +1,8 @@
 {
-  "log": [
-  ],
+  "log": [],
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzk6MjY6NDY=",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzExOjM0OjQ=",
       "id": "admin",
       "pass": "YWRtaW4="
     },
@@ -28,8 +27,6 @@
       "nivel": "profesor"
     }
   ],
-  "peticiones": [
-  ],
+  "peticiones": [],
   "anexos": []
-
 }
