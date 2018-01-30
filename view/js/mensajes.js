@@ -107,6 +107,8 @@ function formatLogTable(logs){
     msjInfo("LOGS", logText);
 }
 
+
+
 function msjLogs(){
     
 }
