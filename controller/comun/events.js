@@ -4,7 +4,7 @@ document.onload = addEventsComun();
 
 function addEventsComun(){
     $("#cerrarSesionInicio").click(returnLogin);
-   // $("#cerrarSesionInicio").click(getLogs); // boton log
+    $("#getLogs").click(getLogs);
 }
 
 function aceptarUsuarios(){

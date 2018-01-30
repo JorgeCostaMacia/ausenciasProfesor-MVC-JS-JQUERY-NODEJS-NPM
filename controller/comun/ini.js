@@ -94,7 +94,8 @@ function aceptarUsuarios(){
 }
 
 function getLogs(){
-
+    var logs = gestor.getLogs();
+    console.log(logs);
 }
 
 function formatLogs(ressult){
