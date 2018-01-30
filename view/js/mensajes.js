@@ -80,7 +80,7 @@ function msjInfo(accion, text) {
     $("#info").modal("show");
 }
 
-function msjLg(accion, text) {
+function msjLg(accion) {
     $("#mensajes").append(
         "<div class=\"modal fade\" id=\"modalscroll\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLongTitle\" aria-hidden=\"true\">" +
         "<div class=\"modal-dialog modal-lg\" role=\"document\">" +
@@ -88,7 +88,7 @@ function msjLg(accion, text) {
         "<div class='modal-header modal-header-info'>" +
         "<h1>" + accion + "</h1>" +
         "</div>" +
-        "<div class='modal-body'>" + text + "</div>" +
+        "<div class='modal-body' id='textBody'></div>" +
         "<div class='modal-footer'>" +
         "<button type='button' class='btn btn-default pull-rigth' data-dismiss='modal'>Cerrar</button>" +
         "</div>" +
@@ -97,7 +97,7 @@ function msjLg(accion, text) {
         "</div>"
     );
 
-    $("#modalscroll").modal("show");
+
 }
 
 function msjClean() {
@@ -130,6 +130,14 @@ function formatLogTable(logs) {
 }
 
 function formatAnexos(anexos) {
+    msjLg("ANEXO");
+
+    $("#modalscroll").modal("show");
+
+    PDFObject.embed(anexos[0], "#textBody");
+    //window.open(window.open(anexos[0]));
+    //msjInfo("LOGS", anexos[0]);
+
 
 }
 

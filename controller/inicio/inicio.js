@@ -98,6 +98,5 @@ function handlerAnexos(event){
 }
 
 function returnAnexos(ressult){
-    console.log(ressult);
     formatAnexos(ressult["anexos"]);
 }
