@@ -80,9 +80,9 @@ function msjInfo(accion, text){
     $("#info").modal("show");
 }
 
-function msjLG(accion, text){
+function msjLg(accion, text){
     $("#mensajes").append(
-        '<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
+        '<div class="modal fade" id="modallg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-info">' +
@@ -97,7 +97,7 @@ function msjLG(accion, text){
         '</div>'
     );
 
-    $("#info").modal("show");
+    $("#modallg").modal("show");
 }
 
 function msjClean(){ $("#mensajes").empty(); }
