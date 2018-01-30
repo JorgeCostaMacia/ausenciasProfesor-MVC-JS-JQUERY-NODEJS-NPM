@@ -7,10 +7,13 @@ function evalExistAnexo(ressult) {
 
         let ruta = $("#adjunto-documentacion-obervaciones").val().split(".");
 
+<<<<<<< HEAD
         if(ruta[ruta.length - 1 ] = "pdf"){
             anexosManager.getAnexos(gestor.getPeticiones()[0].getIdPeticion(), 'anyadirAnexo');
+=======
         if (ruta[ruta.length - 1] = "pdf") {
             anexosManager.getAnexos("id=" + gestor.getPeticiones()[0].getIdPeticion(), 'anyadirAnexo');
+>>>>>>> 190b7bd129032630d54c889f191a1114398478f9
         }
         else {
             addLog("");
