@@ -10,7 +10,7 @@ function msjDanger(accion, text){
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Close</button>' +
+        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Cerrar</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -30,7 +30,7 @@ function msjWarning(accion, text){
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Close</button>' +
+        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Cerrar</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -50,7 +50,7 @@ function msjSucces(accion, text){
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Close</button>' +
+        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Cerrar</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -70,7 +70,7 @@ function msjInfo(accion, text){
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Close</button>' +
+        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Cerrar</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -90,7 +90,7 @@ function msjLg(accion, text){
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Close</button>' +
+        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Cerrar</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
