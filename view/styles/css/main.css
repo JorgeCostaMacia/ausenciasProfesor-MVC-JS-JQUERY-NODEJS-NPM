@@ -347,6 +347,10 @@ input:focus::-webkit-datetime-edit{ color: #000; }*/
         color-adjust: exact !important;
     }
 
+    *[disabled] {
+        background-color: inherit;
+    }
+
     .formulario-imprimir{
         font-size: 11px;
     }
