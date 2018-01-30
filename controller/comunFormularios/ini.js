@@ -44,6 +44,11 @@ function disables(){
             disableFormPeticionEspecific();
         }
 
+        if(petition.getCola() == "ausenciaFinalizada"){
+            disableFormPeticion();
+            disableFormPeticionEspecific();
+        }
+
         if(petition.getCola() == "penAutorizarPermiso" || petition.getCola() == "penAutorizarJustificante"){
             disableFormPeticion();
 

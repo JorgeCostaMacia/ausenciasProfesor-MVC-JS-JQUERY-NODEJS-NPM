@@ -25,6 +25,27 @@ function injectPeticiones(peticiones) {
     }
 }
 
+function injectPeticionesAusencias(peticiones){
+    for (let i = 0; i < peticiones.length; i++) {
+        let fechaAux = peticiones[i].getFechaCreacion().split("-");
+        let fechaCreacion = fechaAux[2] + "/" + fechaAux[1] + "/" + fechaAux[0];
+        fechaAux = peticiones[i].getFechaLlegada().split("-");
+        let fechaLlegada = fechaAux[2] + "/" + fechaAux[1] + "/" + fechaAux[0];
+
+        $("#tbody").append(
+            '<tr>' +
+            '<td>' + peticiones[i].getNombreSolicitante() + '</td>' +
+            '<td>' + fechaCreacion + '</td>' +
+            '<td>' + fechaLlegada + '</td>' +
+            '<td><div id="comentarios-' + peticiones[i].getIdPeticion() + '" class="link">' + peticiones[i].getComentarios().length + '</div></td>' +
+            '<td><div id="permisos-' + peticiones[i].getIdPeticion() + '" class="link">Permiso</div></td>' +
+            '<td><div id="justificantes-' + peticiones[i].getIdPeticion() + '" class="link">Justificante</div></td>' +
+            '<td><div id="anexos-' + peticiones[i].getIdPeticion() + '" class="link">Anexos</div></td>' +
+            '</tr>'
+        );
+    }
+}
+
 function injectNombreCompletoDisable(nombre) {
     $("#buscador-texto").val(nombre);
     $("#buscador-texto").attr('disabled', 'disabled');

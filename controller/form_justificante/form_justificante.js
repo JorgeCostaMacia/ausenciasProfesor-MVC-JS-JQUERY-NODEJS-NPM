@@ -81,13 +81,13 @@ function evalPermiso(event) {
 }
 
 function aceptPermiso(){
-    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "penJustificante"};
+    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "ausenciaFinalizada"};
 
     peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogOk');
 }
 
 function cancelPermiso(){
-    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "genPermiso"};
+    let peticion = { "fechaLlegada": gestor.getDate(), "cola": "penJustificante"};
 
     peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogCancel');
 }
@@ -98,8 +98,8 @@ function updateLogOk(ressult){
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();
-    log["colaInicio"] = "penAutorizarPermiso";
-    log["colaDestino"] = "penJustificante";
+    log["colaInicio"] = "penAutorizarJustificante";
+    log["colaDestino"] = "ausenciaFinalizada";
 
     logManager.addLog(log, 'changePageIninicio');
 }
@@ -110,8 +110,8 @@ function updateLogCancel(ressult){
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();
-    log["colaInicio"] = "penAutorizarPermiso";
-    log["colaDestino"] = "genPermiso";
+    log["colaInicio"] = "penAutorizarJustificante";
+    log["colaDestino"] = "penAutorizarJustificante";
 
     logManager.addLog(log, 'changePageIninicio');
 }

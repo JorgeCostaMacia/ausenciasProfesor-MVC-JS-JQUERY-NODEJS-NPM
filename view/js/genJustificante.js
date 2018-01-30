@@ -72,4 +72,5 @@ function disableFormPeticionEspecific(){
     $("#horas-consejo-ausencia").attr("disabled", true);
     $("#horas-reunion-dep-ausencia").attr("disabled", true);
     $("#horas-reunion-tutores-ausencia").attr("disabled", true);
+    $("#adjunto-documentacion-obervaciones").attr("disabled", true);
 }
