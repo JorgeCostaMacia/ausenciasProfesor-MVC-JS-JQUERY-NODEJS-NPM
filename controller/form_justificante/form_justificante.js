@@ -82,7 +82,7 @@ function evalPermiso(event) {
 
 function aceptPermiso(){
     let peticion = { "fechaLlegada": gestor.getDate(), "cola": "penJustificante"};
-    console.log(gestor.getPeticiones()[0].getIdPeticion());
+
     peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogOk');
 }
 
