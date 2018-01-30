@@ -106,7 +106,7 @@ function formatLogTable(logs){
     let logText = '<table class="table table-hover">' +
         "<thead>" +
         "<tr>" +
-        "<td>ID USUARIO</td><td>NOMBRE</td><td>FECHA</td><td>HORA</td><td>INICIO</td><td>FIN</td>" +
+        "<th>ID USUARIO</th><th>NOMBRE</th><th>FECHA</th><th>HORA</th><th>INICIO</th><th>FIN</th>" +
         "</tr>" +
         '</thead>' +
         '<tbody>';
@@ -127,8 +127,9 @@ function formatLogTable(logs){
     msjInfo("LOGS", logText);
 }
 
+function formatAnexos(anexos) {
 
-
-function msjLogs(){
-    
 }
+
+
+

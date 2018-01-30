@@ -12,7 +12,7 @@
   ],
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzE2Ojk6MzA=",
+      "token": "",
       "id": "admin",
       "pass": "YWRtaW4="
     },
@@ -20,6 +20,11 @@
       "id": "jorge",
       "pass": "am9yZ2U=",
       "token": ""
+    },
+    {
+      "id": "prueba",
+      "pass": "cHJ1ZWJh",
+      "token": "cHJ1ZWJhI3BydWViYSMyMDE4LTEtMzAjMTc6Mzc6Mzk="
     }
   ],
   "registro": [],
@@ -34,6 +39,12 @@
       "id": "jorge",
       "nombre": "jorge jorge jorge",
       "departamento": "jorge",
+      "nivel": "profesor"
+    },
+    {
+      "id": "prueba",
+      "nombre": "asdf asdf asdf",
+      "departamento": "asdfasf",
       "nivel": "profesor"
     }
   ],

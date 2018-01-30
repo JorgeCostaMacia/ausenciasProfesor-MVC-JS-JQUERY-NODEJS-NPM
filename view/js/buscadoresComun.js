@@ -19,6 +19,7 @@ function injectPeticiones(peticiones) {
             '<td>' + fechaLlegada + '</td>' +
             '<td><div id="comentarios-' + peticiones[i].getIdPeticion() + '" class="link">' + peticiones[i].getComentarios().length + '</div></td>' +
             '<td><div id="detalles-' + peticiones[i].getIdPeticion() + '" class="link">Detalles</div></td>' +
+            '<td><div id="anexos-' + peticiones[i].getIdPeticion() + '" class="link">Anexos</div></td>' +
             '</tr>'
         );
     }

@@ -88,3 +88,11 @@ function handlerDetalles(event){
 
     window.location.assign("form_permiso.html");
 }
+
+function handlerAnexos(event){
+    let inputName = event.target.id;
+    let arrayId = inputName.split("-");
+    let idPeticion = arrayId[1];
+
+
+}
