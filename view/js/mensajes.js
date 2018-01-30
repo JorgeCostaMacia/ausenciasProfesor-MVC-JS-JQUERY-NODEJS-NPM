@@ -1,12 +1,12 @@
 "use strict";
 
-function msjDanger(accion, text){
+function msjDanger(accion, text) {
     $("#mensajes").append(
         '<div class="modal fade bd-example-modal-lg" id="danger" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-danger">' +
-        '<h1>' + accion +'</h1>' +
+        '<h1>' + accion + '</h1>' +
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
@@ -20,13 +20,13 @@ function msjDanger(accion, text){
     $("#danger").modal("show");
 }
 
-function msjWarning(accion, text){
+function msjWarning(accion, text) {
     $("#mensajes").append(
         '<div class="modal fade bd-example-modal-lg" id="warning" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-warning">' +
-        '<h1>' + accion +'</h1>' +
+        '<h1>' + accion + '</h1>' +
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
@@ -40,13 +40,13 @@ function msjWarning(accion, text){
     $("#warning").modal("show");
 }
 
-function msjSucces(accion, text){
+function msjSucces(accion, text) {
     $("#mensajes").append(
         '<div class="modal fade bd-example-modal-lg" id="success" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-success">' +
-        '<h1>' + accion +'</h1>' +
+        '<h1>' + accion + '</h1>' +
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
@@ -60,13 +60,13 @@ function msjSucces(accion, text){
     $("#success").modal("show");
 }
 
-function msjInfo(accion, text){
+function msjInfo(accion, text) {
     $("#mensajes").append(
         '<div class="modal fade bd-example-modal-lg" id="info" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-info">' +
-        '<h1>' + accion +'</h1>' +
+        '<h1>' + accion + '</h1>' +
         '</div>' +
         '<div class="modal-body">' + text + '</div>' +
         '<div class="modal-footer">' +
@@ -80,29 +80,31 @@ function msjInfo(accion, text){
     $("#info").modal("show");
 }
 
-function msjLg(accion, text){
+function msjLg(accion, text) {
     $("#mensajes").append(
-        '<div class="modal fade" id="modallg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
-        '<div class="modal-dialog modal-lg">' +
-        '<div class="modal-content">' +
-        '<div class="modal-header modal-header-info">' +
-        '<h1>' + accion +'</h1>' +
-        '</div>' +
-        '<div class="modal-body">' + text + '</div>' +
-        '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Cerrar</button>' +
-        '</div>' +
-        '</div>' +
-        '</div>' +
-        '</div>'
+        "<div class=\"modal fade\" id=\"modalscroll\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLongTitle\" aria-hidden=\"true\">" +
+        "<div class=\"modal-dialog modal-lg\" role=\"document\">" +
+        "<div class=\"modal-content\">" +
+        "<div class='modal-header modal-header-info'>" +
+        "<h1>" + accion + "</h1>" +
+        "</div>" +
+        "<div class='modal-body'>" + text + "</div>" +
+        "<div class='modal-footer'>" +
+        "<button type='button' class='btn btn-default pull-rigth' data-dismiss='modal'>Cerrar</button>" +
+        "</div>" +
+        "</div>" +
+        "</div>" +
+        "</div>"
     );
 
-    $("#modallg").modal("show");
+    $("#modalscroll").modal("show");
 }
 
-function msjClean(){ $("#mensajes").empty(); }
+function msjClean() {
+    $("#mensajes").empty();
+}
 
-function formatLogTable(logs){
+function formatLogTable(logs) {
     let logText = '<table class="table table-hover">' +
         "<thead>" +
         "<tr>" +
@@ -111,7 +113,7 @@ function formatLogTable(logs){
         '</thead>' +
         '<tbody>';
 
-    for(let i = 0; i < logs.length; i++) {
+    for (let i = 0; i < logs.length; i++) {
         logText += '<tr>' +
             "<td>" + logs[i]["idUsuario"] + "</td>" +
             "<td>" + logs[i]["nombre"] + "</td>" +
