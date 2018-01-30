@@ -85,7 +85,7 @@ function evalPermiso(event) {
 
     gestor.addLogs(new Log(log));
 
-    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'addLog');
+    peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'evalExistAnexo');
 }
 
 function aceptPermiso(){

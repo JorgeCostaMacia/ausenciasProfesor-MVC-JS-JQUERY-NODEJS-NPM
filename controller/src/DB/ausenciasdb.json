@@ -30,21 +30,142 @@
     {
       "idUsuario": "admin",
       "nombre": "admin",
-      "fecha": "2018-01-29",
-      "hora": "23:9:45",
+      "fecha": "2018-01-30",
+      "hora": "0:20:2",
       "colaInicio": "genPeticion",
       "colaDestino": "penAutorizarPermiso",
       "id": 1
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:20:15",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "penJustificante",
+      "id": 2
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:20:32",
+      "colaInicio": "penJustificante",
+      "colaDestino": "penAutorizarJustificante",
+      "id": 3
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:21:33",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 4
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:21:45",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "penJustificante",
+      "id": 5
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:22:5",
+      "colaInicio": "penJustificante",
+      "colaDestino": "penAutorizarJustificante",
+      "id": 6
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:23:13",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 7
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:23:28",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "penJustificante",
+      "id": 8
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:23:49",
+      "colaInicio": "penJustificante",
+      "colaDestino": "penAutorizarJustificante",
+      "id": 9
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:24:32",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 10
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:24:43",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "penJustificante",
+      "id": 11
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:25:2",
+      "colaInicio": "penJustificante",
+      "colaDestino": "penAutorizarJustificante",
+      "id": 12
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:25:58",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 13
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:26:12",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "penJustificante",
+      "id": 14
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "0:26:32",
+      "colaInicio": "penJustificante",
+      "colaDestino": "penAutorizarJustificante",
+      "id": 15
     }
   ],
   "peticiones": [
     {
       "idUsuario": "admin",
-      "cola": "penAutorizarPermiso",
+      "cola": "penAutorizarJustificante",
       "nombreSolicitante": "admin",
       "comentarios": [],
-      "fechaCreacion": "2018-01-29",
-      "fechaLlegada": "2018-01-29",
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
       "motivo": "matrimonio",
       "motivoRepresentativas": "",
       "motivoInexcusable": "",
@@ -61,68 +182,20 @@
         }
       },
       "horario": {
-        "1": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "2": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "3": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "4": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "5": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "6": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "7": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        },
-        "8": {
-          "dia": "",
-          "hora": "",
-          "curso": "",
-          "asignatura": "",
-          "sustituto": ""
-        }
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {}
       },
       "observaciones": "",
-      "fechaFirma": "2018-01-29",
+      "fechaFirma": "2018-01-30",
       "firma": "admin",
-      "tipoAusencia": "",
-      "motivoAusencia": "",
+      "tipoAusencia": "ausencia",
+      "motivoAusencia": "enfermedad",
       "horaAusencias": {
         "lectivas": "",
         "otras": "",
@@ -134,13 +207,299 @@
         "reunionDep": "",
         "reunionTutores": ""
       },
-      "firmaDireccion": "",
-      "id": 1
+      "firmaDireccion": "admin",
+      "id": 1,
+      "horAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      }
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "penAutorizarJustificante",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
+      "motivo": "matrimonio",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {}
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-30",
+      "firma": "admin",
+      "tipoAusencia": "ausencia",
+      "motivoAusencia": "enfermedad",
+      "horaAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "firmaDireccion": "admin",
+      "id": 2,
+      "horAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      }
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "penAutorizarJustificante",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
+      "motivo": "matrimonio",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {}
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-30",
+      "firma": "admin",
+      "tipoAusencia": "ausencia",
+      "motivoAusencia": "enfermedad",
+      "horaAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "firmaDireccion": "admin",
+      "id": 3,
+      "horAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      }
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "penAutorizarJustificante",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
+      "motivo": "matrimonio",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {}
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-30",
+      "firma": "admin",
+      "tipoAusencia": "ausencia",
+      "motivoAusencia": "enfermedad",
+      "horaAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "firmaDireccion": "admin",
+      "id": 4,
+      "horAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      }
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "penAutorizarJustificante",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
+      "motivo": "matrimonio",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {}
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-30",
+      "firma": "admin",
+      "tipoAusencia": "ausencia",
+      "motivoAusencia": "enfermedad",
+      "horaAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "firmaDireccion": "admin",
+      "id": 5,
+      "horAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      }
     }
   ],
   "anexos": [
     {
-      "id": 1
+      "id": 1,
+      "anexos": [
+        null
+      ]
+    },
+    {
+      "id": 2,
+      "anexos": [
+        null
+      ]
+    },
+    {
+      "id": 3,
+      "anexos": [
+        null
+      ]
+    },
+    {
+      "id": 4,
+      "anexos": [
+        null
+      ]
+    },
+    {
+      "id": 5,
+      "anexos": [
+        null
+      ]
     }
   ]
 }
