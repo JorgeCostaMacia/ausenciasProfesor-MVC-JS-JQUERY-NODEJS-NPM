@@ -68,7 +68,7 @@ function evalPermiso(event) {
 
 
     let log = {};
-    log["id"] = gestor.getLocal()["id"];
+    log["idUsuario"] = gestor.getLocal()["id"];
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();

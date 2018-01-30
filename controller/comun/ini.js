@@ -94,10 +94,10 @@ function aceptarUsuarios(){
 }
 
 function getLogs(){
-    var logs = gestor.getLogs();
-    console.log(logs);
+    logManager.getLog("formatLogs");
 }
 
 function formatLogs(ressult){
+    console.log(ressult);
 
 }
