@@ -1,7 +1,7 @@
 {
   "login": [
     {
-      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTI5IzIyOjU6NTA=",
+      "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzk6NDI6MTk=",
       "id": "admin",
       "pass": "YWRtaW4="
     },
@@ -156,6 +156,68 @@
       "colaInicio": "penJustificante",
       "colaDestino": "penAutorizarJustificante",
       "id": 15
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "9:42:33",
+      "colaInicio": "genPeticion",
+      "colaDestino": "penAutorizarPermiso",
+      "id": 16
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "9:43:12",
+      "colaInicio": "genPeticion",
+      "colaDestino": "genPermiso",
+      "id": 17
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "9:43:22",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "genPermiso",
+      "id": 18
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "9:43:57",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "penJustificante",
+      "id": 19
+    },
+    {
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "9:44:10",
+      "colaInicio": "penJustificante",
+      "colaDestino": "penAutorizarJustificante",
+      "id": 20
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "9:44:35",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "genPermiso",
+      "id": 21
+    },
+    {
+      "idUsuario": "admin",
+      "nombre": "admin",
+      "fecha": "2018-01-30",
+      "hora": "9:44:52",
+      "colaInicio": "penAutorizarPermiso",
+      "colaDestino": "genPermiso",
+      "id": 22
     }
   ],
   "peticiones": [
@@ -468,6 +530,167 @@
         "reunionDep": "",
         "reunionTutores": ""
       }
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "penAutorizarJustificante",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
+      "motivo": "deber-inexcusable",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {}
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-30",
+      "firma": "admin",
+      "tipoAusencia": "ausencia",
+      "motivoAusencia": "enfermedad",
+      "horaAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "firmaDireccion": "admin",
+      "id": 6,
+      "horAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      }
+    },
+    {
+      "idUsuario": "admin",
+      "cola": "genPermiso",
+      "nombreSolicitante": "admin",
+      "comentarios": [],
+      "fechaCreacion": "2018-01-30",
+      "fechaLlegada": "2018-01-30",
+      "motivo": "traslado",
+      "motivoRepresentativas": "",
+      "motivoInexcusable": "",
+      "jornada": {
+        "completa": {
+          "diaInicio": "",
+          "diaFin": ""
+        },
+        "parcial": {
+          "diaInicio": "",
+          "diaFin": "",
+          "horaInicio": "",
+          "horaFin": ""
+        }
+      },
+      "horario": {
+        "1": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "2": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "3": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "4": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "5": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "6": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "7": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        },
+        "8": {
+          "dia": "",
+          "hora": "",
+          "curso": "",
+          "asignatura": "",
+          "sustituto": ""
+        }
+      },
+      "observaciones": "",
+      "fechaFirma": "2018-01-30",
+      "firma": "admin",
+      "tipoAusencia": "",
+      "motivoAusencia": "",
+      "horaAusencias": {
+        "lectivas": "",
+        "otras": "",
+        "complementarias": "",
+        "evaluacion": "",
+        "claustro": "",
+        "ccp": "",
+        "consejo": "",
+        "reunionDep": "",
+        "reunionTutores": ""
+      },
+      "firmaDireccion": "",
+      "id": 7
     }
   ],
   "anexos": [
@@ -500,6 +723,16 @@
       "anexos": [
         null
       ]
+    },
+    {
+      "id": 6,
+      "anexos": [
+        null
+      ]
+    },
+    {
+      "id": 7,
+      "anexos": []
     }
   ]
 }
