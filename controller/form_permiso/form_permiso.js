@@ -67,13 +67,13 @@ function evalPermiso(event) {
     log["nombre"] = gestor.getLocal()["nombre"];
     log["fecha"] = gestor.getDate();
     log["hora"] = gestor.getTime();
-    log["colaInicio"] = "genPeticion";
+    log["colaInicio"] = "genPermiso";
     log["colaDestino"] = event.target.value;
 
     gestor.addLogs(new Log(log));
 
     if(gestor.getLocal()["idPeticion"] != ""){
-        peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'updateLogOK');
+        peticionManager.updatePeticion(peticion, gestor.getPeticiones()[0].getIdPeticion(), 'addLog');
     }
     else { peticionManager.addPeticion(peticion, 'createAnexo'); }
 }

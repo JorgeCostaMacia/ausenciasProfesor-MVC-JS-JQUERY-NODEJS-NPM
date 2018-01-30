@@ -1,6 +1,5 @@
 "use strict";
 
-
 document.onload = addEventsComun();
 
 function addEventsComun(){

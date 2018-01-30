@@ -20,7 +20,7 @@ function anyadirAnexo(ressult){
     let anexoFile = readFile();
     anexo.addAnexos(anexoFile);
     console.log(anexoFile);
-    let anexoJSON = { "id": anexo.getId(), "anexos": anexo.getAnexos() }
+    let anexoJSON = { "id": anexo.getId(), "anexos": anexo.getAnexos() };
 
     anexosManager.updateAnexos(anexoJSON, gestor.getPeticiones()[0].getIdPeticion(), "addLog");
 }

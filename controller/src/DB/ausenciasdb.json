@@ -1,5 +1,6 @@
 {
-  "log":[],
+  "log": [
+  ],
   "login": [
     {
       "token": "YWRtaW4jYWRtaW4jMjAxOC0xLTMwIzk6MjY6NDY=",
@@ -27,6 +28,6 @@
       "nivel": "profesor"
     }
   ],
-  "peticiones": [],
-  "anexos": []
+  "peticiones": [
+  ]
 }
