@@ -80,6 +80,26 @@ function msjInfo(accion, text){
     $("#info").modal("show");
 }
 
+function msjLg(accion, text){
+    $("#mensajes").append(
+        '<div class="modal fade" id="modallg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
+        '<div class="modal-dialog modal-lg">' +
+        '<div class="modal-content">' +
+        '<div class="modal-header modal-header-info">' +
+        '<h1>' + accion +'</h1>' +
+        '</div>' +
+        '<div class="modal-body">' + text + '</div>' +
+        '<div class="modal-footer">' +
+        '<button type="button" class="btn btn-default pull-rigth" data-dismiss="modal">Close</button>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+    );
+
+    $("#modallg").modal("show");
+}
+
 function msjClean(){ $("#mensajes").empty(); }
 
 function formatLogTable(logs){
