@@ -81,3 +81,32 @@ function msjInfo(accion, text){
 }
 
 function msjClean(){ $("#mensajes").empty(); }
+
+function formatLogTable(logs){
+    let logText = '<table class="table table-hover">' +
+        "<thead>" +
+        "<tr>" +
+        "<td>ID USUARIO</td><td>NOMBRE</td><td>FECHA</td><td>HORA</td><td>INICIO</td><td>FIN</td>" +
+        "</tr>" +
+        '</thead>' +
+        '<tbody>';
+
+    for(let i = 0; i < logs.length; i++) {
+        logText += '<tr>' +
+            "<td>" + logs[i]["idUsuario"] + "</td>" +
+            "<td>" + logs[i]["nombre"] + "</td>" +
+            "<td>" + logs[i]["fecha"] + "</td>" +
+            "<td>" + logs[i]["hora"] + "</td>" +
+            "<td>" + logs[i]["colaInicio"] + "</td>" +
+            "<td>" + logs[i]["colaDestino"] + "</td>" +
+            "</tr>";
+    }
+
+    logText += "</tbody></table>";
+
+    msjInfo("LOGS", logText);
+}
+
+function msjLogs(){
+    
+}
