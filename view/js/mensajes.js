@@ -2,7 +2,7 @@
 
 function msjDanger(accion, text){
     $("#mensajes").append(
-        '<div class="modal fade" id="danger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="danger" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-danger">' +
@@ -22,7 +22,7 @@ function msjDanger(accion, text){
 
 function msjWarning(accion, text){
     $("#mensajes").append(
-        '<div class="modal fade" id="warning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="warning" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-warning">' +
@@ -42,7 +42,7 @@ function msjWarning(accion, text){
 
 function msjSucces(accion, text){
     $("#mensajes").append(
-        '<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="success" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-success">' +
@@ -62,7 +62,7 @@ function msjSucces(accion, text){
 
 function msjInfo(accion, text){
     $("#mensajes").append(
-        '<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="info" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-info">' +
