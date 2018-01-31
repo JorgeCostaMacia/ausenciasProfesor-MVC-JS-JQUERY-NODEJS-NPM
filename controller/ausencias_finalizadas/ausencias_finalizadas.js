@@ -16,11 +16,11 @@ function evalSearch(){
     gestor.setPeticiones(new Array());
 
     let nombre = $("#buscador-texto").val();
-    let cola = "penAutorizarPermiso";
+    let cola = "ausenciaFinalizada";
     let fechaCreacion = $("#buscador-fecha-creacion").val();
     let fechaLlegada = $("#buscador-fecha-llegada").val();
 
-    let whereParameter = "cola=penJustificante";
+    let whereParameter = "cola=" + cola;
 
     if(nombre == ""){ nombre = "aaaaa aaaa aaaa"; }
     else { whereParameter += "&nombreSolicitante=" + nombre; }

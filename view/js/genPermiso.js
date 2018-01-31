@@ -1,25 +1,25 @@
 "use strict";
 
-function infectFormPermisoNuevo(nombre, dia, mes, anyo){
+function infectFormPermisoNuevo(nombre, fechaActual){
     $("#donya").val(nombre);
 
     let firmaDiaNode = $("#firma-dia")[0];
     for(let i = 0; i < firmaDiaNode.length; i++){
-        if(firmaDiaNode[i].value == dia){
+        if(firmaDiaNode[i].value == fechaActual[2]){
             firmaDiaNode[i].setAttribute("selected", "true");
         }
     }
 
     let firmaMesNode = $("#firma-mes")[0];
     for(let i = 0; i < firmaMesNode.length; i++){
-        if(firmaMesNode[i].value == mes){
+        if(firmaMesNode[i].value == fechaActual[1]){
             firmaMesNode[i].setAttribute("selected", "true");
         }
     }
 
     let firmaAnyoNode = $("#firma-anyo")[0];
     for(let i = 0; i < firmaAnyoNode.length; i++){
-        if(firmaAnyoNode[i].value == anyo){
+        if(firmaAnyoNode[i].value == fechaActual[0]){
             firmaAnyoNode[i].setAttribute("selected", "true");
         }
     }

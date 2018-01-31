@@ -5,10 +5,8 @@ function evalExistAnexo(ressult){
 
         let ruta = $("#adjunto-documentacion-obervaciones").val().split(".");
 
-        if(ruta[ruta.length - 1 ] = "pdf"){
-            anexosManager.getAnexos(gestor.getPeticiones()[0].getIdPeticion(), 'readFile');
-        }
-        else { addLog(""); }
+        anexosManager.getAnexos(gestor.getPeticiones()[0].getIdPeticion(), 'readFile');
+
     }
     else { addLog(""); }
 }
